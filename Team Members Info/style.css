@@ -12,6 +12,12 @@ body {
 }
 h1 {
 	color: white;
+	font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 2rem;
+	text-align: center;
+
 }
 h2 {
 	color: #A16060;
