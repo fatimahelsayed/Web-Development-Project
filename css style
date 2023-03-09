@@ -4,11 +4,20 @@
 }
 
 
-html, body
-{
+html{
 height: 100%;
 }
 
+body{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        width: 100%;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+      
+}
 
 @font-face {
     font-family: 'Classy Beautiful';
@@ -68,3 +77,24 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
+#Footer
+{
+    border-top: solid 1px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    width: 100%;
+    padding-top: 5px;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.7em;
+
+}
+h3 {
+    font-family: 'Classy Beautiful';
+}
+.f1 {
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10;
+    opacity: 70%;
+}
