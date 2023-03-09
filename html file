@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <div>  
+            <a href="projectt.html"class="logo" alt="">Clementine</a>
+                <a  href="cart.html"><div><img src="cart-shopping-solid.svg" class="cart"></div></a>
+                <a  href="search.html"><div><img src="search.png" class="search"></div></a>
+                <a href="profile.html"><div><img src="profile.png" class="profile"></div></a>
+
+            </div>
+            <img src="header.png" class="myheader">
+
+    </head>
+    <body>
+       
+        <section id="header">
+            <div class="navbar">
+                <ul>
+                    <li><a href="projectt.html">HOME</a></li>
+                    <li><a href="new.html">NEW IN</a></li>
+                    <li><a href="necks.html">NECKLACES</a></li>
+                    <li><a href="rings.html">RINGS</a></li>
+                    <li><a href="brace.html">BRACELETS</a></li>
+                </ul>
+
+            </div>
+        </section>
+
+    </body>
+</html>
