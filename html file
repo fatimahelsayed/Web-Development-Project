@@ -27,5 +27,28 @@
             </div>
         </section>
 
+        <section id = "Main">
+            <img src = "templogo.png">
+        </section>
+
+
+
+
+
+        <section id = "Footer">
+            <h3>Contact Us </h3>
+            <p class="f1">19012</p>
+            <p class="f1">CLEMENTINE@GMAIL.COM</p>
+            <p class="f1">Operating hours are from 7am – 2am EST,</p>
+            <p class ="f1">7 days a week, excluding holidays.</p>
+       
+        <h3>About Us</h3>
+        <p class="f1">We are a boutique jewellery studio based in</p>
+        <p class="f1">Cairo, Egypt. We create pieces to order using a combination </p>
+        <p class = "f1">of modern technology and traditional jewellery practises,</p>
+        <p class = "f1">each piece is finished carefully by hand.</p>
+
+
+        </section>
     </body>
 </html>
