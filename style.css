@@ -103,7 +103,7 @@ body {
 }
 
 
-/* manual nav start css*/
+/* manual nav start */
 .navmanual {
     position: absolute;
     width: 1520px;
@@ -126,7 +126,6 @@ body {
 
 .manual-btn:hover {
     background: rgb(50, 49, 49);
-    /* transition: 1s ease; */
 }
 
 #radio1:checked~.first {
@@ -141,9 +140,42 @@ body {
     margin-left: -40%;
 }
 
-/* manual nav end css */
+/* manual nav end */
+
+/* automatic nav start */
+.navauto {
+    position: absolute;
+    display: flex;
+    width: 1520px;
+    justify-content: center;
+    margin-top: 455px;
+}
+
+.navauto div {
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navauto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navauto .auto-btn1 {
+    background: rgb(50, 49, 49);
+}
+
+#radio2:checked~.navauto .auto-btn2 {
+    background: rgb(50, 49, 49);
+}
+
+#radio3:checked~.navauto .auto-btn3 {
+    background: rgb(50, 49, 49);
+}
 
 
+/* automatic nav end */
 
 #Footer {
     border-top: solid 1px;
