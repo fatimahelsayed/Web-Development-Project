@@ -5,12 +5,8 @@
     font-style: normal;
 }
 
-#header {
-    position: sticky;
-    left: 0;
-    right: 0;
-    top: 0;
-    background:rgb(255, 255, 255);
+.myheader {
+    width: 100%;
 }
 
 .logo,
@@ -179,27 +175,107 @@ body {
 }
 
 
-/* automatic nav end */
 
-#Footer {
-    border-top: solid 1px;
-    background-color: rgb(31, 31, 31);
+
+
+
+
+
+
+
+/* Footer Design */
+
+.container{
+    background-color: #24262b;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+.f-col ul{
+    list-style: none;
+
+}
+.f-col{
     color: white;
-    width: fill;
-    padding-top: 5px;
-    position: relative;
-    bottom: 0;
-    font-size: 0.7em;
-    padding-left: 10px;
-}
+    width: 25%;
+    padding: 0 15px;
 
-h3 {
+}
+.f-col h3{
+    font-size: 18px;
     font-family: 'Classy Beautiful';
+
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+    position: relative;
 }
 
-.f1 {
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 10;
-    opacity: 70%;
+/* 3lshan a3ml Line taht l h3 */
+.f-col h3::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ffaa00;
+	height: 2px;
+	width: 50px;
 }
+.f-col ul li{
+    margin-bottom: 10px;
+
+}
+
+.f-col ul li a {
+    
+	text-decoration: none;
+	color: #bbbbbb;
+    /* transition 3lshan l hover */
+	transition: all 0.3s ease;
+
+    
+}
+.f-col ul li a:hover{
+    color: white;
+    padding-left: 8px;
+}
+.f-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.f-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 1080){
+    .f-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .f-col{
+      width: 100%;
+  }
+  
+
+  }
