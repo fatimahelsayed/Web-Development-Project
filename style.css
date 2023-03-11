@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Classy Beautiful';
+    src: url(Fonts/ClassyBeautiful.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+.myheader {
+    width: 100%;
+}
+
+.logo,
+img.cart,
+img.search,
+img.profile {
+    display: block;
+    float: right;
+    width: 1.5%;
+    background: rgb(255, 255, 255);
+    margin: 0.5%;
+}
+
+.logo {
+    width: 2.5%;
+    float: left;
+    font-size: larger;
+    font-size: 35;
+    font-family: 'Classy Beautiful';
+    text-decoration: none;
+    color: black;
+    margin-left: 42%;
+}
+
+.logo:hover {
+    text-shadow: 1px 1px 2px rgb(81, 81, 81);
+    transition: 0.1s ease;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 0;
+    right: 300;
+    transform: none;
+}
+
+.navbar ul li a:hover {
+    color: rgb(150, 206, 216);
+    transition: 0.3s ease;
+}
+
+#header ul {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+
+}
+
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* font-family: "Times New Roman", Times, serif; */
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    width: 1520px;
+    height: 474px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slideshow {
+    width: 500%;
+    height: 474px;
+    display: flex;
+}
+
+.slideshow input {
+    display: none
+}
+
+.slide {
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img {
+    width: 1520px;
+    height: 474px;
+}
+
+
+/* manual nav start css*/
+.navmanual {
+    position: absolute;
+    width: 1520px;
+    margin-top: 455px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgb(81, 81, 81);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: rgb(50, 49, 49);
+    /* transition: 1s ease; */
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+/* manual nav end css */
+
+
+
+#Footer {
+    border-top: solid 1px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    width: fill;
+    padding-top: 5px;
+    position: relative;
+    bottom: 0;
+    font-size: 0.7em;
+    padding-left: 10px;
+}
+
+h3 {
+    font-family: 'Classy Beautiful';
+}
+
+.f1 {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10;
+    opacity: 70%;
+}
