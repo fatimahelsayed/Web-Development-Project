@@ -5,7 +5,7 @@
     <title>Clementine</title>
     <a href="trial.html" class="logo" alt=""> Clementine </a>
     <div id="tophead">
-        
+
         <a href="cart.html" class="cart">
             <div><img src="images/cart-shopping-solid.svg" class="cart"></div>
         </a>
@@ -76,6 +76,18 @@
 
         </div>
         <!-- slider end -->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3)
+                {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
     </section>
 
 
