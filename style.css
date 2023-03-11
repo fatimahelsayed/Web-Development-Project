@@ -5,8 +5,12 @@
     font-style: normal;
 }
 
-.myheader {
-    width: 100%;
+#header {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    background:rgb(255, 255, 255);
 }
 
 .logo,
