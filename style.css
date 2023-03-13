@@ -96,17 +96,17 @@ body {
     align-items: center;
 }
 
+
 #slider {
-    position: relative;
-    width: 1520px;
-    height: 474px;
+    width: 500%;
+    height: auto;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .slideshow {
-    width: 500%;
-    height: 474px;
+    width: 100%;
+    height: auto;
     display: flex;
 }
 
@@ -120,15 +120,16 @@ body {
 }
 
 .slide img {
-    width: 1520px;
-    height: 474px;
+    width: 100%;
+    height: auto;
 }
 
 
 /* manual nav start */
 .navmanual {
     position: absolute;
-    width: 1520px;
+    width: 100%;
+    height: auto;
     margin-top: 455px;
     display: flex;
     justify-content: center;
@@ -168,7 +169,8 @@ body {
 .navauto {
     position: absolute;
     display: flex;
-    width: 1520px;
+    width: 100%;
+    height: auto;
     justify-content: center;
     margin-top: 455px;
 }
