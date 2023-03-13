@@ -11,10 +11,10 @@
 * {
     margin: 0;
     padding: 0;
- }
- * {
     box-sizing: border-box;
-  }
+
+ }
+
 .myheader {
     max-width: 100%;
     height: auto;
@@ -24,8 +24,9 @@
 
 .logo,
 img.cart,
-img.search,
-img.profile {
+img.searchpic,
+img.profile,
+.search {
     display: block;
     float: right;
     width: 2%;
@@ -34,6 +35,23 @@ img.profile {
     height: auto;
     margin: 0.5%;
 }
+
+
+input[type=search] {
+    width: 80px;
+    box-sizing: border-box;
+    border: 1.34px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+    background-color: white;
+    padding: 10px 10px ;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=search]:focus {
+    width: 10%;
+  }
 
 .logo {
     align-self: center;
@@ -57,6 +75,17 @@ img.profile {
 
 }
 
+#tophead .search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 .navbar ul li {
     list-style-type: none;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
@@ -68,8 +97,8 @@ img.profile {
     text-decoration: none;
     color: black;
     position: relative;
-    top: 0;
-    right: 300;
+    top: 10;
+    right: 200;
     transform: none;
 }
 
@@ -108,6 +137,7 @@ body {
     width: 100%;
     height: auto;
     display: flex;
+    
 }
 
 .slideshow input {
@@ -117,11 +147,15 @@ body {
 .slide {
     width: 20%;
     transition: 1s;
+    
 }
 
 .slide img {
+    display: block;
+    float: left;
     width: 100%;
     height: auto;
+
 }
 
 
@@ -221,6 +255,10 @@ body {
 
       .logo {
         font-size: 1.4rem;
+      }
+      .search {
+        width: auto;
+        height: auto;
       }
 
     }
