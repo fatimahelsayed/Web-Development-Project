@@ -4,9 +4,22 @@
     font-weight: 100;
     font-style: normal;
 }
+:root {
+    --bgcolor: #ffffff;
+  }
 
+* {
+    margin: 0;
+    padding: 0;
+ }
+ * {
+    box-sizing: border-box;
+  }
 .myheader {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 1.3rem;
+    display: flex;
 }
 
 .logo,
@@ -15,12 +28,15 @@ img.search,
 img.profile {
     display: block;
     float: right;
-    width: 1.5%;
+    width: 2%;
     background: rgb(255, 255, 255);
+    max-width: 100%;
+    height: auto;
     margin: 0.5%;
 }
 
 .logo {
+    align-self: center;
     width: 2.5%;
     float: left;
     font-size: larger;
@@ -34,6 +50,11 @@ img.profile {
 .logo:hover {
     text-shadow: 1px 1px 2px rgb(81, 81, 81);
     transition: 0.1s ease;
+}
+
+.navbar {
+    margin: auto;
+
 }
 
 .navbar ul li {
@@ -76,6 +97,7 @@ body {
 }
 
 #slider {
+    position: relative;
     width: 1520px;
     height: 474px;
     border-radius: 10px;
@@ -176,12 +198,30 @@ body {
 
 
 
+/* ---------------- responsive nav ------------- */
+@media screen and (max-width: 700px) {
+    .navbar {
+      display: none;
+      position: absolute;
+      top: 3.9rem;
+      left: 0;
+      width: 100%;
+      background-color: var(--bgcolor);
+      text-align: center;
+    }
 
+    .navbar.responsive {
+        display: block;
+      }
+      .navbar a {
+        display: block;
+      }
 
+      .logo {
+        font-size: 1.4rem;
+      }
 
-
-
-
+    }
 
 /* Footer Design */
 
@@ -203,44 +243,43 @@ body {
 }
 .f-col ul{
     list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .f-col{
     color: white;
     width: 25%;
     padding: 0 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .f-col h3{
     font-size: 18px;
     font-family: 'Classy Beautiful';
-
     color: white;
     text-transform: capitalize;
     margin-bottom: 32px;
     position: relative;
 }
 
-/* 3lshan a3ml Line taht l h3 */
+/* 3lshan a3ml Line taht el h3 */
 .f-col h3::before{
 	content: '';
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #ffaa00;
+	background-color: #d79e2e;
 	height: 2px;
 	width: 50px;
 }
 .f-col ul li{
     margin-bottom: 10px;
-
 }
 
 .f-col ul li a {
-    
 	text-decoration: none;
 	color: #bbbbbb;
-    /* transition 3lshan l hover */
+    /* transition 3lshan el hover */
 	transition: all 0.3s ease;
 
     
