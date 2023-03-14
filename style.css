@@ -119,7 +119,7 @@ input[type=search] {
 }
 
 .navbar ul li a:hover {
-    color: rgb(255, 213, 0);
+    color: rgb(225, 172, 0);
     transition: 0.3s ease;
 }
 
@@ -392,7 +392,19 @@ body {
 
 
 
+.mid-ad img {
+    width: 100%;
+    padding-top: 100px;
+}
 
+
+.categories-title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Classy Beautiful';
+    padding-top: 100px;
+}
 
 
 .categories-container{
@@ -407,9 +419,8 @@ body {
 }
 
 .category img{
-    padding-top: 100px;
     width: 100%;
-    height: 80%;
+    height: 70%;
     object-fit: cover;
     transition: .5s ease;
     
@@ -420,7 +431,7 @@ body {
 }
 .category p{
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     /* to make the titles centered */
     transform: translate(-50%, -50%);
@@ -433,10 +444,11 @@ body {
 
 
 
+
 /* Footer Design */
 
 .container{
-    background-color: #24262b;
+    background-color: #000000;
     margin: auto;
 }
 .row{
