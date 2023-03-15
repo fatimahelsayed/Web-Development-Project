@@ -1,53 +1,49 @@
 <html>
 
 <head>
+    <title>Clementine</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-<!-- to access font awesome cdn icons -->
+    <!-- to access font awesome cdn icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-    <title>Clementine</title>
-    <link rel = "shortcut icon" img src="R.png" width="0.5" height="0.5">
-    <a href="trial.html" class="logo" alt=""> Clementine </a>
-    <div id="tophead">
-
-        <a href="cart.html" class="cart">
-            <div><img src="images/cart-shopping-solid.svg" class="cart"></div>
-        </a>
-
-        <a href="profile.html" class="profile">
-            <div><img src="images/profile.png" class="profile"></div>
-        </a>           
-
-        </ul>
-       <div> 
-            <input type="search" name="search" class="search" placeholder="Search..">
-        </a> </div>
-
-    </div>
-
-
 </head>
 
 <body>
+    <section id="navbar">
+        <nav class="navig">
+            <link rel="shortcut icon" img src="R.png" width="0.5" height="0.5">
+            <a href="trial.html" class="logo" alt=""> <img src="Images/logoo copy.png" class="brand-logo"> </a>
+            <div class="tophead">
 
-    <section id="header">
-        <div class="navbar" id="mynavbar">
+                <a href="cart.html" class="cart">
+                    <img src="images/cart-shopping-solid.svg" class="cart">
+                </a>
+
+                <a href="profile.html" class="profile">
+                    <img src="images/profile.png" class="profile">
+                </a>
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search..">
+                    </a>
+                </div>
+            </div>
             <ul>
-                <li><a href="projectt.html">HOME</a></li>
+                <li><a href="trial.html">HOME</a></li>
                 <li><a href="new.html">NEW IN</a></li>
                 <li><a href="necks.html">NECKLACES</a></li>
                 <li><a href="rings.html">RINGS</a></li>
                 <li><a href="brace.html">BRACELETS</a></li>
                 <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i></a></li>
+                        <i class="fa fa-bars"></i></a></li>
             </ul>
-        </div>
+        </nav>
     </section>
 
-    <section id="Main">
+    <section id="ImageSlideShow">
         <!-- slider start -->
         <div id="slider">
 
@@ -68,7 +64,7 @@
                 <div class="slide">
                     <img src="images/saleheader.png">
                 </div>
-          
+
                 <!-- slideshow images end -->
                 <!-- auto nav start -->
                 <div class="navauto">
@@ -94,22 +90,17 @@
             setInterval(function () {
                 document.getElementById('radio' + counter).checked = true;
                 counter++;
-                if(counter > 3)
-                {
+                if (counter > 3) {
                     counter = 1;
                 }
             }, 5000);
         </script>
     </section>
-
-
+    <!-- homepage products start -->
     <section class="homepage-products">
         <h2 class="homepage-p-title">New Collection</h2>
 
-
         <div class="product-container">
-
-
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
@@ -123,7 +114,6 @@
                 </div>
             </div>
 
-
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/r2.png" class="product-thumb" alt="">
@@ -135,7 +125,6 @@
                     <span class="price">27000 LE</span>
                 </div>
             </div>
-
 
             <div class="product-card">
                 <div class="product-image">
@@ -149,7 +138,6 @@
                 </div>
             </div>
 
-
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/r3.png" class="product-thumb" alt="">
@@ -161,7 +149,6 @@
                     <span class="price">34500 LE</span>
                 </div>
             </div>
-
 
             <div class="product-card">
                 <div class="product-image">
@@ -201,43 +188,36 @@
             </div>
 
         </div>
-   
     </section>
-
-
-    <section class = "mid-ad">
-        <img src = "Images/valentinesheader.png" alt="newcollection" class="ad1">
+    <!-- homepage products start -->
+    <!-- ads start -->
+    <section class="mid-ad">
+        <img src="Images/valentinesheader.png" alt="newcollection" class="ad1">
 
     </section>
+    <!-- ads end -->
 
-    <h2 class = "categories-title" >Shop By Category</h2>
+    <!-- categories -->
+    <section class="categories-container">
+        <h2 class="categories-title">Shop By Category</h2>
+        <a href="#diamondjewelry.html" class="category">
+            <img src="Images/diacat.jpg" alt="">
+            <p class="category-title">DIAMOND <br> JEWELRY</p>
+        </a>
+        <a href="#goldjewlery.html" class="category">
+            <img src="Images/goldcatt.jpg" alt="">
+            <p class="category-title">GOLD <br> JEWELRY</p>
+        </a>
+    </section>
+    <!-- categories end -->
 
-
-
-<!-- categories -->
-<section class="categories-container">
-    <a href="#diamondjewelry.html" class="category">
-        <img src="Images/diacat.jpg" alt="">
-        <p class="category-title">DIAMOND <br> JEWELRY</p>
-    </a>
-    <a href="#goldjewlery.html" class="category">
-        <img src="Images/goldcatt.jpg" alt="">
-        <p class="category-title">GOLD <br> JEWELRY</p>
-    </a>
-</section>
-
-
-
-
-
-<!-- footer -->
-<!-- fahm -->
+    <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
 
                 <div class="f-col">
-                    <h3>Contact Us</h3>
+                    <h3>Contact us</h3>
                     <ul>
                         <li><a href="#">19012</a></li>
                         <li><a href="#">Clementine@gmail.com</a></li>
@@ -246,7 +226,7 @@
                     </ul>
                 </div>
                 <div class="f-col">
-                    <h3>About Us</h3>
+                    <h3>About us</h3>
                     <p>We are a boutique jewellery studio based in</p>
                     <p>Cairo, Egypt. We create pieces to order using a combination </p>
                     <p>of modern technology and traditional jewellery practises,</p>
@@ -254,33 +234,25 @@
 
                 </div>
                 <div class="f-col">
-                    <h3>Follow us</h3>
+                    <h3>Follow our socials</h3>
                     <div class="social-links">
 
-                        <!-- gets the icons mn font awesome online library -->
-                        <a href="#"><p class="fab fa-facebook-f"></p></a>
-                        <a href="#"><p class="fab fa-twitter"></p></a>
-                        <a href="#"><p class="fab fa-instagram"></p></a>
+                        <!-- gets from font awesome online library -->
+                        <a href="#">
+                            <p class="fab fa-facebook-f"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-twitter"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-instagram"></p>
+                        </a>
                     </div>
-
-                    
                 </div>
-
             </div>
         </div>
     </footer>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("mynavbar");
-          if (x.className === "navbar") {
-            x.className += " responsive";
-          } else {
-            x.className = "navbar";
-          }
-        }
-        </script>
-
-
+    <!-- footer end -->
 </body>
 
 </html>
