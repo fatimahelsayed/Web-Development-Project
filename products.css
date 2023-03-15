@@ -1,0 +1,80 @@
+body{
+    background-color: rgba(255, 255, 255, 0.76);
+}
+img{
+    width: 249.5px;
+    height: 249.5px;
+    transform: translateY(5.5rem);
+    transition: .3s;
+}
+.rings_products{
+    
+    margin-top: 50px;
+     margin-left: 40px; 
+    
+    margin-right: 30px; 
+    display: flex;
+    justify-content:space-evenly;
+    /* overflow: hidden; */
+}
+.rings_products .box{
+   overflow: hidden;
+    width: 250px;
+    border: 2px solid gainsboro;
+    transition: .3s;
+    border-radius: 20px;
+    box-shadow: 0 5ps 20px rgba(0,0,0,.3);
+}
+.rings_products .box:hover,
+.rings_products .box:hover img {
+
+ background-color: rgba(136, 173, 173, 0.822);
+border: 1px solid   rgb(189, 181, 181);
+transform: translateY(-20px);
+transform: scale(1.08);
+
+}
+.rings_products .box:hover .btns
+{
+    transform: translateY(0.6rem);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a p{
+font-weight: bolder;
+font-size: 16px;
+
+}
+
+a del{
+    color: rgb(90, 4, 4);
+    font-size: 15px;
+}
+
+
+.btns{
+    /* position: relative; */
+    margin-left: 25px;
+    padding-bottom: 15px;
+    transform: translateY(4rem);
+    transition: .5;
+}
+.btn-success{
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    color: rgb(12, 12, 12);
+    background-color: rgb(253, 246, 246);
+}
+.btn-border{
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    color: white;
+    background-color: rgb(19, 17, 17);
+}
