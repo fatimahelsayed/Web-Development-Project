@@ -367,6 +367,7 @@ body {
 
 .product-brand{
     text-transform: uppercase;
+	font-size: medium;
 }
 
 .product-short-des{
