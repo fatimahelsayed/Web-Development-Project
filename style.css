@@ -37,7 +37,7 @@ body {
 .navigation .navbar .logo-toggle-container {
     position: absolute;
     left: 50%;
-    top: 5px;
+    top: -3px;
     transform: translateX(-50%);
 }
 
