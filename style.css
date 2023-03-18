@@ -383,12 +383,60 @@ body {
     text-decoration: line-through;
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(192, 186, 186); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2e2e2e; 
+    transition: 0.3s ease;
+  }
+  
+/* 
+left till we figure out how to fix the scroll bar
+.product-container::-webkit-scrollbar{
+
+}
+*/
+.prev_arrow,
+.next_arrow {
+    display: block !important;
+    position: absolute;
+    right: 50;
+    z-index: 99;
+    border: 0;
+    background: inherit;
+    font-size: 17px;
+    background: transparent;
+    cursor: pointer;
+    color: #000000;
+
+  }
+  
+  
+  .next_arrow {
+    right: 13px;
+  }
+  
+
+ 
 
 
-.mid-ad img {
+/*.mid-ad img {
     width: 100%;
     padding-top: 100px;
-}
+} */
 
 /* prodcts row 1 end */
 
