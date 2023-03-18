@@ -504,6 +504,8 @@ left till we figure out how to fix the scroll bar
     background-color: black;
     color: white;
     transition: 0.5s ease;
+    cursor: pointer;
+
   }
 
 
@@ -545,6 +547,8 @@ left till we figure out how to fix the scroll bar
     background-color: black;
     color: white;
     transition: 0.5s ease;
+    cursor: pointer;
+
   }
 
 /* categories */
