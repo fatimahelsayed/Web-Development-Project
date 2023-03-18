@@ -267,6 +267,9 @@ body {
 }
 /* end of image slideshow */
 
+
+/* products row 1 start */
+
 .product {
     position: relative;
     overflow: hidden;
@@ -387,6 +390,115 @@ body {
     padding-top: 100px;
 }
 
+/* prodcts row 1 end */
+
+
+/* ----- vid break ------ */
+
+.videobreak {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.vidmain{
+    width: 80%;
+    height: 500px;
+    padding-left: 10px;
+}
+.vidmain-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+/* ---- end vid break ---- */
+
+.ad1-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ad1-container img {
+    max-width: 100%;
+  }
+  .ad1-img {
+    
+    flex-basis: 100%
+  }
+  .ad1-container p {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .ad1-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  
+  .ad1-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    color: black;
+    border-width: 1.5px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 170px;
+  }
+  .ad1-btn:hover { 
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+  }
+
+
+  
+  .ad2-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .ad2-container img {
+    max-width: 100%;
+  }
+  .ad2-img { 
+    flex-basis: 100%
+  }
+  .ad2-container p {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .ad2-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .ad2-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    color: black;
+    border-width: 1.5px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 170px;
+
+  }
+  .ad2-btn:hover { 
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+  }
+
 /* categories */
 
 .categories-title {
@@ -394,7 +506,8 @@ body {
     text-align: center;
     font-size: 40px;
     font-family: 'Classy Beautiful';
-    padding-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
