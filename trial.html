@@ -3,51 +3,59 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-<!-- to access font awesome cdn icons -->
+    <!-- to access font awesome cdn icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <script src = "trial.js"></script>
     <title>Clementine</title>
-    <link rel = "shortcut icon" img src="R.png" width="0.5" height="0.5">
-    <a href="trial.html" class="logo" alt=""> Clementine </a>
-    <div id="tophead">
-
-        <a href="cart.html" class="cart">
-            <div><img src="images/cart-shopping-solid.svg" class="cart"></div>
-        </a>
-
-        <a href="profile.html" class="profile">
-            <div><img src="images/profile.png" class="profile"></div>
-        </a>           
-
-        </ul>
-       <div> 
-            <input type="search" name="search" class="search" placeholder="Search..">
-        </a> </div>
-
-    </div>
-
-
 </head>
 
 <body>
+    <!-- Navigation Bar Start -->
+    <section id="navigationbar">
+        <div class="navigation">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo-toggle-container">
+                        <a href="trial.html">
+                            <img src="images/logoo copy.png">
+                        </a>
+                        <span class="toggle-box">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
 
-    <section id="header">
-        <div class="navbar" id="mynavbar">
-            <ul>
-                <li><a href="projectt.html">HOME</a></li>
-                <li><a href="new.html">NEW IN</a></li>
-                <li><a href="necks.html">NECKLACES</a></li>
-                <li><a href="rings.html">RINGS</a></li>
-                <li><a href="brace.html">BRACELETS</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i></a></li>
-            </ul>
+                    <ul class="menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">NEW IN</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">DIAMOND</a></li>
+                        <li><a href="#">GOLD</a></li>
+                        <li><a href="#"><i class="ri-search-line"></i></a></li>
+                        <li><a href="#"><i class="ri-shopping-bag-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
-
-    <section id="Main">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".navigation .navbar .logo-toggle-container .toggle-box").click(function () {
+                $(".navigation .menu").stop().slideToggle();
+            });
+        });
+    </script>
+    <!-- Navigation Bar End -->
+    <!-- slideshow start -->
+    <section id="imageslideshow">
         <!-- slider start -->
         <div id="slider">
 
@@ -68,7 +76,7 @@
                 <div class="slide">
                     <img src="images/saleheader.png">
                 </div>
-          
+
                 <!-- slideshow images end -->
                 <!-- auto nav start -->
                 <div class="navauto">
@@ -87,29 +95,31 @@
             </div>
 
         </div>
-        
+        <!-- slider end -->
 
         <script type="text/javascript">
             var counter = 1;
             setInterval(function () {
                 document.getElementById('radio' + counter).checked = true;
                 counter++;
-                if(counter > 3)
-                {
+                if (counter > 3) {
                     counter = 1;
                 }
             }, 5000);
         </script>
     </section>
-<!-- slider end -->
-
+    <!-- slideshow end -->
+    <!-- homepage products start -->
     <section class="homepage-products">
+       
         <h2 class="homepage-p-title">New Collection</h2>
+        <button class="prev_arrow"><i class="ion-chevron-left"></i></button>
+        <button class="next_arrow"><i class="ion-chevron-right"></i></button>
 
-
-      <section class="homepage-products">
 
         <div class="product-container">
+
+
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
@@ -117,11 +127,12 @@
                     <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">Clementine Silver Tear</h2>
+                    <h2 class="product-brand">Ring 1</h2>
                     <p class="product-short-des">ring detail</p>
                     <span class="price">10700 LE</span><span class="actual-price">24000 LE</span>
                 </div>
             </div>
+
 
             <div class="product-card">
                 <div class="product-image">
@@ -129,23 +140,12 @@
                     <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand" > Clementine Silver Heart Shape</h2>
+                    <h2 class="product-brand">Ring 2</h2>
                     <p class="product-short-des">ring detail</p>
                     <span class="price">27000 LE</span>
                 </div>
             </div>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/whiteRook.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand"> Clementine Silver White Rook</h2>
-                    <p class="product-short-des">neck detail</p>
-                    <span class="price">34000 LE</span>
-                </div>
-            </div>
 
             <div class="product-card">
                 <div class="product-image">
@@ -153,11 +153,25 @@
                     <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">Clementine Silver Heart</h2>
+                    <h2 class="product-brand">Neck 3</h2>
+                    <p class="product-short-des">neck detail</p>
+                    <span class="price">34000 LE</span>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/r3.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to whislist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Neck 4</h2>
                     <p class="product-short-des">neck detail</p>
                     <span class="price">34500 LE</span>
                 </div>
             </div>
+
 
             <div class="product-card">
                 <div class="product-image">
@@ -166,7 +180,7 @@
                     <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">Clementine Silver Snowflake</h2>
+                    <h2 class="product-brand">Ring 5</h2>
                     <p class="product-short-des">ring detail</p>
                     <span class="price">11000 LE</span><span class="actual-price">19000 LE</span>
                 </div>
@@ -194,63 +208,91 @@
                     <p class="product-short-des">neck detail</p>
                     <span class="price">24500 LE</span>
                 </div>
-                <div class="product-card">
-                <div class="product-image">
-                    <img src="images/sterlingSilverRing.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand">Clementine Sterling Silver Ring</h2>
-                    <p class="product-short-des">neck detail</p>
-                    <span class="price">15600 LE</span>
-                </div>
             </div>
 
         </div>
-   
-    </section>
-
-
-    <section class = "mid-ad">
-        <img src = "Images/valentinesheader.png" href="#newin.html" alt="newcollection" class="ad1">
 
     </section>
-
-    <h2 class = "categories-title" >Shop By Category</h2>
-
-
-
-<!-- categories -->
-<section class="categories-container">
-    <a href="#diamondjewelry.html" class="category">
-        <img src="Images/diacat.jpg" alt="">
-        <p class="category-title">DIAMOND <br> JEWELRY</p>
-    </a>
-    <a href="#goldjewlery.html" class="category">
-        <img src="Images/goldcatt.jpg" alt="">
-        <p class="category-title">GOLD <br> JEWELRY</p>
-    </a>
-</section>
-
-
-
-
-<!-- contact us -->
-<section class = "contact-footer" id="contact-footer">
-
-    <h1 class ="contact-heading"> Have any questions?</h1>
-    <div class="c-button">
-        <button href="#contactus.html" class ="sub-contact-btn">Contact Us Now!</button>
-
+    <div class="videobreak"> 
+        <div class="vidmain-title">
+            <h1>Ignite <Br> Your <br> Dreams.  </h1>
+        </div>
+        <video ctontrols autoplay muted loop class="vidmain">
+            <source src="Images/vidmain.mp4" type="video/mp4">
+        </video>
     </div>
-</section>
+   
+
+    <!-- homepage end -->
+
+
+    <!-- further ads start -->
+
+    <div class="ad1-container">
+        <div class="ad1-img">
+          <img src="Images/ad1.png">
+        </div>
+        <div class="ad1-text">
+          <h1>Pieces of Pure Wonder </h1>
+          <p>Our Millenia family is a contemporary interpretation of our heritage and expertise. The science of crystal cutting meets the magic of light refraction in bold designs that go right to the heart of who we are.
+          </p>
+          <button class="ad1-btn">
+            Discover More
+          </button>
+        </div>
+      </div>
+      <div class="ad2-container">
+        <div class="ad2-text">
+            <h1>Kaleidoscopic Hues</h1>
+            <p>Step inside a vibrant wonderland, where confidence is colorful and coordinating crystals make
+                <br> every look pop. Push the boundaries in party pink, shine bright in bold metallics, bring positive vibes in sunshine yellow, deep dive into a spectrum of blues, or channel your inner goddess in emerald green. 
+            </p>
+            <button class="ad2-btn">
+                Discover More
+              </button>
+          </div>
+        <div class="ad2-img">
+          <img src="Images/ad2.png">
+        </div>
+        
+      </div>
 
 
 
+    <!-- collection ad start -->
+    <!-- <section class="mid-ad">
+        <img src="Images/valentinesheader.png" href="" alt="newcollection" class="ad1">
 
+    </section> */ -->
 
-<!-- footer -->
-<!-- fahm -->
+    <h2 class="categories-title">Shop By Category</h2>
+    <!-- collection ad end  -->
+
+    <!-- categories start -->
+    <section class="categories-container">
+        <a href="#diamondjewelry.html" class="category">
+            <img src="Images/diacat.jpg" alt="">
+            <p class="category-title">DIAMOND <br> JEWELRY</p>
+        </a>
+        <a href="#goldjewlery.html" class="category">
+            <img src="Images/goldcatt.jpg" alt="">
+            <p class="category-title">GOLD <br> JEWELRY</p>
+        </a>
+    </section>
+    <!-- categories end -->
+
+    <!-- contact us start-->
+    <section class="contact-footer" id="contact-footer">
+
+        <h1 class="contact-heading"> Have any questions?</h1>
+        <div class="c-button">
+            <button href="#contactus.html" class="sub-contact-btn">Contact Us Now!</button>
+
+        </div>
+    </section>
+    <!-- contact us end-->
+
+    <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -277,12 +319,18 @@
                     <div class="social-links">
 
                         <!-- gets the icons mn font awesome online library -->
-                        <a href="#"><p class="fab fa-facebook-f"></p></a>
-                        <a href="#"><p class="fab fa-twitter"></p></a>
-                        <a href="#"><p class="fab fa-instagram"></p></a>
+                        <a href="#">
+                            <p class="fab fa-facebook-f"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-twitter"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-instagram"></p>
+                        </a>
                     </div>
 
-                    
+
                 </div>
 
             </div>
@@ -290,14 +338,14 @@
     </footer>
     <script>
         function myFunction() {
-          var x = document.getElementById("mynavbar");
-          if (x.className === "navbar") {
-            x.className += " responsive";
-          } else {
-            x.className = "navbar";
-          }
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
         }
-        </script>
+    </script>
 
 
 </body>
