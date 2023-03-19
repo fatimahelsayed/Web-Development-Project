@@ -674,6 +674,7 @@ left till we figure out how to fix the scroll bar
 
 .f-col h3 {
     font-size: 18px;
+    margin-top: 15px;
     font-family: 'Classy Beautiful';
     color: white;
     text-transform: capitalize;
@@ -706,6 +707,9 @@ left till we figure out how to fix the scroll bar
 .f-col ul li a:hover {
     color: white;
     padding-left: 8px;
+}
+.f-col .social-links a p {
+    padding-top: 12px;
 }
 
 .f-col .social-links a {
