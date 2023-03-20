@@ -60,6 +60,7 @@ body {
     padding: 43px 10px;
 }
 
+
 .navigation .menu li a {
     display: block;
     padding: 8px 15px;
@@ -73,6 +74,30 @@ body {
     color: #000000;
 }
 
+.navigation .menu li ul{
+    position: absolute;
+    display: block;
+    width: 150px;
+    background: #fff;
+}
+.navigation .menu li ul li{
+    display: none;
+    text-align: left;
+    width: 100%;
+    padding: 10 0px;
+    border-top: 1px solid #bbbbbb;
+    
+}
+.navigation .menu li ul li:nth-child(3)
+{
+    border-bottom: 1px solid #bbbbbb;   
+}
+
+.navigation .menu li:focus-within > ul li
+,.navigation .menu li:hover > ul li{
+    display: initial;
+}
+
 .navigation .menu li:nth-child(1),
 .navigation .menu li:nth-child(2),
 .navigation .menu li:nth-child(3) {
@@ -82,6 +107,9 @@ body {
 .navigation .menu li a:hover {
     color: #d79e2e;
     transition: 0.5s ease;
+}
+.navigation .menu li a:active {
+    color: #d79e2e;
 }
 
 /* responsive nav bar start */
@@ -132,13 +160,20 @@ body {
     .navigation .menu {
         text-align: left;
         display: none;
+        width: 100%;
     }
 
     .navigation .menu li {
         display: block;
         float: none !important;
-        padding: 0 10px;
+        padding: 0 0px;
         border-bottom: 1px solid #bbbbbb;
+        left: 0;
+    }
+    .navigation .menu li ul
+    {
+        width: 100%; 
+        left: 0;
     }
 }
 
