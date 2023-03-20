@@ -2,7 +2,7 @@
 .signIn{
 
 position: absolute;
-top: 50%;
+top: 100%;
 left: 50%;
 transform: translate(-50%,-50%);
 
@@ -19,18 +19,22 @@ text-align: center;
 }
 .submit{
 
-background-color:rgb(85, 66, 4) ;
-  
+background-color:rgb(128, 99, 7);
+  text-align: center;
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
   display: inline-block;
-  font-size: 15px;
+  font-size: 17px;
   border-radius: 15px;
  
   width: 180px;
 }
+.submit:hover{
+
+    cursor: pointer;
+}
+
 
 .signInform{
 
@@ -68,18 +72,36 @@ transition: .4s;
 
 {
 top: -5px;
-color: rgb(85, 66, 4);
+color: rgb(128, 99, 7);
 
 }
 .textfield span::before{
+    
 content: '';
-position: absolute;
-background-color: rgb(85, 66, 4);
+position:absolute ;
+background-color: rgb(128, 99, 7);
 width: 0%;
 height: 2px;
 top: 40px;
+
+
 }
 .textfield input:focus ~span::before
 {
     width: 100%;   
+}
+
+.disclaimer{
+    color: #808080;
+    font-size: 14px;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+#loginlink {
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+.loginlink{
+    color: rgb(128, 99, 7);
+    cursor: pointer;
 }
