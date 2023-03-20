@@ -85,7 +85,7 @@ body {
 }
 
 /* responsive nav bar start */
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1500px) {
     .navigation .menu {
         display: block !important;
         height: auto !important;
@@ -93,7 +93,7 @@ body {
 
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1300px) {
     .navigation .navbar .logo-toggle-container {
         position: static;
         transform: translateX(0%);
@@ -106,7 +106,7 @@ body {
     .navigation .navbar .logo-toggle-container .toggle-box {
         position: absolute;
         right: 10px;
-        top: 30px;
+        top: 10px;
         display: block;
         padding: 15px 9px;
         cursor: pointer;
@@ -309,7 +309,9 @@ body {
 .row1-title {
     text-decoration: none;
     color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
     position: relative;
     text-align: center;
     font-size: 30px;
@@ -422,7 +424,9 @@ body {
 }
 
 .product-info {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
     width: 100%;
     height: 100px;
     padding-top: 10px;
@@ -533,15 +537,15 @@ left till we figure out how to fix the scroll bar
 }
 
 .vidmain-title {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
     font-size: 18px;
     padding-left: 20px;
     color: #fff;
 }
 
 /* ---- end vid break ---- */
-
-
 
 
 .ad1-container {
@@ -561,17 +565,22 @@ left till we figure out how to fix the scroll bar
 
 .ad1-container p {
     font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
 }
 
 .ad1-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;    font-size: 20px;
     padding-left: 20px;
 }
 
 .ad1-btn {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     background-color: transparent;
     color: black;
     border-width: 1.5px;
@@ -608,17 +617,23 @@ left till we figure out how to fix the scroll bar
 
 .ad2-container p {
     font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 .ad2-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     font-size: 20px;
     padding-left: 20px;
 }
 
 .ad2-btn {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     background-color: transparent;
     color: black;
     border-width: 1.5px;
@@ -648,7 +663,9 @@ left till we figure out how to fix the scroll bar
     position: relative;
     text-align: center;
     font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     padding-top: 50px;
     padding-bottom: 30px;
 }
@@ -696,7 +713,9 @@ left till we figure out how to fix the scroll bar
 
 
 .contact-heading {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding-bottom: 15px;
@@ -725,7 +744,7 @@ left till we figure out how to fix the scroll bar
 }
 
 #contact-footer {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 
 }
 
@@ -748,29 +767,33 @@ left till we figure out how to fix the scroll bar
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 .f-col ul {
     list-style: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 .f-col {
     color: white;
     width: 25%;
-    padding: 0 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    padding: 10px 15px;
+    padding-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 .f-col h3 {
     font-size: 18px;
-    font-family: 'Classy Beautiful';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     color: white;
     text-transform: capitalize;
+    margin-top: 10px;
     margin-bottom: 32px;
     position: relative;
 }
@@ -817,6 +840,9 @@ left till we figure out how to fix the scroll bar
 .f-col .social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
+}
+.f-col .social-links a p{
+    padding: 10px;
 }
 
 /* footer end */
