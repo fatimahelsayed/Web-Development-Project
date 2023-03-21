@@ -70,7 +70,7 @@ body {
 }
 
 
-.navigation .menu li a {
+.navigation .menu li a  {
     display: block;
     padding: 8px 12px;
     text-decoration: none;
@@ -272,6 +272,115 @@ body {
 }
 
 /* manual nav end */
+
+
+/* Cart Window Start */
+
+
+
+.ShopBag{
+    font-size: x-large;
+    padding: 15px 10px;
+    text-align: left;
+
+}
+.cart-wrapper{
+    overflow-y: auto;
+    max-height: 350px;
+}
+.total{
+    text-align: right;
+    padding: 5%;
+}
+.checkout{
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: large;
+    color: white;
+    margin: 5px auto;
+    padding: 10px 15px;
+    background-color: black;
+    border: none;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    transition: 0.5s;
+    
+}
+.checkout:hover{
+    background-color: #d79e2e;
+}
+.btn-wrapper{
+    height:40px;
+    width: 80px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+}
+.btn-wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+} 
+.btn-wrapper span.num, span.num1{
+    font-size: 20px;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.cart-item{
+    display: grid;
+    grid-template-columns: 3rf 4fr;
+    padding: 3% 2%;
+    border-bottom: solid 1px lightgray;
+
+}
+.cart-item img{
+width: 130px;
+
+}
+.cart-item details{
+    padding-left: 20%;
+}
+ .cart-item .name{
+   display: block;
+    text-align:left;
+    font-size: medium;
+}
+.cart-window{
+    border: solid lightgray;
+    border-top: none;
+    position: fixed;
+    top: 10vh;
+    background-color:white;
+    width: 390px;
+    margin: 2%;
+    left: 70%;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.cart-item .price{
+    display: block;
+    text-align: right;
+    margin-top: 30px;
+    font-size: medium;
+}
+.hide{
+    display: none;
+}
+
+
+/* Cart Window end */
+
+
 
 /* automatic nav start */
 .navauto {
@@ -481,6 +590,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
         'Helvetica Neue', sans-serif;
+        font-size: medium;
     width: 100%;
     height: 100px;
     padding-top: 10px;
@@ -536,7 +646,6 @@ body {
 /* 
 left till we figure out how to fix the scroll bar
 .product-container::-webkit-scrollbar{
-
 }
 */
 .prev_arrow,
