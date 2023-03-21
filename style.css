@@ -19,7 +19,9 @@
 body {
     width: 100%;
     height: 100vh;
-    font-family: "Times New Roman", Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
 }
 
 /* navigation start */
@@ -37,7 +39,7 @@ body {
 .navigation .navbar .logo-toggle-container {
     position: absolute;
     left: 50%;
-    top: -3px;
+    top: 10px;
     transform: translateX(-50%);
 }
 
@@ -58,6 +60,7 @@ body {
     padding: 43px 10px;
 }
 
+
 .navigation .menu li a {
     display: block;
     padding: 8px 15px;
@@ -71,6 +74,30 @@ body {
     color: #000000;
 }
 
+.navigation .menu li ul{
+    position: absolute;
+    display: block;
+    width: 150px;
+    background: #fff;
+}
+.navigation .menu li ul li{
+    display: none;
+    text-align: left;
+    width: 100%;
+    padding: 10 0px;
+    border-top: 1px solid #bbbbbb;
+    
+}
+.navigation .menu li ul li:nth-child(3)
+{
+    border-bottom: 1px solid #bbbbbb;   
+}
+
+.navigation .menu li:focus-within > ul li
+,.navigation .menu li:hover > ul li{
+    display: initial;
+}
+
 .navigation .menu li:nth-child(1),
 .navigation .menu li:nth-child(2),
 .navigation .menu li:nth-child(3) {
@@ -81,16 +108,20 @@ body {
     color: #d79e2e;
     transition: 0.5s ease;
 }
+.navigation .menu li a:active {
+    color: #d79e2e;
+}
 
 /* responsive nav bar start */
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1500px) {
     .navigation .menu {
         display: block !important;
         height: auto !important;
     }
 
 }
-@media screen and (max-width:1000px) {
+
+@media screen and (max-width:1300px) {
     .navigation .navbar .logo-toggle-container {
         position: static;
         transform: translateX(0%);
@@ -103,7 +134,7 @@ body {
     .navigation .navbar .logo-toggle-container .toggle-box {
         position: absolute;
         right: 10px;
-        top: 30px;
+        top: 10px;
         display: block;
         padding: 15px 9px;
         cursor: pointer;
@@ -129,13 +160,20 @@ body {
     .navigation .menu {
         text-align: left;
         display: none;
+        width: 100%;
     }
 
     .navigation .menu li {
         display: block;
         float: none !important;
-        padding: 0 10px;
+        padding: 0 0px;
         border-bottom: 1px solid #bbbbbb;
+        left: 0;
+    }
+    .navigation .menu li ul
+    {
+        width: 100%; 
+        left: 0;
     }
 }
 
@@ -247,25 +285,92 @@ body {
 #radio3:checked~.navauto .auto-btn3 {
     background: rgb(50, 49, 49);
 }
-@media screen and (max-width:1020px)
-{
+
+@media screen and (max-width:1020px) {
     .navmanual {
         margin-top: 25%;
     }
+
     .navauto {
         margin-top: 25%;
     }
 }
-@media screen and (min-width:1024px)
-{
+
+@media screen and (min-width:1024px) {
     .navmanual {
         margin-top: 30%;
     }
+
     .navauto {
         margin-top: 30%;
     }
 }
+
 /* end of image slideshow */
+
+
+/* row1 start */
+.row1-maintitle {
+    text-align: center;
+    padding-top: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    padding-left: 20px;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+.row1-container {
+    padding-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+
+}
+
+.row1-container img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.row1-title {
+    text-decoration: none;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+}
+
+.row1btn {
+    margin-top: 5px;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+    width: 140;
+    height: 30;
+    background: transparent;
+    border-width: 1.5px;
+    cursor: pointer;
+
+}
+
+.row1btn:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 0.5s ease;
+}
 
 
 /* products row 1 start */
@@ -278,11 +383,15 @@ body {
 }
 
 .homepage-p-title {
+    text-align: center;
     padding: 0 5vw;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: bold;
     margin-bottom: 5px;
-    font-family: 'Classy Beautiful';
+    padding-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
 }
 
 .product-container {
@@ -350,6 +459,9 @@ body {
 }
 
 .product-info {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
     width: 100%;
     height: 100px;
     padding-top: 10px;
@@ -357,11 +469,13 @@ body {
 
 .product-brand {
     text-transform: uppercase;
+    font-size: 15px;
 }
 
 .product-short-des {
     width: 100%;
     height: 20px;
+    font-size: 12px;
     line-height: 20px;
     overflow: hidden;
     opacity: 0.5;
@@ -381,25 +495,25 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(192, 186, 186); 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0); 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #2e2e2e; 
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.5px rgb(192, 186, 186);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #2e2e2e;
     transition: 0.3s ease;
-  }
-  
+}
+
 /* 
 left till we figure out how to fix the scroll bar
 .product-container::-webkit-scrollbar{
@@ -419,15 +533,15 @@ left till we figure out how to fix the scroll bar
     cursor: pointer;
     color: #000000;
 
-  }
-  
-  
-  .next_arrow {
-    right: 13px;
-  }
-  
+}
 
- 
+
+.next_arrow {
+    right: 13px;
+}
+
+
+
 
 
 /*.mid-ad img {
@@ -450,13 +564,17 @@ left till we figure out how to fix the scroll bar
     padding-bottom: 50px;
 
 }
-.vidmain{
+
+.vidmain {
     width: 80%;
     height: 500px;
     padding-left: 10px;
 }
-.vidmain-title{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.vidmain-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
     font-size: 18px;
     padding-left: 20px;
     color: #fff;
@@ -464,30 +582,40 @@ left till we figure out how to fix the scroll bar
 
 /* ---- end vid break ---- */
 
+
 .ad1-container {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .ad1-container img {
+}
+
+.ad1-container img {
     max-width: 100%;
-  }
-  .ad1-img {
-    
+}
+
+.ad1-img {
+
     flex-basis: 100%
-  }
-  .ad1-container p {
+}
+
+.ad1-container p {
     font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .ad1-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+}
+
+.ad1-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;    font-size: 20px;
     padding-left: 20px;
-  }
-  
-  .ad1-btn{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ad1-btn {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     background-color: transparent;
     color: black;
     border-width: 1.5px;
@@ -495,41 +623,52 @@ left till we figure out how to fix the scroll bar
     height: 40px;
     font-size: 20px;
     margin-top: 30px;
-    margin-left: 170px;
-  }
-  .ad1-btn:hover { 
+    margin-left: 180px;
+}
+
+.ad1-btn:hover {
     background-color: black;
     color: white;
     transition: 0.5s ease;
     cursor: pointer;
 
-  }
+}
 
 
-  
-  .ad2-container {
+.ad2-container {
     display: flex;
     align-items: center;
     justify-content: center;
 
-  }
-  .ad2-container img {
+}
+
+.ad2-container img {
     max-width: 100%;
-  }
-  .ad2-img { 
+}
+
+.ad2-img {
     flex-basis: 100%
-  }
-  .ad2-container p {
+}
+
+.ad2-container p {
     font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .ad2-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+.ad2-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     font-size: 20px;
     padding-left: 20px;
-  }
-  .ad2-btn{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ad2-btn {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     background-color: transparent;
     color: black;
     border-width: 1.5px;
@@ -537,26 +676,33 @@ left till we figure out how to fix the scroll bar
     height: 40px;
     font-size: 20px;
     margin-top: 30px;
-    margin-left: 170px;
+    margin-left: 180px;
 
-  }
-  .ad2-btn:hover { 
+}
+
+.ad2-btn:hover {
     background-color: black;
     color: white;
     transition: 0.5s ease;
     cursor: pointer;
 
-  }
+}
+
+
 
 /* categories */
+
+
 
 .categories-title {
     position: relative;
     text-align: center;
     font-size: 40px;
-    font-family: 'Classy Beautiful';
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 
@@ -602,7 +748,9 @@ left till we figure out how to fix the scroll bar
 
 
 .contact-heading {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding-bottom: 15px;
@@ -631,7 +779,7 @@ left till we figure out how to fix the scroll bar
 }
 
 #contact-footer {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 
 }
 
@@ -654,30 +802,33 @@ left till we figure out how to fix the scroll bar
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 .f-col ul {
     list-style: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 .f-col {
     color: white;
     width: 25%;
-    padding: 0 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    padding: 10px 15px;
+    padding-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 .f-col h3 {
     font-size: 18px;
-    margin-top: 15px;
-    font-family: 'Classy Beautiful';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     color: white;
     text-transform: capitalize;
+    margin-top: 10px;
     margin-bottom: 32px;
     position: relative;
 }
@@ -708,9 +859,6 @@ left till we figure out how to fix the scroll bar
     color: white;
     padding-left: 8px;
 }
-.f-col .social-links a p {
-    padding-top: 12px;
-}
 
 .f-col .social-links a {
     display: inline-block;
@@ -727,6 +875,9 @@ left till we figure out how to fix the scroll bar
 .f-col .social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
+}
+.f-col .social-links a p{
+    padding: 10px;
 }
 
 /* footer end */
