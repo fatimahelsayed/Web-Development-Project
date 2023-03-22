@@ -437,35 +437,13 @@
 
 
         /*Drop down cart start*/
-        const cartIcon = document.querySelector(".ri-shopping-bag-line");
-const WholeCartWindow = document.querySelector(".cart-window");
-WholeCartWindow.inWindow = 0;
-cartIcon.addEventListener("mouseover", ()=>{
-if(WholeCartWindow.classList.contains("hide"))
-WholeCartWindow.classList.remove("hide");
-})
-
-cartIcon.addEventListener("mouseleave", ()=>{
-    //if(WholeCartWindow.classLis.contains('hide'))
-    setTimeout(()=>{
-        if(WholeCartWindow.inWindow===0)
-        {
-          WholeCartWindow.classList.add("hide");
-
-        }
-
-    } , 2000)
-    })
-    
-WholeCartWindow.addEventListener("mouseover", ()=>{
-    WholeCartWindow.inWindow=1;
-})
-
-WholeCartWindow.addEventListener("mouseleave", ()=>{
-    WholeCartWindow.inWindow = 0;
-    WholeCartWindow.classList.add("hide");
-
-})
+(function(){
+ 
+ $("#cart").on("click", function() {
+   $(".cart-window").fadeToggle( "fast");
+ });
+ 
+})();
       /*Drop down cart end*/
 
 
