@@ -37,6 +37,7 @@ body {
     background: #ffffff;
     max-width: 90%;
     margin: auto;
+    
 }
 
 .navigation .navbar {
@@ -70,7 +71,7 @@ body {
 }
 
 
-.navigation .menu li a  {
+.navigation .menu li a {
     display: block;
     padding: 8px 12px;
     text-decoration: none;
@@ -200,78 +201,6 @@ body {
 /* responsive nav bar end */
 /* navigation end */
 
-/* image slideshow start */
-#slider {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-.slideshow {
-    width: 500%;
-    height: auto;
-    display: flex;
-
-}
-
-.slideshow input {
-    display: none
-}
-
-.slide {
-    width: 20%;
-    transition: 1s;
-
-}
-
-.slide img {
-    display: block;
-    float: left;
-    width: 100%;
-    height: auto;
-
-}
-
-
-/* manual nav start */
-.navmanual {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    margin-top: 455px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 1px solid rgb(81, 81, 81);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s ease;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background: rgb(50, 49, 49);
-}
-
-#radio1:checked~.first {
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -20%;
-}
-
-#radio3:checked~.first {
-    margin-left: -40%;
-}
-
-/* manual nav end */
 
 
 /* Cart Window Start */
@@ -382,6 +311,81 @@ width: 130px;
 
 
 
+
+
+/* image slideshow start */
+#slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slideshow {
+    width: 500%;
+    height: auto;
+    display: flex;
+
+}
+
+.slideshow input {
+    display: none
+}
+
+.slide {
+    width: 20%;
+    transition: 1s;
+
+}
+
+.slide img {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* manual nav start */
+.navmanual {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 455px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 1px solid rgb(81, 81, 81);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: rgb(50, 49, 49);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+/* manual nav end */
+
 /* automatic nav start */
 .navauto {
     position: absolute;
@@ -478,16 +482,18 @@ width: 130px;
     position: relative;
     text-align: center;
     font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .row1btn {
     margin-top: 5px;
-    font-size: 22px;
+    font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
         'Helvetica Neue', sans-serif;
-    width: 140;
-    height: 30;
+    width: 110;
+    height: 32;
     background: transparent;
     border-width: 1.5px;
     cursor: pointer;
@@ -513,13 +519,12 @@ width: 130px;
 .homepage-p-title {
     text-align: center;
     padding: 0 5vw;
-    font-size: 35px;
-    font-weight: bold;
     margin-bottom: 5px;
     padding-left: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: 'Zapf';
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .product-container {
@@ -590,7 +595,6 @@ width: 130px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
         'Helvetica Neue', sans-serif;
-        font-size: medium;
     width: 100%;
     height: 100px;
     padding-top: 10px;
@@ -613,7 +617,7 @@ width: 130px;
 }
 
 .price {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 20px;
 }
 
@@ -646,6 +650,7 @@ width: 130px;
 /* 
 left till we figure out how to fix the scroll bar
 .product-container::-webkit-scrollbar{
+
 }
 */
 .prev_arrow,
@@ -691,21 +696,38 @@ left till we figure out how to fix the scroll bar
     padding-top: 50px;
     padding-bottom: 50px;
 
+
 }
 
 .vidmain {
     width: 80%;
     height: 500px;
     padding-left: 10px;
+
 }
 
 .vidmain-title {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: 'Zapf';
+    letter-spacing: 5;
+    font-weight: 100;
     font-size: 18px;
     padding-left: 20px;
     color: #fff;
+    border-right: 1px solid #ffffff;
+    padding: 80 25px;
+    padding-top: 40px;
+    
+
+}
+.br1{
+    letter-spacing: 13px;
+}
+
+@media screen and (max-width: 1020px) {
+    .vidmain-title {
+        border-right: none;
+     }
+    
 }
 
 /* ---- end vid break ---- */
@@ -736,7 +758,8 @@ left till we figure out how to fix the scroll bar
 .ad1-text {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;    font-size: 20px;
+    'Helvetica Neue', sans-serif;   
+     font-size: 20px;
     padding-left: 20px;
 }
 
@@ -816,6 +839,23 @@ left till we figure out how to fix the scroll bar
 
 }
 
+@media screen and (max-width: 1020px) {
+    .ad1-container{
+       flex-wrap: wrap;
+    }
+    .ad1-btn{
+        margin-bottom: 20px;
+        margin-left: 25%;
+    }
+    .ad2-container{
+        flex-wrap: wrap-reverse;
+    }
+    .ad2-btn{
+        margin-bottom: 20px;
+        margin-left: 25%;
+    }
+}
+
 
 
 /* categories */
@@ -825,10 +865,10 @@ left till we figure out how to fix the scroll bar
 .categories-title {
     position: relative;
     text-align: center;
-    font-size: 40px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
+    font-family: 'Zapf';
+    font-size: 35px;
+    font-weight: 550;
+    letter-spacing: 1px;
     padding-top: 50px;
     padding-bottom: 30px;
 }
@@ -868,6 +908,7 @@ left till we figure out how to fix the scroll bar
     color: #fff;
     font-size: 30px;
     text-transform: capitalize;
+    font-family: 'Zapf';
 }
 
 
@@ -949,13 +990,8 @@ left till we figure out how to fix the scroll bar
     'Helvetica Neue', sans-serif;
 }
 
-.f-col p{
-    font-weight: 150;
-}
-
 .f-col h3 {
     font-size: 18px;
-    font-weight: 200;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
