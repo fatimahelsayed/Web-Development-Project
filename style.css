@@ -284,9 +284,9 @@ width: 130px;
     font-size: medium;
 }
 .cart-window{
-    border: solid lightgray;
+    border: 1px solid lightgray ;
     border-top: none;
-    position: fixed;
+    position: absolute;
     top: 10vh;
     background-color:white;
     width: 390px;
@@ -295,7 +295,19 @@ width: 130px;
     display: block;
     padding-bottom: 10px;
 }
-
+.cart-window::after{
+    bottom: 100%;
+	left: 89%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: white;
+	border-width: 8px;
+	margin-left: -110px;
+}
 .cart-item .price{
     display: block;
     text-align: right;
