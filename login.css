@@ -1,124 +1,129 @@
+footer .container {
+    margin-top: 100px;
+}
 
-.signIn{
+.signIn {
 
-    position: absolute;
-    top: 55%;
-    left: 55%;
-    transform: translate(-60%,-50%);
+
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}
-     
-
-.signIn h2{
-        padding-top: 20px;
-        padding-bottom: 13px;
-        border-bottom: 1px solid #adadad;
 
 }
 
 
- .submit{
-    
-    background-color:rgb(128, 99, 7);
-      text-align: center;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      display: inline-block;
-      font-size: 16px;
-      border-radius: 15px;
-      width: 100px;
-    }
-    .submit:hover{
-    
-        cursor: pointer;
-    }
-    
-    
-    .signInform{
-    
-        padding: 0 50px;
-        border-right: 1px solid #adadad;
+.signIn h2 {
+    padding-top: 20px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #adadad;
 
-    }
-    .textfield{
-        position: relative;
-        border-bottom: 1px solid #adadad;
-        margin: 30px 0;
-        
-    }
-    
-    .textfield input{
+}
+
+
+.submit {
+
+    background-color: rgb(128, 99, 7);
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    width: 100px;
+}
+
+.submit:hover {
+
+    cursor: pointer;
+}
+
+
+.signInform {
+
+    padding: 0 50px;
+    border-right: 1px solid #adadad;
+
+}
+
+.textfield {
+    position: relative;
+    border-bottom: 1px solid #adadad;
+    margin: 30px 0;
+
+}
+
+.textfield input {
     width: 100%;
     padding: 0 5px;
     height: 40px;
     font: 16px;
     border: none;
     outline: none;
-    }
-    
-    .textfield label{
-    
+}
+
+.textfield label {
+
     position: absolute;
-    
+
     top: 50%;
     left: 5px;
     pointer-events: none;
     transform: translateY(-50%);
     font-size: 17px;
     transition: .4s;
-    }
-    
-    .textfield input:focus ~label
-    
-    {
+}
+
+.textfield input:focus~label {
     top: -5px;
     color: rgb(128, 99, 7);
-    
-    }
-    .textfield span::before{
-        
+
+}
+
+.textfield span::before {
+
     content: '';
-    position:absolute ;
+    position: absolute;
     background-color: rgb(128, 99, 7);
     width: 0%;
     height: 2px;
     top: 40px;
-    
-    
-    }
-    .textfield input:focus ~span::before
-    {
-        width: 100%;   
-    }
-    
- .right {
+
+
+}
+
+.textfield input:focus~span::before {
+    width: 100%;
+}
+
+.right {
     padding-left: 50px;
 
- }
-#loginlink{
+}
+
+#loginlink {
     font-weight: bold;
     padding-bottom: 5px;
     font-size: 20px;
     text-align: center;
 }
- .ulist{
+
+.ulist {
     font-style: italic;
     color: #686868;
     padding-bottom: 78.5px;
- }
-#loginlink2{
-padding-bottom: 40px;
-text-align: center;
 }
 
-.signuplink{
-     
-     
-    background-color:rgb(128, 99, 7);
+#loginlink2 {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.signuplink {
+
+
+    background-color: rgb(128, 99, 7);
     text-align: center;
     border: none;
     color: white;
@@ -131,22 +136,28 @@ text-align: center;
 }
 
 
+
 @media screen and (max-width: 574px) {
     .signIn {
         padding-top: 300px;
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
     }
-    .signInform{
+
+    .signInform {
         border-right: none;
     }
-    .left{
+
+    .left {
         border-bottom: 1px solid #adadad;
         padding-bottom: 30px;
     }
-    .right{
-        padding-top: 30px;;
+
+    .right {
+        padding-top: 30px;
+        ;
         padding-left: 0px;
         padding-bottom: 100px;
     }
-  }
+}
+
