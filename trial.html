@@ -6,11 +6,14 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="login" href="logi.css">
+
     <!-- to access font awesome cdn icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
+    <script src = "trial.js"></script>
     <title>Clementine</title>
 </head>
 
@@ -50,48 +53,47 @@
                                 <li><a href="#gbracelets.html">BRACELETS</a></li>
                             </ul>
                         </li>
-                        <li><a href="contactus.html">CONTACT US</a></li>
+                        <li><a href="#">CONTACT US</a></li>
     
                         <li><a href="#"><i class="ri-search-line"></i></a></li>
-                        <!--Cart Start-->
+ <!--Cart Start-->
                         
-                        <li><a href="#"><div class="cart-icon"><i class="ri-shopping-bag-line"></i></div></a></li>
+ <li><a href="#"><div class="cart-icon"><i class="ri-shopping-bag-line"></i></div></a></li>
                        
-                        <div class="cart-window hide">
-                            <h2 class="ShopBag">Shopping Bag</h2>
-                            <div class="cart-wrapper">
-                            <div class="cart-item">
-                                <img src="Images/whiteRook.jpg" alt="">
-                                 <div class="details">
-                                    <span class="name"> Clementine Silver White Rook</span>
-                                    <div class="btn-wrapper">
-                                        <span class="minus">-</span>
-                                        <span class="num">1</span>
-                                        <span class="add">+</span>
-                                    </div> 
-                                    <span class="price"> Price: 15200 LE</span>
-                                 </div>
-                            </div>
-                            <!--Item 2-->
-                            <div class="cart-item">
-                                <img src="Images/r5.png" alt="">
-                                 <div class="details">
-                                    <span class="name">Clementine Silver Snowflake</span>
-                                    <div class="btn-wrapper">
-                                        <span class="minus1">-</span>
-                                        <span class="num1">1</span>
-                                        <span class="add1">+</span>
-                                    </div>                                 
-                                     <span class="price"> Price: 11000 LE</span>
-                                 </div>
-                            </div>
-                            </div>
-                            <div class="total">Total: 26200 LE</div>
-                            <button class="checkout">checkout</button>
-                        </div>
-                     
-                        <!--Cart End-->
-                        <li><a href="#"><i class="ri-account-circle-line"></i></a></li>
+ <div class="cart-window hide">
+     <h2 class="ShopBag">Shopping Bag</h2>
+     <div class="cart-wrapper">
+     <div class="cart-item">
+         <img src="Images/whiteRook.jpg" alt="">
+          <div class="details">
+             <span class="name"> Clementine Silver White Rook</span>
+             <div class="btn-wrapper">
+                 <span class="minus">-</span>
+                 <span class="num">1</span>
+                 <span class="add">+</span>
+             </div> 
+             <span class="price"> Price: 15200 LE</span>
+          </div>
+     </div>
+     <!--Item 2-->
+     <div class="cart-item">
+         <img src="Images/r5.png" alt="">
+          <div class="details">
+             <span class="name">Clementine Silver Snowflake</span>
+             <div class="btn-wrapper">
+                 <span class="minus1">-</span>
+                 <span class="num1">1</span>
+                 <span class="add1">+</span>
+             </div>                                 
+              <span class="price"> Price: 11000 LE</span>
+          </div>
+     </div>
+     </div>
+     <div class="total">Total: 26200 LE</div>
+     <button class="checkout">checkout</button>
+ </div>
+
+ <!--Cart End-->                        <li><a href="#"><i class="ri-account-circle-line"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -123,10 +125,10 @@
                     <img src="images/header.png">
                 </div>
                 <div class="slide">
-                    <img src="images/headergold.png">
+                    <img src="images/saleheader.png">
                 </div>
                 <div class="slide">
-                    <img src="images/saleheader.png">
+                    <img src="images/headergold.png">
                 </div>
 
                 <!-- slideshow images end -->
@@ -172,14 +174,14 @@
             <img src="Images/y2.png" alt="necklaces">
             <class="row1-neck">NECKLACES</h3>
             <div>
-              <button href="#necklaces.html" class="row1btn">SHOP NOW</button>
+              <button href="#necklaces.html" class="row1btn">Shop Now</button>
             </div>
         </a>
         <a href="#earring.html" class="row1-title">
             <img src="Images/y1.png" alt="earrings">
             <class="row1-neck">EARRINGS</h3>
             <div>
-              <button href="#earrings.html" class="row1btn">SHOP NOW</button>
+              <button href="#earrings.html" class="row1btn">Shop Now</button>
             </div>
         </a>
     </section>
@@ -191,12 +193,14 @@
     <!-- homepage products start -->
     <section class="homepage-products">
        
-        <h2 class="homepage-p-title">New Collection</h2>
+        <h2 class="homepage-p-title">NEW COLLECTION</h2>
         <button class="prev_arrow"><i class="ion-chevron-left"></i></button>
         <button class="next_arrow"><i class="ion-chevron-right"></i></button>
 
 
         <div class="product-container">
+
+
             <div class="product-card">
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
@@ -204,11 +208,12 @@
                     <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">Clementine Silver Tear</h2>
+                    <h2 class="product-brand">Ring 1</h2>
                     <p class="product-short-des">ring detail</p>
                     <span class="price">10700 LE</span><span class="actual-price">24000 LE</span>
                 </div>
             </div>
+
 
             <div class="product-card">
                 <div class="product-image">
@@ -216,23 +221,12 @@
                     <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand" > Clementine Silver Heart Shape</h2>
+                    <h2 class="product-brand">Ring 2</h2>
                     <p class="product-short-des">ring detail</p>
                     <span class="price">27000 LE</span>
                 </div>
             </div>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/whiteRook.jpg" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
-                </div>
-                <div class="product-info">
-                    <h2 class="product-brand"> Clementine Silver White Rook</h2>
-                    <p class="product-short-des">neck detail</p>
-                    <span class="price">34000 LE</span>
-                </div>
-            </div>
 
             <div class="product-card">
                 <div class="product-image">
@@ -240,11 +234,25 @@
                     <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">Clementine Silver Heart</h2>
+                    <h2 class="product-brand">Neck 3</h2>
+                    <p class="product-short-des">neck detail</p>
+                    <span class="price">34000 LE</span>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/r3.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to whislist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Neck 4</h2>
                     <p class="product-short-des">neck detail</p>
                     <span class="price">34500 LE</span>
                 </div>
             </div>
+
 
             <div class="product-card">
                 <div class="product-image">
@@ -253,16 +261,42 @@
                     <button class="card-btn">add to whislist</button>
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">Clementine Silver Snowflake</h2>
+                    <h2 class="product-brand">Ring 5</h2>
                     <p class="product-short-des">ring detail</p>
                     <span class="price">11000 LE</span><span class="actual-price">19000 LE</span>
                 </div>
             </div>
 
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/r6.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to whislist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Neck 6</h2>
+                    <p class="product-short-des">neck detail</p>
+                    <span class="price">19500 LE</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/r7.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to whislist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Neck 7</h2>
+                    <p class="product-short-des">neck detail</p>
+                    <span class="price">24500 LE</span>
+                </div>
+            </div>
+
+        </div>
+
     </section>
     <div class="videobreak"> 
         <div class="vidmain-title">
-            <h1>Ignite <Br> Your <br> Dreams.  </h1>
+            <h1>IGNITE <div class="br1">YOUR</div>DREAMS  </h1>
         </div>
         <video ctontrols autoplay muted loop class="vidmain">
             <source src="Images/vidmain.mp4" type="video/mp4">
@@ -309,9 +343,10 @@
     <!-- collection ad start -->
     <!-- <section class="mid-ad">
         <img src="Images/valentinesheader.png" href="" alt="newcollection" class="ad1">
+
     </section> */ -->
 
-    <h2 class="categories-title">Shop By Category</h2>
+    <h2 class="categories-title">SHOP BY CATEGORY</h2>
     <!-- collection ad end  -->
 
     <!-- categories start -->
@@ -382,6 +417,14 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+
+
+    
     <script>
         function myFunction() {
             var x = document.getElementById("mynavbar");
@@ -391,7 +434,9 @@
                 x.className = "navbar";
             }
         }
-      /*Drop down cart start*/
+
+
+        /*Drop down cart start*/
         const cartIcon = document.querySelector(".ri-shopping-bag-line");
 const WholeCartWindow = document.querySelector(".cart-window");
 WholeCartWindow.inWindow = 0;
@@ -461,10 +506,13 @@ WholeCartWindow.addEventListener("mouseleave", ()=>{
 
     /* increment and decrement end */
 
-
     </script>
 
-    <script src = "js/trial.js"></script>
+
+
+
+
+
 
 </body>
 
