@@ -499,24 +499,26 @@ width: 130px;
 }
 
 .row1btn {
-    margin-top: 5px;
+    margin: 5px;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
         'Helvetica Neue', sans-serif;
-    width: 110;
-    height: 32;
+    width: 110px;
+    height: 35px;
     background: transparent;
     border-width: 1.5px;
     cursor: pointer;
-
 }
 
 .row1btn:hover {
-    background-color: #000000;
-    color: #fff;
+    border: none;
+    background: #d79e2e;
+    color: #ffffff;
     transition: 0.5s ease;
+    cursor: pointer;
 }
+
 
 
 /* products row 1 start */
@@ -930,12 +932,12 @@ left till we figure out how to fix the scroll bar
 
 .contact-heading {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding-bottom: 15px;
-    padding-top: -500px;
+    font-weight: 400;
 }
 
 .c-button {
@@ -943,19 +945,20 @@ left till we figure out how to fix the scroll bar
 }
 
 .sub-contact-btn {
-    border-radius: 20px;
     color: white;
-    background-color: black;
-    width: 180px;
+    background-color: #d79e2e;
+    width: 210px;
     height: 40;
     font-size: 20px;
-
+    border: none;
 }
 
 .sub-contact-btn:hover {
-    width: 220px;
-    font-size: 25px;
+    width: 250px;
+    font-size: 23px;
     transition: 0.9s ease;
+    background: #e4c688;
+    cursor: pointer;
 
 }
 
@@ -968,7 +971,7 @@ left till we figure out how to fix the scroll bar
 
 /* Footer Design */
 
-.container {
+.fcontainer {
     background-color: #000000;
     margin: auto;
 }
