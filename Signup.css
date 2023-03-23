@@ -1,15 +1,24 @@
+@font-face {
+    font-family: 'Zapf';
+    src: url(Fonts/Zapf.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+
 * {
     box-sizing: content-box;
     margin: 0;
     padding: 0;
 }
+.logo-toggle-container img{
+    box-sizing: border-box;
+}
 
 body {
     width: 100%;
     height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    font-family:'Zapf';
 }
 
 
@@ -27,25 +36,26 @@ body {
 }
 
 .signIn h2 {
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 13px;
     border-bottom: 1px solid #adadad;
 }
 
 .submit {
-
-    background-color: #d79e2e;
+    font-family: 'Zapf';
+    background-color: #be8a20;
     text-align: center;
     border: none;
     color: white;
     padding: 15px 32px;
     display: inline-block;
-    font-size: 17px;
-    width: 100%;
+    font-size: 19px;
+    width: 90%;
 }
 
 .submit:hover {
-    background: #e4c688;
+    letter-spacing: 10px;
+    background: #e0bd78;
     transition: 0.5s ease;
     cursor: pointer;
 }
@@ -114,6 +124,7 @@ body {
 }
 
 #loginlink {
+    
     padding-left: 20px;
     padding-bottom: 100px;
 }
@@ -121,6 +132,7 @@ body {
 .loginlink {
     color: rgb(128, 99, 7);
     cursor: pointer;
+    
 }
 
 @media screen and (max-width: 900px)
