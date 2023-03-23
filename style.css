@@ -96,6 +96,7 @@ body {
     display: block;
     width: 150px;
     background: #fff;
+    z-index: 9;
 }
 .navigation .menu li ul li{
     display: none;
