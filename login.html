@@ -117,16 +117,18 @@
     <!-- Sign in form -->
     <div class="signIn">
         <div class="left">
-            <form action="" class="signInform">
+            <form action="" class="signInform" id="signInform">
                 <h2>Login</h2>
 
                 <div class="textfield">
-                    <input type="text" name="email">
+                    <input type="email" name="email">
                     <span class="sp1"></span>
                     <label for="">E-mail</label>
                 </div>
                 <div class="textfield">
-                    <input type="password" name="password">
+                    <input type="password" name="password" id="pass">
+                    <label for="" id="passlabel"></label>
+                    
                     <span class="sp1"></span>
                     <label for="">Password</label>
                 </div>
@@ -134,6 +136,18 @@
                 <input type="submit" class="lgbutton" value="LOG IN">
                 <br><br>
             </form>
+            <script>
+                const form=document.getElementById('signInform');
+                const pass=document.getElementById('pass');
+                form.addEventListener('submit',(e)=>{
+                    e.preventDefault();
+                    if(pass.value.trim()=='')
+                    {
+                    let label=document.getElementById('passlabel');
+                    label.innerHTML='Please enter password';
+                    }
+                });
+            </script>
 
         </div>
 
@@ -182,7 +196,7 @@
                         </a>
                         <a href="#">
                             <p class="fab fa-twitter"></p>
-                        </a>
+                        </as>
                         <a href="#">
                             <p class="fab fa-instagram"></p>
                         </a>
