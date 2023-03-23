@@ -12,6 +12,10 @@
 .accepted{
     padding-top: 20px;
 }
+.place-link{
+    text-decoration: none;
+    color: white;
+}
 #checkout-container select{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 10px;
