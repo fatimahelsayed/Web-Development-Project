@@ -1,110 +1,70 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-         <link rel="stylesheet" href="login.css">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-         rel="stylesheet" />
-         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-         <link rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">     
-         <link rel="stylesheet" type="text/css" href="style.css">
-         <link rel="signup" href="signup.html">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    </head>
-    <body>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 
-<style>
-    * {
-        box-sizing:content-box;
+    <link rel="signup" href="signup.html">
+</head>
 
-    }
-</style>
+<body>
+
+    <style>
+
+    </style>
     <!-- Navigation Bar Start -->
-    <section id="navigationbar">
-        <div class="navigation">
-            <div class="ncontainer">
-                <div class="navbar">
-                    <div class="logo-toggle-container">
-                        <a href="trial.html">
-                            <img src="images/logoo copy.png">
-                        </a>
-                        <span class="toggle-box">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-
-                    <ul class="menu">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">NEW IN</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                        <li><a href="#">DIAMOND</a></li>
-                        <li><a href="#">GOLD</a></li>
-                        <li><a href="#"><i class="ri-search-line"></i></a></li>
-                        <li><a href="#"><i class="ri-shopping-bag-line"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <section class="navigationbar">
+        <script src="nav.js"></script>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".navigation .navbar .logo-toggle-container .toggle-box").click(function () {
-                $(".navigation .menu").stop().slideToggle();
-            });
-        });
-    </script>
     <!-- Navigation Bar End -->
+    <!-- Sign in form -->
+    <div class="signIn">
+        <div class="left">
+            <form action="" class="signInform">
+                <h2>Login</h2>
 
+                <div class="textfield">
+                    <input type="text" name="email">
+                    <span class="sp1"></span>
+                    <label for="">E-mail</label>
+                </div>
+                <div class="textfield">
+                    <input type="password" name="password">
+                    <span class="sp1"></span>
+                    <label for="">Password</label>
+                </div>
 
+                <input type="submit" class="lgbutton" value="LOG IN">
+                <br><br>
+            </form>
 
-        <div class="signIn">
-            <div class="left"> 
-                <form action="" class="signInform">
-                    <h2>Login</h2>
-
-                    <div class="textfield"> 
-                        <input type="text" name="email">  
-                        <span class="sp1"></span>          
-                        <label for="">E-mail</label>      
-                    </div>
-                    <div class="textfield"> 
-                        <input type="password" name="password">
-                        <span class="sp1"></span>
-                        <label for="">Password</label>      
-                    </div>
-   
-                    <input type="submit" class="submit">
-                    <br><br>
-               </form>
-
-            </div>
-
-            <div class="right">
-                <p id="loginlink">Don't have an account?</p>
-                <p id="loginlink2">Create one to:</p>
-                    <ul class="ulist">
-                        <li>Checkout faster</li>
-                        <li>Manage your preferences</li>
-                         <li>Save your wishlist across devices</li>
-                    </ul>                   
-                    <button href="signup.html" class="signuplink">Sign Up</button>
-                 
-            </div>
         </div>
+
+        <div class="right">
+            <p class="header1">Don't have an account?</p>
+            <p class="header2">Create one to:</p>
+            <ul class="ulist">
+                <li>Checkout faster</li>
+                <li>Manage your preferences</li>
+                <li>Save your wishlist across devices</li>
+            </ul>
+            <button href="signup.html" class="subutton">SIGN UP</button>
+        </div>
+    </div>
 
 
     <!-- footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="fcontainer">
             <div class="row">
 
                 <div class="f-col">
@@ -138,20 +98,17 @@
                         <a href="#">
                             <p class="fab fa-instagram"></p>
                         </a>
-                    </div>
 
+                    </div>
 
                 </div>
 
             </div>
+
         </div>
+
     </footer>
 
-
-       
-            
-
-    </body>
-
+</body>
 
 </html>
