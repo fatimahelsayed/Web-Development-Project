@@ -8,7 +8,7 @@
 
 .box {
 
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
   margin-top: 30px;
   border: none;
   overflow: hidden;
@@ -136,6 +136,10 @@ button:hover {
   font-size: 35px;
   padding-bottom: 10px;
 
+}
+
+.snip{
+  padding-bottom: 50px;
 }
 
 .footer {
