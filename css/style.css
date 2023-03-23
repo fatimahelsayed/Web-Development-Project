@@ -37,6 +37,8 @@ body {
     width: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
     position: sticky;
+    z-index: 999999; 
+
 }
 
 .navigation>.container {
@@ -301,11 +303,12 @@ width: 130px;
     position: fixed;
     top: 10vh;
     background-color:white;
-    width: 390px;
+    width: 400px;
     margin: 2%;
     left: 70%;
     display: block;
     padding-bottom: 10px;
+    padding-right: 40px;
 }
 
 .cart-item .price{
@@ -322,9 +325,17 @@ width: 130px;
 @media screen and (max-width:1050px) {
     .cart-window{
         display: none;
-    }
-}
+        left: 30%;
+        width: 300px;
+        padding-bottom: 50px;
 
+    }
+   .checkout{
+    margin: 0px auto;
+    margin-left: 70px;
+    margin-top: -30px;
+   }
+}
 
 /* Cart Window end */
 
@@ -930,35 +941,17 @@ width: 130px;
 
 
 
-/* services start */
-.serwrap {
-    border: 1px solid #c9c5c5;
-    display: flex;
-    margin-top: -5%;
-    text-align: center;
-}
-.serwrap div{
-    margin: 5%;
-}
-.serwrap  p{
-    margin: 3%;
-}
-
-/* services end */
-
 /* contact us footer css */
 
-.contact-footer{
-    margin: 5%;
-}
+
 .contact-heading {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding-bottom: 15px;
-    font-weight: 400;
+    padding-top: -500px;
 }
 
 .c-button {
@@ -966,25 +959,26 @@ width: 130px;
 }
 
 .sub-contact-btn {
+    border-radius: 20px;
     color: white;
-    background-color: #000000;
-    width: 210px;
+    background-color: black;
+    width: 180px;
     height: 40;
     font-size: 20px;
-    border: none;
+
 }
 
 .sub-contact-btn:hover {
-    width: 250px;
-    font-size: 23px;
+    width: 220px;
+    font-size: 25px;
     transition: 0.9s ease;
-    color: #000000;
-    background: #ffffff;
-    border: 1px solid #000000 ;
-    cursor: pointer;
 
 }
 
+#contact-footer {
+    padding-bottom: 80px;
+
+}
 
 /* end contact us footer css */
 
