@@ -941,23 +941,29 @@ width: 130px;
 
 
 /* services start */
-.serwrap {
+.services{
     border: 1px solid #c9c5c5;
+}
+.serwrap {
+    
     display: flex;
     margin-top: -5%;
     text-align: center;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.serwrap div {
-    margin: 8%;
+.serwrap div{
+    margin: 8% ;
 }
-
-.serwrap div h2 {
+.serwrap  h2 {
     font-family: 'Zapf';
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 100px;
 }
 
-.serwrap p {
-    margin: 3%;
+.serwrap  p {
+    margin-top: 5%;
 }
 
 /* services end */
@@ -1022,10 +1028,6 @@ width: 130px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
 }
 
 .f-col ul {
