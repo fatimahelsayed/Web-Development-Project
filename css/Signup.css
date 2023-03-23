@@ -73,29 +73,31 @@ body {
     margin: 30px 0;
 }
 
-.textfield input {
+.textfield input{
     width: 100%;
     padding: 0 5px;
     height: 40px;
     font: 16px;
+    font-size: 16px;
     border: none;
     outline: none;
-}
-
-.textfield label {
+    }
+.textfield label{
 
     position: absolute;
-
+    
     top: 50%;
     left: 5px;
     pointer-events: none;
-    transform: translateY(-50%);
-    font-size: 17px;
+    transform: translateY(-120%);
+    font-size: 20px;
     transition: .4s;
-}
+    font-weight: 590;
+    }
+    
 
 .textfield input:focus~label {
-    top: -5px;
+    /* top: -5px; */
     color: rgb(128, 99, 7);
 
 }
@@ -141,4 +143,28 @@ body {
         top: 65%;
         width: 90%;
     }
+}
+
+.textfield.success img.true{
+
+    visibility: visible;
+}
+.textfield img{
+
+    visibility: hidden;
+}
+.textfield.failed img.false{
+
+    visibility: visible;
+}
+#firstnamelabel,#lastnamelabel,#emaillabel,
+#passlabel,#confirmpasslabel,#phonelabel{
+    top: 60px;
+    font-size: 13px;
+    color: rgb(121, 4, 4);
+}
+.textfield img{
+    position: absolute;
+    top: 21px;
+    left: 100%;
 }
