@@ -53,47 +53,50 @@
                                 <li><a href="#gbracelets.html">BRACELETS</a></li>
                             </ul>
                         </li>
-                        <li><a href="contactus.html">CONTACT US</a></li>
+                        <li><a href="#">CONTACT US</a></li>
     
                         <li><a href="#"><i class="ri-search-line"></i></a></li>
- <!--Cart Start-->
+<!--Cart Start-->
                         
- <li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
+<li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
                        
- <div class="cart-window hide">
-     <h2 class="ShopBag">Shopping Bag</h2>
-     <div class="cart-wrapper">
-     <div class="cart-item">
-         <img src="Images/whiteRook.jpg" alt="">
-          <div class="details">
-             <span class="name"> Clementine Silver White Rook</span>
-             <div class="btn-wrapper">
-                 <span class="minus">-</span>
-                 <span class="num">1</span>
-                 <span class="add">+</span>
-             </div> 
-             <span class="price"> Price: 15200 LE</span>
-          </div>
-     </div>
-     <!--Item 2-->
-     <div class="cart-item">
-         <img src="Images/r5.png" alt="">
-          <div class="details">
-             <span class="name">Clementine Silver Snowflake</span>
-             <div class="btn-wrapper">
-                 <span class="minus1">-</span>
-                 <span class="num1">1</span>
-                 <span class="add1">+</span>
-             </div>                                 
-              <span class="price"> Price: 11000 LE</span>
-          </div>
-     </div>
-     </div>
-     <div class="total">Total: 26200 LE</div>
-     <button class="checkout">checkout</button>
- </div>
+<div class="cart-window hide">
+    <h2 class="ShopBag">Shopping Bag</h2>
+    <div class="cart-wrapper">
+    <div class="cart-item">
+        <img src="Images/whiteRook.jpg" alt="">
+         <div class="details">
+            <span class="name"> Clementine Silver White Rook</span>
+            <div class="btn-wrapper">
+                <span class="minus">-</span>
+                <span class="num">1</span>
+                <span class="add">+</span>
+            </div> 
+            <span class="price"> Price: 15200 LE</span>
+         </div>
+    </div>
+    <!--Item 2-->
+    <div class="cart-item">
+        <img src="Images/r5.png" alt="">
+         <div class="details">
+            <span class="name">Clementine Silver Snowflake</span>
+            <div class="btn-wrapper">
+                <span class="minus1">-</span>
+                <span class="num1">1</span>
+                <span class="add1">+</span>
+            </div>                                 
+             <span class="price"> Price: 11000 LE</span>
+         </div>
+    </div>
+    </div>
+    <div class="total">Total: 26200 LE</div>
+    <button class="checkout" href="#checkout.html">Checkout</button>
+</div>
 
- <!--Cart End-->                        <li><a href="#"><i class="ri-account-circle-line"></i></a></li>
+<!--Cart End-->
+
+
+   <li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -122,14 +125,15 @@
 
                 <!-- slideshow images start -->
                 <div class="slide first">
-                    <img src="images/header.png">
+                    <img src="images/titleheader.png">
                 </div>
                 <div class="slide">
-                    <img src="images/saleheader.png">
+                    <img src="images/header1.png">
                 </div>
                 <div class="slide">
                     <img src="images/headergold.png">
                 </div>
+                
 
                 <!-- slideshow images end -->
                 <!-- auto nav start -->
@@ -194,8 +198,8 @@
     <section class="homepage-products">
        
         <h2 class="homepage-p-title">NEW COLLECTION</h2>
-        <button class="prev_arrow"><i class="ion-chevron-left"></i></button>
-        <button class="next_arrow"><i class="ion-chevron-right"></i></button>
+        <button class="prev_arrow" onclick="newcollectionslider()"><i class="ion-chevron-left"></i></button>
+        <button class="next_arrow" onclick="newcollectionslider()"><i class="ion-chevron-right"></i></button>
 
 
         <div class="product-container">
@@ -292,7 +296,6 @@
             </div>
 
         </div>
-
     </section>
     <div class="videobreak"> 
         <div class="vidmain-title">
@@ -375,7 +378,7 @@
 
     <!-- footer -->
     <footer class="footer">
-        <div class="fcontainer">
+        <div class="container">
             <div class="row">
 
                 <div class="f-col">
@@ -436,7 +439,7 @@
         }
 
 
-        /*Drop down cart start*/
+      /*Drop down cart start*/
 (function(){
  
  $("#cart").on("click", function() {
@@ -485,6 +488,10 @@
     /* increment and decrement end */
 
     </script>
+
+
+<script src =./trial.js></script>
+
 
 
 
