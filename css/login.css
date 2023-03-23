@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    /* margin-top: 0; */
+    /* overflow: hidden; */
 }
 
 
@@ -66,10 +67,12 @@ body {
 }
 
 .textfield input {
-    width: 100%;
-    padding: 0 5px;
+    width: 20%;
+ 
+    /* padding: 0 5px; */
     height: 40px;
     font: 16px;
+    font-size: 16.5px;
     border: none;
     outline: none;
 }
@@ -80,13 +83,14 @@ body {
     top: 50%;
     left: 5px;
     pointer-events: none;
-    transform: translateY(-50%);
-    font-size: 17px;
+    transform: translateY(-125%);
+    font-size: 19px;
+    font-weight: 530;
     transition: .4s;
 }
 
 .textfield input:focus~label {
-    top: -5px;
+    /* top: -5px; */
     color: rgb(128, 99, 7);
 
 }
@@ -99,7 +103,7 @@ body {
     width: 0%;
     height: 2px;
     top: 40px;
-
+    left: -1px ;
 }
 
 .textfield input:focus~span::before {
@@ -149,6 +153,14 @@ body {
     transition: 0.5s ease;
     cursor: pointer;
 }
+
+#passlabel{
+font-size: 15px;
+    position: absolute;
+    top: 68px;
+    color: rgb(131, 6, 6);
+}
+
 
 @media screen and (max-width: 574px) {
     .signIn {
