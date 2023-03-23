@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html>
+const createNav = () => {
+    let nav = document.querySelector('.navigationbar');
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-
-</head>
-
-<body>
-
-    <style>
-
-    </style>
-    <!-- Navigation Bar Start -->
-    <!-- Navigation Bar Start -->
+    nav.innerHTML = `
     <section class="navigationbar">
         <div class="navigation">
             <div class="container">
@@ -64,7 +44,7 @@
                         <li><a href="#">
                                 <div class="cart-icon"><i class="ri-shopping-bag-line"></i></div>
                             </a></li>
-                        <li><a href="#"><i class="ri-account-circle-line"></i></a></li>
+
                         <div class="cart-window hide">
                             <h2 class="ShopBag">Shopping Bag</h2>
                             <div class="cart-wrapper">
@@ -99,6 +79,7 @@
                         </div>
 
                         <!--Cart End-->
+                        <li><a href="#"><i class="ri-account-circle-line"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -112,91 +93,7 @@
             });
         });
     </script>
-    <!-- Navigation Bar End -->
-    <!-- Navigation Bar End -->
-    <!-- Sign in form -->
-    <div class="signIn">
-        <div class="left">
-            <form action="" class="signInform">
-                <h2>Login</h2>
+`;
+}
 
-                <div class="textfield">
-                    <input type="text" name="email">
-                    <span class="sp1"></span>
-                    <label for="">E-mail</label>
-                </div>
-                <div class="textfield">
-                    <input type="password" name="password">
-                    <span class="sp1"></span>
-                    <label for="">Password</label>
-                </div>
-
-                <input type="submit" class="lgbutton" value="LOG IN">
-                <br><br>
-            </form>
-
-        </div>
-
-        <div class="right">
-            <p class="header1">Don't have an account?</p>
-            <p class="header2">Create one to:</p>
-            <ul class="ulist">
-                <li>Checkout faster</li>
-                <li>Manage your preferences</li>
-                <li>Save your wishlist across devices</li>
-            </ul>
-            <button class="subutton" href="./signup.html">SIGN UP</button>
-        </div>
-    </div>
-
-
-    <!-- footer -->
-    <footer class="footer">
-        <div class="fcontainer">
-            <div class="row">
-
-                <div class="f-col">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li><a href="#">19012</a></li>
-                        <li><a href="#">Clementine@gmail.com</a></li>
-                        <p>Operating hours are from 7am – 2am EST,</p>
-                        <p>7 days a week, excluding holidays.</p>
-                    </ul>
-                </div>
-                <div class="f-col">
-                    <h3>About Us</h3>
-                    <p>We are a boutique jewellery studio based in</p>
-                    <p>Cairo, Egypt. We create pieces to order using a combination </p>
-                    <p>of modern technology and traditional jewellery practises,</p>
-                    <p>each piece is finished carefully by hand.</p>
-
-                </div>
-                <div class="f-col">
-                    <h3>Follow us</h3>
-                    <div class="social-links">
-
-                        <!-- gets the icons mn font awesome online library -->
-                        <a href="#">
-                            <p class="fab fa-facebook-f"></p>
-                        </a>
-                        <a href="#">
-                            <p class="fab fa-twitter"></p>
-                        </a>
-                        <a href="#">
-                            <p class="fab fa-instagram"></p>
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-</body>
-
-</html>
+createNav();
