@@ -3,38 +3,189 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/prodPdetails.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- to access font awesome cdn icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 </head>
 
 <body>
+    <!-- Navigation Bar Start -->
+    <section id="navigationbar">
+        <div class="navigation">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo-toggle-container">
+                        <a href="trial.html">
+                            <img src="images/logoo copy.png">
+                        </a>
+                        <span class="toggle-box">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
 
+                    <ul class="menu">
+                        <li><a href="trial.html">HOME</a></li>
+                        <li><a href="#">NEW IN</a></li>
+                        <li><a href="#">DIAMOND +</a>
+                            <ul>
+                                <li><a href="#drings.html">RINGS</a></li>
+                                <li><a href="#dearrings.html">EARRINGS</a></li>
+                                <li><a href="#dnecklaces.html">NECKLACES</a></li>
+                                <li><a href="#dbracelets.html">BRACELETS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">GOLD +</a>
+                            <ul>
+                                <li><a href="#grings.html">RINGS</a></li>
+                                <li><a href="#gearrings.html">EARRINGS</a></li>
+                                <li><a href="#gnecklaces.html">NECKLACES</a></li>
+                                <li><a href="#gbracelets.html">BRACELETS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CONTACT US</a></li>
+
+                        <li><a href="#"><i class="ri-search-line"></i></a></li>
+                        <!--Cart Start-->
+
+                        <li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
+
+                        <div class="cart-window hide">
+                            <h2 class="ShopBag">Shopping Bag</h2>
+                            <div class="cart-wrapper">
+                                <div class="cart-item">
+                                    <img src="Images/whiteRook.jpg" alt="">
+                                    <div class="details">
+                                        <span class="name"> Clementine Silver White Rook</span>
+                                        <div class="btn-wrapper">
+                                            <span class="minus">-</span>
+                                            <span class="num">1</span>
+                                            <span class="add">+</span>
+                                        </div>
+                                        <span class="price"> Price: 15200 LE</span>
+                                    </div>
+                                </div>
+                                <!--Item 2-->
+                                <div class="cart-item">
+                                    <img src="Images/r5.png" alt="">
+                                    <div class="details">
+                                        <span class="name">Clementine Silver Snowflake</span>
+                                        <div class="btn-wrapper">
+                                            <span class="minus1">-</span>
+                                            <span class="num1">1</span>
+                                            <span class="add1">+</span>
+                                        </div>
+                                        <span class="price"> Price: 11000 LE</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total">Total: 26200 LE</div>
+                            <button class="checkout" href="#checkout.html">Checkout</button>
+                        </div>
+
+                        <!--Cart End-->
+
+
+                        <li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".navigation .navbar .logo-toggle-container .toggle-box").click(function () {
+                $(".navigation .menu").stop().slideToggle();
+            });
+        });
+    </script>
+    <!-- Navigation Bar End -->
     <div class="parent">
 
         <div class="imgs">
 
-            <div class="img1"> <img src="./Images/ring1.jpg" alt=""> </div>
-            <div class="img2"> <img src="./Images/ring2.png" alt=""> </div>
-            <div class="img2"> <img src="./Images/ring3.png" alt=""> </div>
-            <div class="img2"> <img src="./Images/ring4.jpg" alt=""> </div>
+            <!-- slideshow start -->
+            <section id="imageslideshow">
+                <!-- slider start -->
+                <div id="slider">
+
+                    <div class="slideshow">
+                        <!-- radiobuttons start -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <!-- radiobuttons end -->
+
+                        <!-- slideshow images start -->
+                        <div class="slide first">
+                            <img src="./Images/diamond jewelry/diamond rings/ring1.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/diamond jewelry/diamond rings/ring2.png">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/diamond jewelry/diamond rings/ring4.jpg">
+                        </div>
+
+
+                        <!-- slideshow images end -->
+                        <!-- auto nav start -->
+                        <div class="navauto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+                        <!-- auto nav end -->
+                        <!-- manual nav start -->
+                        <div class="navmanual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                        </div>
+                        <!-- manual nav end -->
+                    </div>
+
+                </div>
+                <!-- slider end -->
+
+                <script type="text/javascript">
+                    var counter = 1;
+                    setInterval(function () {
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if (counter > 4) {
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            </section>
+            <!-- slideshow end -->
             <!-- <div class="umg2"> <img src="ring6.jpg" alt=""></div>
                 <div class="umg2"> <img src="ring5.jpg" alt=""></div> -->
 
         </div>
         <div class="details">
-
             <h2>Sparkling Wishbone Ring</h2>
             <p>Built to exude gorgeousness, these poised studs in 18-karat white gold from Celementite Diamonds will
                 seamlessly work for you across outfits and occasions.</p>
             <hr>
             <p>
-                <p class="aboutring"><b> Brand:</b> Celemntite </p>
-                <p class="aboutring"><b> Collection:</b> Rings</p>
-                <p class="aboutring"><b> Metal:</b> Silver</p>
-                <p class="aboutring"><b> Style Number:</b> HS20-223</p>
+            <p class="aboutring"><b> Brand:</b> Clementine </p>
+            <p class="aboutring"><b> Collection:</b> Rings</p>
+            <p class="aboutring"><b> Metal:</b> Silver</p>
+            <p class="aboutring"><b> Style Number:</b> HS20-223</p>
             </p>
             <div class="priceinfo">
 
@@ -68,11 +219,11 @@
         <div class="maylike">
 
             <p class="head">You May Like</p>
-            <section class="container">
+            <section class="pcontainer">
                 <div class="box">
                     <a href="">
                         <img src="./Images/fav.png" alt="" class="cardimg cardfav">
-                        <img src="./Images/ring1.jpg" alt="" class="cardimg">
+                        <img src="./Images/diamond jewelry/diamond rings/ring1.jpg" alt="" class="cardimg">
                     </a>
                     <div class="items">
                         <div class="prodetails">
@@ -87,7 +238,7 @@
                 <div class="box">
                     <a href="">
                         <img src="./Images/fav.png" alt="" class="cardimg cardfav">
-                        <img src="./Images/ring2.png" alt="" class="cardimg">
+                        <img src="./Images/diamond jewelry/diamond rings/ring2.png" alt="" class="cardimg">
                     </a>
                     <div class="items">
                         <div class="prodetails">
@@ -101,7 +252,7 @@
                 <div class="box">
                     <a href="">
                         <img src="./Images/fav.png" alt="" class="cardimg cardfav">
-                        <img src="./Images/ring3.png" alt="" class="cardimg">
+                        <img src="./Images/diamond jewelry/diamond rings/ring3.png" alt="" class="cardimg">
                     </a>
                     <div class="items">
                         <div class="prodetails">
@@ -115,7 +266,7 @@
                 <div class="box">
                     <a href="">
                         <img src="./Images/fav.png" alt="" class="cardimg cardfav">
-                        <img src="./Images/ring4.jpg" alt="" class="cardimg">
+                        <img src="./Images/diamond jewelry/diamond rings/ring4.jpg" alt="" class="cardimg">
                     </a>
                     <div class="items">
                         <div class="prodetails">
@@ -130,8 +281,6 @@
 
 
         </div>
-
-
 
 
         <div class="review">
@@ -165,11 +314,6 @@
 
 
     </div>
-
-
-
-
-
     <!-- footer -->
     <footer class="footer">
         <div class="fcontainer">
@@ -214,6 +358,8 @@
             </div>
         </div>
     </footer>
+
+
 
 </body>
 
