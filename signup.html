@@ -1,134 +1,125 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-         <link rel="stylesheet" href="Signup.css">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-         rel="stylesheet" />
-         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-         <link rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">     
-         <link rel="stylesheet" type="text/css" href="style.css">
-         <link rel="login" href="login.html">
+<head>
+    <link rel="stylesheet" href="Signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="login" href="login.html">
 
-    </head>
-    <body>
+</head>
 
-<style>
-    * {
-        box-sizing:content-box;
+<body>
 
-    }
-</style>
+    <!-- Navigation Bar Start -->
+    <section class="navigationbar">
+        <script src="nav.js"></script>
+    </section>
+    <!-- Navigation Bar End -->
 
+    <section class="signIn">
 
-   <!-- Navigation Bar Start -->
-   <section id="navigationbar">
-    <div class="navigation">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo-toggle-container">
-                    <a href="trial.html">
-                        <img src="images/logoo copy.png">
-                    </a>
-                    <span class="toggle-box">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </div>
+        <h2>Sign Up Information </h2>
+        <form action="" class="signInform">
 
-                <ul class="menu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">NEW IN</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#">DIAMOND</a></li>
-                    <li><a href="#">GOLD</a></li>
-                    <li><a href="#"><i class="ri-search-line"></i></a></li>
-                    <li><a href="#"><i class="ri-shopping-bag-line"></i></a></li>
-                </ul>
+            <div class="textfield">
+                <input type="text" name="fisrtname">
+                <span class="sp1"></span>
+                <label for=""> First Name</label>
             </div>
-        </div>
-    </div>
-</section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".navigation .navbar .logo-toggle-container .toggle-box").click(function () {
-            $(".navigation .menu").stop().slideToggle();
-        });
-    });
-</script>
-<!-- Navigation Bar End -->
+            <div class="textfield">
+                <input type="text" name="lastname">
+                <span class="sp1"></span>
+                <label for=""> Last Name</label>
+            </div>
+            <div class="textfield">
+                <input type="text" name="email">
+                <span class="sp1"></span>
+                <label for="">E-mail</label>
+            </div>
+            <div class="textfield">
+                <input type="password" name="password">
+                <span class="sp1"></span>
+                <label for="">Password</label>
+            </div>
+            <div class="textfield">
+                <input type="password" name="confirmpassword">
+                <span class="sp1"></span>
+                <label for="">Confirm Password</label>
+            </div>
+            <div class="textfield">
+                <input type="date" name="dob">
+            </div>
+            <div class="textfield">
+                <input type="text" name="phone">
+                <span class="sp1"></span>
+                <label for="">Phone </label>
+            </div>
+            <p class="disclaimer">By providing your personal information, you agreed to our Privacy & Cookies Policy.
+            </p>
+            <input type="submit" class="submit">
+            <br><br>
+        </form>
+
+        <p id="loginlink">Already have an account?
+            <span href="login.html" class="loginlink"> Log In </span>
+        </p>
 
 
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="row">
 
-
-
-
-
-
-
-        <section class="signIn">
-
-            <h2>Sign Up Information </h2>
-            <form action="" class="signInform">
-
-                 <div class="textfield"> 
-                     <input type="text" name="fisrtname">
-                     <span class="sp1"></span>
-                     <label for=""> First Name</label>  
-                 </div>
-                 <div class="textfield" > 
-                     <input type="text" name="lastname">
-                     <span class="sp1"></span>
-                     <label for=""> Last Name</label>
-                    </div>
-                 <div class="textfield"> 
-                     <input type="text" name="email">  
-                     <span class="sp1"></span>          
-                     <label for="">E-mail</label>      
-                 </div>
-                 <div class="textfield"> 
-                     <input type="password" name="password">
-                     <span class="sp1"></span>
-                     <label for="">Password</label>      
-                 </div>
-                 <div class="textfield" >  
-                    <input type="password" name="confirmpassword">
-                    <span class="sp1"></span>
-                     <label for="">Confirm Password</label>
+                <div class="f-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">19012</a></li>
+                        <li><a href="#">Clementine@gmail.com</a></li>
+                        <p>Operating hours are from 7am – 2am EST,</p>
+                        <p>7 days a week, excluding holidays.</p>
+                    </ul>
                 </div>
-                 <div class="textfield">
-                      <input type="date" name="dob">     
-                 </div>
-                 <div class="textfield">
-                       <input type="text" name="phone">
-                       <span class="sp1"></span>
-                        <label for="">Phone </label>   
-                 </div>
-                 <p class="disclaimer">By providing your personal information, you agreed to our Privacy & Cookies Policy.
-                </p>
-                 <input type="submit" class="submit">
-                 <br><br>
-            </form>
+                <div class="f-col">
+                    <h3>About Us</h3>
+                    <p>We are a boutique jewellery studio based in</p>
+                    <p>Cairo, Egypt. We create pieces to order using a combination </p>
+                    <p>of modern technology and traditional jewellery practises,</p>
+                    <p>each piece is finished carefully by hand.</p>
 
-            <p id="loginlink">Already have an account?
-                <span href="login.html" class="loginlink"> Log In </span> </p>
-          
+                </div>
+                <div class="f-col">
+                    <h3>Follow us</h3>
+                    <div class="social-links">
 
-        </section>
+                        <!-- gets the icons mn font awesome online library -->
+                        <a href="#">
+                            <p class="fab fa-facebook-f"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-twitter"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-instagram"></p>
+                        </a>
 
+                    </div>
 
+                </div>
 
+            </div>
 
+        </div>
 
-       
-            
+    </footer>
 
-    </body>
+</body>
 
 
 </html>
