@@ -1,64 +1,286 @@
-* {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<link rel="stylesheet" type="text/css" href="css/Signup.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-#checkout-container h2 {
-    padding-top: 100px;
-    padding-bottom: 13px;
-    border-bottom: 1px solid #adadad;
-}
-.accepted{
-    padding-top: 20px;
-}
-.place-link{
-    text-decoration: none;
-    color: white;
-}
-#checkout-container select{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 10px;
-    background-color: #b58422;
-    color: aliceblue;
-    font-size: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 150px;
-}
 
-#checkout-container{
-    font-family: 'Zapf';
-    width: 50%;
-    position: relative;
-    top: 120%;
-    margin-bottom: 6%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.logo-toggle-container img{
-    box-sizing: border-box;
-}
-h4{
-    font-size: 20px;
-}
+</head>
 
-.place-order {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #b58422;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    display: inline-block;
-    font-size: 16px;
-    width: 42%;
-    margin-bottom: 50px;
-}
+<style>
+    *{
+        box-sizing: content-box;
+    }
+</style>
+<body>		
+	
 
-.place-order:hover {
-    letter-spacing: 5px;
-    background: #e4c688;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
+    
+     <!-- Navigation Bar Start -->
+     <section id="navigationbar">
+        <div class="navigation">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo-toggle-container">
+                        <a href="trial.html">
+                            <img src="images/logoo copy.png">
+                        </a>
+                        <span class="toggle-box">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
 
+                    <ul class="menu">
+                        <li><a href="trial.html">HOME</a></li>
+                        <li><a href="./newin.html">NEW IN</a></li>
+                        <li><a href="#">DIAMOND +</a>
+                            <ul>
+                                <li><a href="./products.html">RINGS</a></li>
+                                <li><a href="./dearrings.html">EARRINGS</a></li>
+                                <li><a href="./dNecklaces.html">NECKLACES</a></li>
+                                <li><a href="./dbracelets.html">BRACELETS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">GOLD +</a>
+                            <ul>
+                                <li><a href="./grings.html">RINGS</a></li>
+                                <li><a href="./dearrings.html">EARRINGS</a></li>
+                                <li><a href="./gnecklaces.html">NECKLACES</a></li>
+                                <li><a href="./gbracelets.html">BRACELETS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./contactus.html">CONTACT US</a></li>
+    
+                        <li><a href="#"><i class="ri-search-line"></i></a></li>
+<!--Cart Start-->
+                        
+<li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
+                       
+<div class="cart-window hide">
+    <h2 class="ShopBag">Shopping Bag</h2>
+    <div class="cart-wrapper">
+    <div class="cart-item">
+        <img src="Images/whiteRook.jpg" alt="">
+         <div class="details">
+            <span class="name"> Clementine Silver White Rook</span>
+            <div class="btn-wrapper">
+                <span class="minus">-</span>
+                <span class="num">1</span>
+                <span class="add">+</span>
+            </div> 
+            <span class="price"> Price: 15200 LE</span>
+         </div>
+    </div>
+    <!--Item 2-->
+    <div class="cart-item">
+        <img src="Images/r5.png" alt="">
+         <div class="details">
+            <span class="name">Clementine Silver Snowflake</span>
+            <div class="btn-wrapper">
+                <span class="minus1">-</span>
+                <span class="num1">1</span>
+                <span class="add1">+</span>
+            </div>                                 
+             <span class="price"> Price: 11000 LE</span>
+         </div>
+    </div>
+    </div>
+    <div class="total">Total: 26200 LE</div>
+    <button class="checkout"><a href="./checkout.html" style="color: azure; text-decoration: none;">Checkout</a></button>
+</div>
+
+<!--Cart End-->
+
+
+   <li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".navigation .navbar .logo-toggle-container .toggle-box").click(function () {
+                $(".navigation .menu").stop().slideToggle();
+            });
+        });
+    </script>
+    <!-- Navigation Bar End -->
+
+	        <section id="checkout-container">
+				<h2>Billing Address </h2>
+				<form action="" class="signInform" id="signInform">
+	
+					 <div class="textfield"> 
+						 <input type="text" name="fisrtname" id="firstname">
+						  <label for="firstname" id="firstnamelabel"></label>
+						 <img src="./Images/right.png" alt="" width="15px" height="15px" class="true">
+						 <img src="./Images/wrongg.png" alt="" width="15px" height="15px" class="false">
+						 <span class="sp1"></span>
+						 <label for=""> Full Name</label> 
+					 </div>
+					 
+					 <div class="textfield"> 
+						 <input type="email" name="email" id="email" >  
+						 <label for="firstname" id="emaillabel"></label>
+						 <img src="./Images/right.png" alt="" width="15px" height="15px" class="true">
+						 <img src="./Images/wrongg.png" alt="" width="15px" height="15px" class="false">
+						 <span class="sp1"></span>          
+						 <label for="">E-mail</label>      
+					 </div>
+					 <div class="textfield"> 
+						 <input type="address" name="address" id="address" >
+						 <label for="firstname" id="addlabel"></label>
+                         <span class="sp1"></span>
+                         <label for="">Address</label>      
+					 </div>
+					 <div class="textfield" >  
+						<input type="city" name="city" id="city" >
+						<label for="firstname" id="citylabel"></label>
+                        <span class="sp1"></span> 
+                        <label for="">City</label>
+					</div>
+					   
+					<div id="zip">
+						<label>
+							<h4>State</h4>
+							<select>
+								<option>Choose State..</option>
+								<option>Cairo</option>
+								<option>Giza</option>
+								<option>Alexandria</option>
+								<option>Sinai</option>
+							</select>
+                            <div class="textfield" >  
+                                <input type="zipcode" name="zipcode" id="zipcode" >
+                                <label for="firstname" id="ziplabel"></label>
+                                <span class="sp1"></span>
+                                 <label for="">Zip Code</label>
+                            </div>
+						</label> 
+					</div>
+					
+				</form>
+
+                <div class="right">
+                    <h2>PAYMENT</h2>
+                    <form>
+                       <h4 class="accepted">Accepted Cards</h4>  <br>
+                        <img src="Images/card1.png" width="100">
+                        <img src="Images/card2.png" width="50">
+                        <br><br>
+
+
+                        <div class="textfield" >  
+                            <input type="card" name="card" id="card" >
+                            <label for="firstname" id="cardlabel"></label>
+                            <span class="sp1"></span>
+                            <label for="">Credit Card Number</label>
+                        </div>
+
+                        <div class="textfield" >  
+                            <input type="card" name="card" id="card" >
+                            <label for="firstname" id="cardlabel"></label>
+                            <span class="sp1"></span>
+                            <label for="">Expiry Month</label>
+                        </div>
+                            
+                            <div id="zip">
+                                <label>
+                                    <h4>Exp year</h4>
+                                    <select>
+                                        <option>Choose Year..</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
+                                    </select>
+                                </label>
+
+                                <div class="textfield" >  
+                                    <input type="card" name="card" id="card" >
+                                    <label for="firstname" id="cardlabel"></label>
+                                    <span class="sp1"></span>
+                                    <label for="">CVV</label>
+                                </div>
+                                    
+                            </div>
+                        </form>
+                        <button class="place-order"><a class="place-link" href="./trial.html">Place Order</a></button>
+                    </div>
+                </div>
+	
+	
+
+
+	
+            </section>
+	
+	
+	</body>
+	
+		
+
+
+
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="fcontainer">
+				<div class="row">
+	
+					<div class="f-col">
+						<h3>Contact Us</h3>
+						<ul>
+							<li><a href="#">19012</a></li>
+							<li><a href="#">Clementine@gmail.com</a></li>
+							<p>Operating hours are from 7am – 2am EST,</p>
+							<p>7 days a week, excluding holidays.</p>
+						</ul>
+					</div>
+					<div class="f-col">
+						<h3>About Us</h3>
+						<p>We are a boutique jewellery studio based in</p>
+						<p>Cairo, Egypt. We create pieces to order using a combination </p>
+						<p>of modern technology and traditional jewellery practises,</p>
+						<p>each piece is finished carefully by hand.</p>
+	
+					</div>
+					<div class="f-col">
+						<h3>Follow us</h3>
+						<div class="social-links">
+	
+							<!-- gets the icons mn font awesome online library -->
+							<a href="#">
+								<p class="fab fa-facebook-f"></p>
+							</a>
+							<a href="#">
+								<p class="fab fa-twitter"></p>
+							</a>
+							<a href="#">
+								<p class="fab fa-instagram"></p>
+							</a>
+	
+						</div>
+	
+					</div>
+	
+				</div>
+	
+			</div>
+	
+		</footer>
+
+        <script src="validation.js"></script>
+
+</body>
+</html>
