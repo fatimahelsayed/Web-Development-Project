@@ -473,15 +473,42 @@ width: 130px;
 /* end of image slideshow */
 
 
+
+
+
+
+/* intro start */
+#intro{
+    padding-top: 150px;
+    text-align: center;
+    padding-bottom: 150px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #24262b;
+}
+.intro-title{
+    font-family: 'Zapf';
+    font-weight: 500px;
+    font-size: 40px;
+}
+.intro-p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+
+
+
 /* row1 start */
 .row1-maintitle {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 100px;
     font-family:'Zapf';
     padding-left: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
+
 
 }
 
@@ -507,14 +534,12 @@ width: 130px;
 .row1-title {
     text-decoration: none;
     color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
     text-align: center;
     font-size: 30px;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .row1btn {
@@ -538,6 +563,9 @@ width: 130px;
 }
 
 
+
+
+
 /* products row 1 start */
 
 .product {
@@ -554,7 +582,7 @@ width: 130px;
     padding-left: 20px;
     font-family: 'Zapf';
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 500px;
     letter-spacing: 1px;
 }
 
@@ -623,9 +651,7 @@ width: 130px;
 }
 
 .product-info {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100%;
     height: 100px;
     padding-top: 10px;
@@ -895,9 +921,9 @@ width: 130px;
     text-align: center;
     font-family: 'Zapf';
     font-size: 35px;
-    font-weight: 550;
+    font-weight: 500px;
     letter-spacing: 1px;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 30px;
 }
 
@@ -940,6 +966,8 @@ width: 130px;
 }
 
 
+
+
 /* services start */
 .services{
     border: 1px solid #c9c5c5;
@@ -975,13 +1003,11 @@ width: 130px;
 }
 
 .contact-heading {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: 'Zapf';
     font-size: 2rem;
     text-align: center;
     padding-bottom: 15px;
-    font-weight: 400;
+    font-weight: 500px;
 }
 
 .c-button {
@@ -1010,6 +1036,8 @@ width: 130px;
 
 
 /* end contact us footer css */
+
+
 
 /* Footer Design */
 
