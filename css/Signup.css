@@ -6,11 +6,7 @@
 }
 
 
-* {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
-}
+
 .logo-toggle-container img{
     box-sizing: border-box;
 }
