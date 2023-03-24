@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,6 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
         'Helvetica Neue', sans-serif;
-    background: #fff;
 }
 
 .bodyimage img {
@@ -169,6 +170,7 @@ body {
         margin-top: 50%;
         padding: 50px;
         max-width: 100%;
+        margin-bottom: 20%;
     }
     .containers{
         flex-direction: column;
@@ -182,4 +184,4 @@ body {
         width: 100%;
     }
 }
-/* contact form end  */
+/* contact form end */
