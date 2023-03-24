@@ -5,7 +5,7 @@
 }
 
 #checkout-container h2 {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 13px;
     border-bottom: 1px solid #adadad;
 }
@@ -31,7 +31,7 @@
     font-family: 'Zapf';
     width: 50%;
     position: relative;
-    top: 120%;
+    top: 100%;
     margin-bottom: 6%;
     left: 50%;
     transform: translate(-50%, -50%);
