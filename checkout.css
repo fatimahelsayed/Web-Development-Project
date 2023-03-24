@@ -22,13 +22,13 @@
 	
 
     
-     <!-- Navigation Bar Start -->
-     <section id="navigationbar">
+    <!-- Navigation Bar Start -->
+    <section id="navigationbar">
         <div class="navigation">
             <div class="container">
                 <div class="navbar">
                     <div class="logo-toggle-container">
-                        <a href="trial.html">
+                        <a href="index.html">
                             <img src="images/logoo copy.png">
                         </a>
                         <span class="toggle-box">
@@ -39,22 +39,22 @@
                     </div>
 
                     <ul class="menu">
-                        <li><a href="trial.html">HOME</a></li>
+                        <li><a href="index.html">HOME</a></li>
                         <li><a href="./newin.html">NEW IN</a></li>
                         <li><a href="#">DIAMOND +</a>
                             <ul>
-                                <li><a href="./products.html">RINGS</a></li>
-                                <li><a href="./dearrings.html">EARRINGS</a></li>
-                                <li><a href="./dNecklaces.html">NECKLACES</a></li>
-                                <li><a href="./dbracelets.html">BRACELETS</a></li>
+                                <li><a href="drings.html">RINGS</a></li>
+                                <li><a href="dearrings.html">EARRINGS</a></li>
+                                <li><a href="dnecklaces.html">NECKLACES</a></li>
+                                <li><a href="dbracelets.html">BRACELETS</a></li>
                             </ul>
                         </li>
                         <li><a href="#">GOLD +</a>
                             <ul>
-                                <li><a href="./grings.html">RINGS</a></li>
-                                <li><a href="./dearrings.html">EARRINGS</a></li>
-                                <li><a href="./gnecklaces.html">NECKLACES</a></li>
-                                <li><a href="./gbracelets.html">BRACELETS</a></li>
+                                <li><a href="grings.html">RINGS</a></li>
+                                <li><a href="gearrings.html">EARRINGS</a></li>
+                                <li><a href="gnecklaces.html">NECKLACES</a></li>
+                                <li><a href="gbracelets.html">BRACELETS</a></li>
                             </ul>
                         </li>
                         <li><a href="./contactus.html">CONTACT US</a></li>
@@ -94,7 +94,7 @@
     </div>
     </div>
     <div class="total">Total: 26200 LE</div>
-    <button class="checkout"><a href="./checkout.html" style="color: azure; text-decoration: none;">Checkout</a></button>
+    <button class="checkout" href="#checkout.html">Checkout</button>
 </div>
 
 <!--Cart End-->
@@ -115,6 +115,7 @@
         });
     </script>
     <!-- Navigation Bar End -->
+
 
 	        <section id="checkout-container">
 				<h2>Billing Address </h2>
