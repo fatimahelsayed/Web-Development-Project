@@ -1,23 +1,26 @@
 @font-face {
     font-family: 'Zapf';
-    src: url(./Zapf.ttf);
+    src: url(Fonts/Zapf.ttf);
     font-weight: 100;
     font-style: normal;
 }
 
 
 * {
+    box-sizing: content-box;
     margin: 0;
     padding: 0;
+}
+.logo-toggle-container img{
     box-sizing: border-box;
 }
-
 
 body {
     width: 100%;
     height: 100vh;
-    font-family: 'Zapf';
+    font-family:'Zapf';
 }
+
 
 .signIn {
     width: 30%;
@@ -70,7 +73,7 @@ body {
     margin: 30px 0;
 }
 
-.textfield input {
+.textfield input{
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -78,12 +81,11 @@ body {
     font-size: 16px;
     border: none;
     outline: none;
-}
-
-.textfield label {
+    }
+.textfield label{
 
     position: absolute;
-
+    
     top: 50%;
     left: 5px;
     pointer-events: none;
@@ -91,8 +93,8 @@ body {
     font-size: 20px;
     transition: .4s;
     font-weight: 590;
-}
-
+    }
+    
 
 .textfield input:focus~label {
     /* top: -5px; */
@@ -108,13 +110,12 @@ body {
     width: 0%;
     height: 2px;
     top: 40px;
-    margin-left: -100%;
-}
 
-a {
+
+}
+a{
     text-decoration: none;
 }
-
 .textfield input:focus~span::before {
     width: 100%;
 }
@@ -127,7 +128,7 @@ a {
 }
 
 #loginlink {
-
+    
     padding-left: 20px;
     padding-bottom: 100px;
 }
@@ -135,43 +136,36 @@ a {
 .loginlink {
     color: rgb(128, 99, 7);
     cursor: pointer;
-
+    
 }
 
-@media screen and (max-width: 900px) {
-    .signIn {
+@media screen and (max-width: 900px)
+{
+    .signIn{
         top: 65%;
         width: 90%;
     }
 }
 
-.textfield.success img.true {
+.textfield.success img.true{
 
     visibility: visible;
 }
-
-.textfield img {
+.textfield img{
 
     visibility: hidden;
 }
-
-.textfield.failed img.false {
+.textfield.failed img.false{
 
     visibility: visible;
 }
-
-#firstnamelabel,
-#lastnamelabel,
-#emaillabel,
-#passlabel,
-#confirmpasslabel,
-#phonelabel {
+#firstnamelabel,#lastnamelabel,#emaillabel,
+#passlabel,#confirmpasslabel,#phonelabel{
     top: 60px;
     font-size: 13px;
     color: rgb(121, 4, 4);
 }
-
-.textfield img {
+.textfield img{
     position: absolute;
     top: 21px;
     left: 100%;
