@@ -18,6 +18,7 @@
     margin: 5%;
 }
 
+
 .add-title {
     color: rgb(4, 4, 4);
     margin: 5%;
@@ -170,6 +171,37 @@ input[type=password] {
     color: #2bb184;
 }
 
+
+
+
+
+/* product edit */
+.pdes{
+    height: 100px;
+}
+
+
+.add-photo-btn{
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    text-align:center;
+    background-color:#a0a3b7;
+    color:#fff;
+    display:block;
+    width:300px;
+    height:40px;
+    font-size:20px;
+    line-height:40px;
+}
+
+.add-photo-btn:hover{
+    cursor: pointer;
+    background-color: #6a6666;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.7s ease;
+}
 
 /* MAIN */
 main {
