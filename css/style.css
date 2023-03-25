@@ -720,17 +720,17 @@ width: 130px;
     position: absolute;
     right: 50;
     z-index: 99;
-    border: 0;
     background: inherit;
-    font-size: 17px;
     background: transparent;
     cursor: pointer;
     color: #000000;
 
-
 }
 
 
+.next_arrow {
+    right: 13px;
+}
 .next_arrow {
     right: 13px;
 
@@ -739,6 +739,8 @@ width: 130px;
     transform: scalex(-1);
 
 }
+
+
 
 
 
