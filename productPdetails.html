@@ -203,9 +203,26 @@
             </div>
             <br>
 
-            <div class="wishlist">
-                <img src="./Images/fav.png" alt="" class="fav">
-            </div>
+            <div class="wishlist" id="wishlist">
+                           <img src="./Images/darkfav.png" alt=""    id="darkfav" onclick="changeimage()" title="remove from wishlist">
+                           <img src="./Images/whiteheart.png" alt="" id="fav"  onclick="changeimage2()" title="add to wishlist">
+                           <script >
+                            let imgs=[document.getElementById('darkfav'),document.getElementById('fav')];
+                            function changeimage()
+                            {
+                               let parent= document.getElementById('wishlist');
+                              parent.className='wishlist darkfav';
+                                 
+                            } 
+                            function changeimage2()
+                            {
+                                
+                                let parent= document.getElementById('wishlist');
+                                 parent.className='wishlist fav';
+                                 
+                            } 
+                          </script>
+                      </div>
             <br>
             <div class="btnsdiv">
 
@@ -365,3 +382,4 @@
 
 
 </html>
+
