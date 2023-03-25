@@ -727,13 +727,18 @@ width: 130px;
     cursor: pointer;
     color: #000000;
 
+
 }
 
 
 .next_arrow {
     right: 13px;
-}
 
+}
+.prev_arrow{
+    transform: scalex(-1);
+
+}
 
 
 
