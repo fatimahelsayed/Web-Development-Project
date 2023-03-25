@@ -48,6 +48,20 @@ else{
   l.innerHTML='';
 }
 
+if(emailvalue=='')
+{
+  const l=document.getElementById('emaillabel');
+  const formc=email.parentElement;
+  formc.className='textfield failed';
+  l.innerHTML='Please enter your mail';
+}
+else{
+  const formc=email.parentElement;
+  const l=document.getElementById('emaillabel');
+  formc.className='textfield success';
+  l.innerHTML='';
+}
+
  if(passvalue=='' )
 {
   const l=document.getElementById('passlabel');
