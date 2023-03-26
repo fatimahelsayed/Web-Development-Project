@@ -7,14 +7,13 @@ Web Development Project
 which sells diamond and gold, catered towards women around the age of 18-45</p>
 
 <h3 align="left">Our Goals:</h3>
-<p> We wanted to deliver a nicely done website that satisifies all the requirements for our team project while ensuring that we're expanding our knowledge on web development. 
-**HTML, CSS, JS** are used for our front-end design.
-Our website ensures that the products are displayed in a sophisticated matter, while also maintaining eye-catching features.
-This project will hopefully act as a guideline to any of us(the contributors) if we needed to develop a website in the future</p>
+<p> We wanted to deliver a nicely done website that satisifies all the requirements for our team project while ensuring that we're expanding our knowledge on web development. </p>
+<p>Our website ensures that the products are displayed in a sophisticated matter, while also maintaining eye-catching features.</p>
+<p>This project will hopefully act as a guideline to any of us(the contributors) if we needed to develop a website in the future</p>
 
 <h3 align="left">Setbacks: </h3>
-<p>Putting together all objects while keeping the theme/design of the website refined posed a bit of a challenge to us, since it was a group project, and it is safe to say that everyone has their own fashion when it comes to coding. Fortunately, we managed to have everything work seemlessly together. 
-Using the github domain to view a sample of the website sparked some issues seeing that some files would not load which prevented some parts of the website from looking finnished and flawless. So downloading the zip file and clicking on index.html is the only solution to see the website in its absolute essence.
+<p>Putting together all objects while keeping the theme/design of the website refined posed a bit of a challenge to us, since it was a group project, and it is safe to say that everyone has their own fashion when it comes to coding. Fortunately, we managed to have everything work seemlessly together. </p>
+<p>Using the github domain to view a sample of the website sparked some issues seeing that some files would not load which prevented some parts of the website from looking finnished and flawless. So downloading the zip file and clicking on index.html is the only solution to see the website in its absolute essence.
 </p>
 
 <h3 align="left">The Contributors:</h3>
