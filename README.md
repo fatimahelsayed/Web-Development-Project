@@ -17,10 +17,14 @@ which sells diamond and gold, catered towards women around the age of 18-45</p>
 </p>
 
 <h3 align="left">The Contributors:</h3>
-<p>  This project was delivered to you by <ul><li> Saher Amr, Eslam Ahmed</li>
+<p> This project was delivered to you by
+<ul>
+  <li> Saher Amr</li>
+  <li>Eslam Ahmed</li>
   <li> Fatemah Hatem </li>
   <li>Malak Mohamed Ahmed</li> 
-  <li>Mazen Fouad Zaki </li></ul>
+  <li>Mazen Fouad Zaki </li>
+</ul>
 </p>
 
 
