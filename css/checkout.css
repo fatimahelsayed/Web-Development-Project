@@ -63,3 +63,11 @@ h4{
 .sameadr{
     margin-bottom: 30px;
 }
+#firstnamelabel,#addlabel,#emaillabel,
+#citylabel,#ziplabel,#cardlabel,#cardexlabel,
+#cardcvvlabel{
+    top: 60px;
+    font-size: 13px;
+    color: rgb(90, 64, 64);
+    font-style: italic;
+}
