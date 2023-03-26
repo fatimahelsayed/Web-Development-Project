@@ -9,7 +9,7 @@ which sells diamond and gold, catered towards women around the age of 18-45</p>
 <h3 align="left">Our Goals:</h3>
 <p> We wanted to deliver a nicely done website that satisifies all the requirements for our team project while ensuring that our knowledge on web development is expanding. </p>
 <p>Our website ensures that the products are displayed in a sophisticated matter, while also maintaining eye-catching features.</p>
-<p>This project will hopefully act as a guideline to any of us(the contributors) if we needed to develop a website in the future</p>
+<p>This project will hopefully act as a guideline to any of us( the contributors ) if we needed to develop a website in the future</p>
 
 <h3 align="left">Setbacks: </h3>
 <p>Putting together all objects while keeping the theme/design of the website refined posed a bit of a challenge to us, since it was a group project, and it is safe to say that everyone has their own coding style. Fortunately, we managed to have everything work seemlessly together with great communication and working together as a team</p>
@@ -17,7 +17,10 @@ which sells diamond and gold, catered towards women around the age of 18-45</p>
 </p>
 
 <h3 align="left">The Contributors:</h3>
-<p> This project was delivered to you by Saher Amr, Eslam Ahmed, Fatemah Hatem, Malak Mohamed Ahmed, Mazen Fouad Zaki.
+<p>  This project was delivered to you by <ul><li> Saher Amr, Eslam Ahmed</li>
+  <li> Fatemah Hatem </li>
+  <li>Malak Mohamed Ahmed</li> 
+  <li>Mazen Fouad Zaki </li></ul>
 </p>
 
 
