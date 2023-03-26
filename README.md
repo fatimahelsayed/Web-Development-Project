@@ -12,8 +12,8 @@ which sells diamond and gold, catered towards women around the age of 18-45</p>
 <p>This project will hopefully act as a guideline to any of us(the contributors) if we needed to develop a website in the future</p>
 
 <h3 align="left">Setbacks: </h3>
-<p>Putting together all objects while keeping the theme/design of the website refined posed a bit of a challenge to us, since it was a group project, and it is safe to say that everyone has their own fashion when it comes to coding. Fortunately, we managed to have everything work seemlessly together. </p>
-<p>Using the github domain to view a sample of the website sparked some issues seeing that some files would not load which prevented some parts of the website from looking finnished and flawless. So downloading the zip file and clicking on index.html is the only solution to see the website in its absolute essence.
+<p>Putting together all objects while keeping the theme/design of the website refined posed a bit of a challenge to us, since it was a group project, and it is safe to say that everyone has their own coding style. Fortunately, we managed to have everything work seemlessly together with great communication and working together as a team</p>
+<p>Using the github domain to view a sample of the website sparked some issues seeing that some files would not load which prevented some parts of the website from looking finnished and flawless. So downloading the zip file and clicking on index.html is the only solution to see the website in its absolute essence for now.
 </p>
 
 <h3 align="left">The Contributors:</h3>
