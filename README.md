@@ -7,7 +7,7 @@ Web Development Project
 which sells diamond and gold, catered towards women around the age of 18-45</p>
 
 <h3 align="left">Our Goals:</h3>
-<p> We wanted to deliver a nicely done website that satisifies all the requirements for our team project while ensuring that we're expanding our knowledge on web development. </p>
+<p> We wanted to deliver a nicely done website that satisifies all the requirements for our team project while ensuring that our knowledge on web development is expanding. </p>
 <p>Our website ensures that the products are displayed in a sophisticated matter, while also maintaining eye-catching features.</p>
 <p>This project will hopefully act as a guideline to any of us(the contributors) if we needed to develop a website in the future</p>
 
