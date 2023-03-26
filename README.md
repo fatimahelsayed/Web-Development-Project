@@ -3,8 +3,8 @@ Web Development Project
 
 <h1 align="center">Welcome to our group project</h1>
 <h3 align="left">Project Description:</h3>
-<p>We developed a website for a luxury jewelry brand under the name of [clementine] (https://fatimahelsayed.github.io/Web-Development-Project/index.html#) 
-which sells diamond and gold, catered towards women around the age of 18-45</p>
+<p>We developed a website for a luxury jewelry brand under the name of Clementine (https://fatimahelsayed.github.io/Web-Development-Project/index.html#) 
+which sells specifically diamond and gold, catered towards women around the age of 18-45</p>
 
 <h3 align="left">Our Goals:</h3>
 <p> We wanted to deliver a nicely done website that satisifies all the requirements for our team project while ensuring that our knowledge on web development is expanding. </p>
