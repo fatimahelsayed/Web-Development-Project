@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <script src = "trial.js"></script>
     <title>Clementine</title>
@@ -59,7 +60,9 @@
                         
 <li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
                        
-<div class="cart-window hide">
+<div class="cart-window hide" id="sidebar">
+    <button id ="closesidebarbtn" onclick="closesidebar()"><span class="material-icons">close</span></button>
+
     <h2 class="ShopBag">Shopping Bag</h2>
     <div class="cart-wrapper">
     <div class="cart-item">
@@ -84,7 +87,7 @@
                 <span class="num1">1</span>
                 <span class="add1">+</span>
             </div>                                 
-             <span class="price"> Price: 11000 LE</span>
+             <span class="price" id="pie"> Price: 11000 LE</span>
          </div>
     </div>
     </div>
@@ -182,10 +185,10 @@
 
 
      <!--row 1 star-->
-     <section class = "row1-maintitle">
+     <section class = "row1-maintitle reveal">
         <h1>Crystals In Mesmerizing Constellations       </h1>
      </section>
-     <section class="row1-container">
+     <section class="row1-container reveal">
         <a href="./gnecklaces.html" class="row1-title">
             <img src="./Images/y2.png" alt="necklaces">
             <class="row1-neck">Necklaces</h3>
@@ -207,7 +210,7 @@
 
 
     <!-- homepage products start -->
-    <section class="homepage-products">
+    <section class="homepage-products reveal">
        
         <h1 class="homepage-p-title">New Collection</h1>
         <img src="Images/arrow2.png" width="10px" class="prev_arrow"  onclick="newcollectionslider()"></button>
@@ -309,7 +312,7 @@
 
         </div>
     </section>
-    <div class="videobreak"> 
+    <div class="videobreak reveal"> 
         <div class="vidmain-title">
             <h1>IGNITE <div class="br1">YOUR</div>DREAMS  </h1>
         </div>
@@ -324,7 +327,7 @@
 
     <!-- further ads start -->
 
-    <div class="ad1-container">
+    <div class="ad1-container reveal">
         <div class="ad1-img">
           <img src="./Images/ad1.png">
         </div>
@@ -337,7 +340,7 @@
           </button>
         </div>
       </div>
-      <div class="ad2-container">
+      <div class="ad2-container reveal">
         <div class="ad2-text">
             <h1>Kaleidoscopic Hues</h1>
             <p>Step inside a vibrant wonderland, where confidence is colorful and coordinating crystals make
@@ -361,11 +364,11 @@
 
     </section> */ -->
 
-    <h1 class="categories-title">SHOP BY CATEGORY</h1>
+    <h1 class="categories-title reveal">SHOP BY CATEGORY</h1>
     <!-- collection ad end  -->
 
     <!-- categories start -->
-    <section class="categories-container">
+    <section class="categories-container reveal">
         <a href="./dbracelets.html" class="category">
             <img src="./Images/diacat.jpg" alt="">
             <p class="category-title">DIAMOND <br> JEWELRY</p>
@@ -380,7 +383,7 @@
     
 
     <!-- services start -->
-    <section class="services">
+    <section class="services reveal">
         <div class="serwrap">
             <div class="listing-01">
                 <h2>Quality for our jewelry creations</h2>
@@ -402,7 +405,7 @@
     <section class="contact-footer" id="contact-footer">
 
         <h1 class="contact-heading"> Have any questions?</h1>
-        <div class="c-button">
+        <div class="c-button ">
             <button class="sub-contact-btn"> <a href="./contactus.html" style="text-decoration: none; color:white">Contact Us Now!</a></button>
 
         </div>
@@ -485,22 +488,28 @@
 
  /* increment and decrement start*/
       const plus = document.querySelector(".add"),  
-            num = document.querySelector(".num"),
-            minus = document.querySelector(".minus");
+      num = document.querySelector(".num"),
+      minus = document.querySelector(".minus");
 
       const plus1 = document.querySelector(".add1"),
       minus1 = document.querySelector(".minus1"),
       num1 = document.querySelector(".num1");
-       
+      var priceupdate = document.querySelector(".price");
+      var priceupdate2 = document.querySelector("#pie");
+
       let b=1;
       let a =1;
       plus.addEventListener("click", ()=>{
         a++;
         num.innerText =a; 
+        priceupdate.innerText="Price: " + a*15200 + " LE";
       })
       plus1.addEventListener("click", ()=>{
         b++;
         num1.innerText =b; 
+        priceupdate2.innerText="Price: " + b*11000 + " LE";
+
+
       })
    
       minus.addEventListener("click", ()=>{
@@ -509,6 +518,9 @@
         a--; 
        } 
         num.innerText =a; 
+        var p= 15200+Math.abs(15200-a*15200);
+        priceupdate.innerText= "Price: " + p + " LE";
+
       })
       minus1.addEventListener("click", ()=>{
        if(b>1)
@@ -516,6 +528,10 @@
         b--;
        } 
         num1.innerText =b; 
+        var p2= 11000+Math.abs(11000-a*11000);
+        priceupdate2.innerText= "Price: " + p2 + " LE";
+
+
       })
 
     /* increment and decrement end */
