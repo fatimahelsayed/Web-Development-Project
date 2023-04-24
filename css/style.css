@@ -68,7 +68,7 @@ body {
 }
 
 .navigation .navbar .logo-toggle-container a img {
-    width: 290px;
+    width: 275px;
     padding-left: 70px;
     padding-top: 8px;
 }
@@ -91,7 +91,7 @@ body {
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
         'Helvetica Neue', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1.3px;
     color: #000000;
 }
@@ -309,9 +309,22 @@ width: 130px;
     display: block;
     padding-bottom: 10px;
     padding-right: 40px;
+    
+
+}
+#sidebar{
+  height: 100vh;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.568);
+  z-index: 35;
 }
 
 .cart-item .price{
+    display: block;
+    text-align: right;
+    margin-top: 30px;
+    font-size: medium;
+}
+#pie{
     display: block;
     text-align: right;
     margin-top: 30px;
@@ -1166,4 +1179,15 @@ width: 130px;
         width: 100%;
     }
 
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
 }
