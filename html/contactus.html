@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contactus.css">
+    <!-- to access font awesome cdn icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <script src="js/trial.js"></script>
+    <title>Clementine</title>
+</head>
+
+<body>
+      <!-- Navigation Bar Start -->
+      <section id="navigationbar">
+        <div class="navigation">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo-toggle-container">
+                        <a href="index.html">
+                            <img src="./Images/logoo copy.png">
+                        </a>
+                        <span class="toggle-box">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+
+                    <ul class="menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="./newin.html">NEW IN</a></li>
+                        <li><a href="#">DIAMOND +</a>
+                            <ul>
+                                <li><a href="./products.html">RINGS</a></li>
+                                <li><a href="./dearrings.html">EARRINGS</a></li>
+                                <li><a href="./dNecklaces.html">NECKLACES</a></li>
+                                <li><a href="./dbracelets.html">BRACELETS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">GOLD +</a>
+                            <ul>
+                                <li><a href="./grings.html">RINGS</a></li>
+                                <li><a href="./dearrings.html">EARRINGS</a></li>
+                                <li><a href="./gnecklaces.html">NECKLACES</a></li>
+                                <li><a href="./gbracelets.html">BRACELETS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./contactus.html">CONTACT US</a></li>
+    
+                        <li><a href="#"><i class="ri-search-line"></i></a></li>
+<!--Cart Start-->
+                        
+<li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
+                       
+<div class="cart-window hide">
+    <h2 class="ShopBag">Shopping Bag</h2>
+    <div class="cart-wrapper">
+    <div class="cart-item">
+        <img src="Images/whiteRook.jpg" alt="">
+         <div class="details">
+            <span class="name"> Clementine Silver White Rook</span>
+            <div class="btn-wrapper">
+                <span class="minus">-</span>
+                <span class="num">1</span>
+                <span class="add">+</span>
+            </div> 
+            <span class="price"> Price: 15200 LE</span>
+         </div>
+    </div>
+    <!--Item 2-->
+    <div class="cart-item">
+        <img src="Images/r5.png" alt="">
+         <div class="details">
+            <span class="name">Clementine Silver Snowflake</span>
+            <div class="btn-wrapper">
+                <span class="minus1">-</span>
+                <span class="num1">1</span>
+                <span class="add1">+</span>
+            </div>                                 
+             <span class="price"> Price: 11000 LE</span>
+         </div>
+    </div>
+    </div>
+    <div class="total">Total: 26200 LE</div>
+    <button class="checkout"><a href="./checkout.html" style="color: azure; text-decoration: none;">Checkout</a></button>
+</div>
+
+<!--Cart End-->
+
+
+   <li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".navigation .navbar .logo-toggle-container .toggle-box").click(function () {
+                $(".navigation .menu").stop().slideToggle();
+            });
+        });
+    </script>
+    <!-- Navigation Bar End -->
+    <section>
+        <div class="bodyimage">
+            <img src="Images/contact.jpeg" alt="">
+        </div>
+    </section>
+    <section class="contact">
+        <div class="content">
+
+            <h2>Contact us</h2>
+            <p>If you have a question or require further information,
+                then please feel free to contact us using the form below. We would be happy to help.
+            </p>
+            <div class="containers">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="ri-map-pin-line"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>S4, Area (A) city center, 5th District, Road 90,
+                                <br>New Cairo Store No.22 Building, Cairo Governorate<br>11211
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="ri-mail-open-line"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>
+                                Clementine@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="ri-phone-line"></i></div>
+                        <div class="text">
+                            <h3>Phone Number</h3>
+                            <p>
+                                19012
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <h2>Send us a message</h2>
+                    <form action="">
+
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Message</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="SEND">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="row">
+
+                <div class="f-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">19012</a></li>
+                        <li><a href="#">Clementine@gmail.com</a></li>
+                        <p>Operating hours are from 7am – 2am EST,</p>
+                        <p>7 days a week, excluding holidays.</p>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h3>About Us</h3>
+                    <p>We are a boutique jewellery studio based in</p>
+                    <p>Cairo, Egypt. We create pieces to order using a combination </p>
+                    <p>of modern technology and traditional jewellery practises,</p>
+                    <p>each piece is finished carefully by hand.</p>
+
+                </div>
+                <div class="f-col">
+                    <h3>Follow us</h3>
+                    <div class="social-links">
+
+                        <!-- gets the icons mn font awesome online library -->
+                        <a href="#">
+                            <p class="fab fa-facebook-f"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-twitter"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-instagram"></p>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
