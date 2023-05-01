@@ -1,218 +1,186 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" href="/css/login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-
-</head>
-
-<body>
-    <style>
-        .su-link{
-            color:white;
-            text-decoration: none;
-        }
-
-    </style>
-      <!-- Navigation Bar Start -->
-  <section id="navigationbar">
-    <div class="navigation">
-        <div class="nv-container">
-            <div class="navbar">
-                <div class="logo-toggle-container">
-                    <a href="/index.html">
-                        <img src="/Images/logoo copy.png">
-                    </a>
-                    <span class="toggle-box">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </div>
-
-                <ul class="menu">
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="./newin.html">NEW IN</a></li>
-                    <li><a href="#">DIAMOND +</a>
-                        <ul>
-                            <li><a href="./products.html">RINGS</a></li>
-                            <li><a href="./dearrings.html">EARRINGS</a></li>
-                            <li><a href="./dNecklaces.html">NECKLACES</a></li>
-                            <li><a href="./dbracelets.html">BRACELETS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">GOLD +</a>
-                        <ul>
-                            <li><a href="./grings.html">RINGS</a></li>
-                            <li><a href="./dearrings.html">EARRINGS</a></li>
-                            <li><a href="./gnecklaces.html">NECKLACES</a></li>
-                            <li><a href="./gbracelets.html">BRACELETS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./contactus.html">CONTACT US</a></li>
-
-                    <li><a href="#"><i class="ri-search-line"></i></a></li>
-<!--Cart Start-->
-                    
-<li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
-                   
-<div class="cart-window hide">
-<h2 class="ShopBag">Shopping Bag</h2>
-<div class="cart-wrapper">
-<div class="cart-item">
-    <img src="/Images/whiteRook.jpg" alt="">
-     <div class="details">
-        <span class="name"> Clementine Silver White Rook</span>
-        <div class="btn-wrapper">
-            <span class="minus">-</span>
-            <span class="num">1</span>
-            <span class="add">+</span>
-        </div> 
-        <span class="price"> Price: 15200 LE</span>
-     </div>
-</div>
-<!--Item 2-->
-<div class="cart-item">
-    <img src="/Images/r5.png" alt="">
-     <div class="details">
-        <span class="name">Clementine Silver Snowflake</span>
-        <div class="btn-wrapper">
-            <span class="minus1">-</span>
-            <span class="num1">1</span>
-            <span class="add1">+</span>
-        </div>                                 
-         <span class="price"> Price: 11000 LE</span>
-     </div>
-</div>
-</div>
-<div class="total">Total: 26200 LE</div>
-<button class="checkout"><a href="./checkout.html" style="color: azure; text-decoration: none;">Checkout</a></button>
-</div>
-
-<!--Cart End-->
 
 
-<li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".navigation .navbar .logo-toggle-container .toggle-box").click(function () {
-            $(".navigation .menu").stop().slideToggle();
-        });
-    });
-</script>
-<!-- Navigation Bar End -->
-    <!-- Sign in form -->
-    <div class="signIn">
-        <div class="left">
-            <form action="" class="signInform" id="signInform">
-                <h2>Login</h2>
-
-                <div class="textfield">
-                    <input type="email" name="email">
-                    <span class="sp1"></span>
-                    <label for="">E-mail</label>
-                </div>
-                <div class="textfield">
-                    <input type="password" name="password" id="pass">
-                    <label for="" id="passlabel"></label>
-                    
-                    <span class="sp1"></span>
-                    <label for="">Password</label>
-                </div>
-
-                <input type="submit" class="lgbutton" value="LOG IN">
-                <br><br>
-            </form>
-            <script>
-                const form=document.getElementById('signInform');
-                const pass=document.getElementById('pass');
-                form.addEventListener('submit',(e)=>{
-                    e.preventDefault();
-                    if(pass.value.trim()=='')
-                    {
-                    let label=document.getElementById('passlabel');
-                    label.innerHTML='Please enter password';
-                    }
-                });
-            </script>
-
-        </div>
-
-        <div class="right">
-            <p class="header1">Don't have an account?</p>
-            <p class="header2">Create one to:</p>
-            <ul class="ulist">
-                <li>Checkout faster</li>
-                <li>Manage your preferences</li>
-                <li>Save your wishlist across devices</li>
-            </ul>
-            <button class="subutton"><a href="./signup.html" class="su-link">SIGN UP </a></button>
-        </div>
-    </div>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* margin-top: 0; */
+    /* overflow: hidden; */
+}
 
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="fcontainer">
-            <div class="row">
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Zapf';
+}
+.left {
+    width: 50%;
+}
 
-                <div class="f-col">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li><a href="#">19012</a></li>
-                        <li><a href="#">Clementine@gmail.com</a></li>
-                        <p>Operating hours are from 7am – 2am EST,</p>
-                        <p>7 days a week, excluding holidays.</p>
-                    </ul>
-                </div>
-                <div class="f-col">
-                    <h3>About Us</h3>
-                    <p>We are a boutique jewellery studio based in</p>
-                    <p>Cairo, Egypt. We create pieces to order using a combination </p>
-                    <p>of modern technology and traditional jewellery practises,</p>
-                    <p>each piece is finished carefully by hand.</p>
+.signIn {
+    margin: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-                </div>
-                <div class="f-col">
-                    <h3>Follow us</h3>
-                    <div class="social-links">
+.signIn h2 {
+    margin: 5%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #adadad;
+}
 
-                        <!-- gets the icons mn font awesome online library -->
-                        <a href="#">
-                            <p class="fab fa-facebook-f"></p>
-                        </a>
-                        <a href="#">
-                            <p class="fab fa-twitter"></p>
-                        </as>
-                        <a href="#">
-                            <p class="fab fa-instagram"></p>
-                        </a>
+.lgbutton {
+    margin: 5%;
+    margin-top: 10%;
+    background-color: #b58422;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 16px;
+    width: 55%;
+}
 
-                    </div>
+.lgbutton:hover {
+    letter-spacing: 5px;
+    background: #e4c688;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
 
-                </div>
 
-            </div>
+.signInform {
 
-        </div>
+    padding: 0 50px;
+    border-right: 1px solid #adadad;
+    width: 100%;
+}
 
-    </footer>
+.textfield {
+    position: relative;
+    border-bottom: 1px solid #adadad;
+    margin: 5%;
 
-</body>
+}
 
-</html>
+.textfield input {
+    width: 20%;
+ 
+    /* padding: 0 5px; */
+    height: 40px;
+    font: 16px;
+    font-size: 16.5px;
+    border: none;
+    outline: none;
+}
+
+.textfield label {
+
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    pointer-events: none;
+    transform: translateY(-125%);
+    font-size: 19px;
+    font-weight: 530;
+    transition: .4s;
+}
+
+.textfield input:focus~label {
+    /* top: -5px; */
+    color: rgb(128, 99, 7);
+
+}
+
+.textfield span::before {
+
+    content: '';
+    position: absolute;
+    background-color: rgb(128, 99, 7);
+    width: 0%;
+    height: 2px;
+    top: 40px;
+    left: -1px ;
+}
+
+.textfield input:focus~span::before {
+    width: 100%;
+}
+
+.right {
+    padding-left: 50px;
+    display: block;
+    width: 50%;
+}
+
+.header1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5%;
+}
+
+.header2 {
+    margin: 5%;
+}
+
+.ulist{
+    font-style: italic;
+    color: #686868;
+    margin: 5%;
+    margin-top: 4.5%;
+    margin-bottom: 4.5%;
+}
+
+.subutton {
+    margin: 5%;
+    margin-top: 8%;
+    background-color: #b58422;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 16px;
+    width: 55%;
+}
+
+.subutton:hover {
+    letter-spacing: 5px;
+    background: #e4c688;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#passlabel{
+font-size: 15px;
+    position: absolute;
+    top: 68px;
+    color: rgb(131, 6, 6);
+}
+
+
+@media screen and (max-width: 700px) {
+    .signIn {
+        width: 100%;
+        display: block;
+    }
+
+    .signInform {
+        border-right: none;
+    }
+
+    .left {
+        margin-top: 5%;
+        border-bottom: 1px solid #adadad;
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 5%;
+        width: 100%;
+    }
+}
