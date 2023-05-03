@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" prod-content="IE=edge" />
+    <meta name="viewport" prod-content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
     <!-- to access font awesome cdn icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <script src="trial.js"></script>
+    <script src="./js/trial.js"></script>
     <title>Clementine</title>
 </head>
 
@@ -28,7 +28,7 @@
                         <a href="index.html">
                             <img src="./Images/logoo copy.png">
                         </a>
-                        <span class="toggle-box">
+                        <span class="toggle-cart-box">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -110,13 +110,201 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $(".navigation .navbar .logo-toggle-container .toggle-box").click(function () {
+            $(".navigation .navbar .logo-toggle-container .toggle-cart-box").click(function () {
                 $(".navigation .menu").stop().slideToggle();
             });
         });
     </script>
     <!-- Navigation Bar End -->
-    
+
+    <!-- shopping cart start -->
+
+    <div class="shopcart-wrapper">
+        <h1 class="cart-header">your shopping bag (3 items)</h1>
+        <div class="prod">
+            <div class="cart-items">
+                <div class="cart-box">
+                    <img src="./Images/e8.jpg" alt="earring 8">
+                    <div class="prod-content">
+                        <h3>Clementine Emerald Earring <button class="remove-btn"><i class="ri-close-line"></i></button></h3>
+                        <h4>EGP 152100</h4>
+                        <div class="btn-wrap">
+                            <span class="minus">-</span>
+                            <span class="num">1</span>
+                            <span class="add">+</span>
+                        </div>
+                        <button class="wishlist" onclcik="">Add to Wishlist</p>
+                    </div>
+                </div>
+                <div class="cart-box">
+                    <img src="./Images/r1.png" alt="earring 8">
+                    <div class="prod-content">
+
+                        <h3>Opera Heart Ring<button class="remove-btn"><i class="ri-close-line"></i></button>
+                            <h4>EGP 152100</h4>
+                            <div class="btn-wrap">
+                                <span class="minus">-</span>
+                                <span class="num">1</span>
+                                <span class="add">+</span>
+                            </div>
+                            <button class="wishlist" onclcik="">Add to Wishlist</p>
+                    </div>
+                </div>
+                <div class="cart-box">
+                    <img src="./Images/n2.png" alt="earring 8">
+                    <div class="prod-content">
+                        <h3>Eternal Diamond Necklace<button class="remove-btn"><i class="ri-close-line"></i></button></h3>
+                        <h4>EGP 152100</h4>
+                        <div class="btn-wrap">
+                            <span class="minus">-</span>
+                            <span class="num">1</span>
+                            <span class="add">+</span>
+                        </div>
+                        <button class="wishlist" onclcik="">Add to Wishlist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-bar">
+                <p><span>Subtotal</span><span> EGP120000</span></p>
+                <p><span>Shipping</span> <span>EGP100</span></p>
+                <hr>
+                <p><span>Total</span> <span>EGP1200100</span></p>
+                <button onclick="location.href='./checkout.html'" class="checkout-btn">CHECKOUT</button>
+
+                <div class="payment-method">
+                    <p></p>
+                    <hr>
+                    Checkout quickly and securely with
+                    <br>
+
+                    <img src="./Images/cash.svg" alt="">
+                    <img src="./Images/visa.svg" alt="">
+                    <img src="./Images/mastercard.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- shopping cart end -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="row">
+
+                <div class="f-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">19012</a></li>
+                        <li><a href="#">Clementine@gmail.com</a></li>
+                        <p>Operating hours are from 7am – 2am EST,</p>
+                        <p>7 days a week, excluding holidays.</p>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h3>About Us</h3>
+                    <p>We are a boutique jewellery studio based in</p>
+                    <p>Cairo, Egypt. We create pieces to order using a combination </p>
+                    <p>of modern technology and traditional jewellery practises,</p>
+                    <p>each piece is finished carefully by hand.</p>
+
+                </div>
+                <div class="f-col">
+                    <h3>Follow us</h3>
+                    <div class="social-links">
+
+                        <!-- gets the icons mn font awesome online library -->
+                        <a href="#">
+                            <p class="fab fa-facebook-f"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-twitter"></p>
+                        </a>
+                        <a href="#">
+                            <p class="fab fa-instagram"></p>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
+
+        /*Drop down cart start*/
+        (function () {
+
+            $("#cart").on("click", function () {
+                $(".cart-window").fadeToggle("fast");
+            });
+
+        })();
+        /*Drop down cart end*/
+
+
+        /* increment and decrement start*/
+        const plus = document.querySelector(".add"),
+            num = document.querySelector(".num"),
+            minus = document.querySelector(".minus");
+
+        const plus1 = document.querySelector(".add1"),
+            minus1 = document.querySelector(".minus1"),
+            num1 = document.querySelector(".num1");
+        var priceupdate = document.querySelector(".price");
+        var priceupdate2 = document.querySelector("#pie");
+
+        let b = 1;
+        let a = 1;
+        plus.addEventListener("click", () => {
+            a++;
+            num.innerText = a;
+            priceupdate.innerText = "Price: " + a * 15200 + " LE";
+        })
+        plus1.addEventListener("click", () => {
+            b++;
+            num1.innerText = b;
+            priceupdate2.innerText = "Price: " + b * 11000 + " LE";
+
+
+        })
+
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+            }
+            num.innerText = a;
+            var p = 15200 + Math.abs(15200 - a * 15200);
+            priceupdate.innerText = "Price: " + p + " LE";
+
+        })
+        minus1.addEventListener("click", () => {
+            if (b > 1) {
+                b--;
+            }
+            num1.innerText = b;
+            var p2 = 11000 + Math.abs(11000 - a * 11000);
+            priceupdate2.innerText = "Price: " + p2 + " LE";
+
+
+        })
+
+        /* increment and decrement end */
+
+    </script>
+
 </body>
+
 
 </html>
