@@ -4,7 +4,6 @@
     font-weight: 100;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Zapf';
     src: url(./Zapf.ttf);
@@ -14,7 +13,7 @@
 
 :root {
     --bgcolor: #ffffff;
-
+    
 }
 
 * {
@@ -37,7 +36,7 @@ body {
     width: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
     position: sticky;
-    z-index: 999999;
+    z-index: 999999; 
 
 }
 
@@ -45,15 +44,13 @@ body {
     background: #ffffff;
     max-width: 90%;
     margin: auto;
-    z-index: 999999;
+    z-index: 999999; 
 
-
+    
 }
 
 .navigation .navbar {
     position: relative;
-    z-index: 999999;
-
 }
 
 .navigation .navbar .logo-toggle-container {
@@ -100,38 +97,37 @@ body {
 .navigation .menu li:nth-child(6),
 .navigation .menu li:nth-child(7),
 .navigation .menu li:nth-child(8) {
-    padding-right: 20px;
+        padding-right: 20px;
 }
 
-.navigation .menu li ul {
+.navigation .menu li ul{
     position: absolute;
     display: block;
     width: 150px;
     background: #fff;
 }
-
-.navigation .menu li ul li {
+.navigation .menu li ul li{
     display: none;
     text-align: left;
     width: 100%;
     padding: 10 0px;
     border-top: 1px solid #bbbbbb;
-
+    
+}
+.navigation .menu li ul li:nth-child(3)
+{
+    border-bottom: 1px solid #bbbbbb;   
 }
 
-.navigation .menu li ul li:nth-child(3) {
-    border-bottom: 1px solid #bbbbbb;
-}
-
-.navigation .menu li:focus-within>ul li,
-.navigation .menu li:hover>ul li {
+.navigation .menu li:focus-within > ul li
+,.navigation .menu li:hover > ul li{
     display: initial;
 }
 
 
 .navigation .menu li:nth-child(1),
 .navigation .menu li:nth-child(2),
-.navigation .menu li:nth-child(3),
+.navigation .menu li:nth-child(3), 
 .navigation .menu li:nth-child(4) {
     float: left;
 }
@@ -142,7 +138,6 @@ body {
     color: #d79e2e;
     transition: 0.5s ease;
 }
-
 .navigation .menu li a:active {
     color: #d79e2e;
 }
@@ -205,9 +200,9 @@ body {
         border-bottom: 1px solid #bbbbbb;
         left: 0;
     }
-
-    .navigation .menu li ul {
-        width: 100%;
+    .navigation .menu li ul
+    {
+        width: 100%; 
         left: 0;
     }
 }
@@ -221,25 +216,22 @@ body {
 
 
 
-.ShopBag {
+.ShopBag{
     font-size: x-large;
     padding: 15px 10px;
     text-align: left;
     font-family: 'Zapf';
 
 }
-
-.cart-wrapper {
+.cart-wrapper{
     overflow-y: auto;
     max-height: 350px;
 }
-
-.total {
+.total{
     text-align: right;
     padding: 5%;
 }
-
-.checkout {
+.checkout{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 50%;
     text-align: center;
@@ -251,121 +243,109 @@ body {
     background-color: black;
     transform: translateX(-50%);
     transition: 0.5s ease;
-
+    text-decoration: none;
+    border:none;
 }
-
-.checkout:hover {
-    background-color: #ffffff;
-    color: black;
+.checkout:hover{
+    background-color: #d79e2e;
+    color: white;
     border-width: 1px;
 }
-
-.btn-wrapper {
-    height: 40px;
-    width: 80px;
+.btn-wrapper{
+    height:40px;
+    width: 80px ;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 
 }
-
-.btn-wrapper span {
+.btn-wrapper span{
     width: 100%;
     text-align: center;
     font-size: 30px;
     font-weight: 600;
     cursor: pointer;
-}
-
-.btn-wrapper span.num,
-span.num1 {
+} 
+.btn-wrapper span.num, span.num1{
     font-size: 20px;
     border-right: 2px solid rgba(0, 0, 0, 0.2);
     border-left: 2px solid rgba(0, 0, 0, 0.2);
     pointer-events: none;
 }
 
-.cart-item {
+.cart-item{
     display: grid;
     grid-template-columns: 3rf 4fr;
     padding: 3% 2%;
     border-bottom: solid 1px lightgray;
 
 }
-
-.cart-item img {
-    width: 130px;
+.cart-item img{
+width: 130px;
 
 }
-
-.cart-item details {
+.cart-item details{
     padding-left: 20%;
 }
-
-.cart-item .name {
-    display: block;
-    text-align: left;
+ .cart-item .name{
+   display: block;
+    text-align:left;
     font-size: medium;
 }
-
-.cart-window {
+.cart-window{
     border: solid lightgray;
     border-top: none;
     position: fixed;
     top: 10vh;
-    background-color: white;
+    background-color:white;
     width: 400px;
     margin: 2%;
     left: 68.5%;
     display: block;
     padding-bottom: 10px;
     padding-right: 40px;
-
+    
 
 }
-
-#sidebar {
-    height: 100vh;
-    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.568);
-    z-index: 35;
+#sidebar{
+  height: 100vh;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.568);
+  z-index: 35;
 }
 
-.cart-item .price {
+.cart-item .price{
     display: block;
     text-align: right;
     margin-top: 30px;
     font-size: medium;
 }
-
-#pie {
+#pie{
     display: block;
     text-align: right;
     margin-top: 30px;
     font-size: medium;
 }
-
-.hide {
+.hide{
     display: none;
 }
 
 
 @media screen and (max-width:1050px) {
-    .cart-window {
+    .cart-window{
         display: none;
         left: 30%;
         width: 300px;
         padding-bottom: 50px;
 
     }
-
-    .checkout {
-        margin: 0px auto;
-        margin-left: 70px;
-        margin-top: -30px;
-    }
+   .checkout{
+    margin: 0px auto;
+    margin-left: 70px;
+    margin-top: -30px;
+   }
 }
 
 /* Cart Window end */
@@ -483,11 +463,11 @@ span.num1 {
 
 @media screen and (max-width:1020px) {
     .navmanual {
-        margin-top: 27%;
+        margin-top: 25%;
     }
 
     .navauto {
-        margin-top: 27%;
+        margin-top: 25%;
     }
 }
 
@@ -509,7 +489,7 @@ span.num1 {
 
 
 /* intro start */
-#intro {
+#intro{
     padding-top: 220px;
     text-align: center;
     padding-bottom: 220px;
@@ -517,13 +497,11 @@ span.num1 {
     border-width: 1.5px;
     border-color: #24262b;
 }
-
-.intro-title {
+.intro-title{
     font-family: 'Zapf';
     font-weight: 500px;
     font-size: 40px;
 }
-
 .intro-p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
@@ -536,7 +514,7 @@ span.num1 {
 .row1-maintitle {
     text-align: center;
     padding-top: 100px;
-    font-family: 'Zapf';
+    font-family:'Zapf';
     padding-left: 20px;
     font-size: 20px;
     font-weight: 500;
@@ -590,10 +568,10 @@ span.num1 {
 }
 
 @media screen and (max-width:1050px) {
-    .row1-container {
+    .row1-container{
         flex-wrap: wrap;
     }
-
+    
 }
 
 .row1btn:hover {
@@ -744,10 +722,9 @@ span.num1 {
     transition: 0.3s ease;
 }
 
-.product-container::-webkit-scrollbar {
+.product-container::-webkit-scrollbar{
     display: none;
 }
-
 .prev_arrow,
 .next_arrow {
     display: block !important;
@@ -765,7 +742,6 @@ span.num1 {
 .next_arrow {
     right: 13px;
 }
-
 .next_arrow {
     right: 13px;
 
@@ -816,19 +792,18 @@ span.num1 {
     border-right: 1px solid #ffffff;
     padding: 80 25px;
     padding-top: 40px;
-
+    
 
 }
-
-.br1 {
+.br1{
     letter-spacing: 13px;
 }
 
 @media screen and (max-width: 1020px) {
     .vidmain-title {
         border-right: none;
-    }
-
+     }
+    
 }
 
 /* ---- end vid break ---- */
@@ -858,16 +833,16 @@ span.num1 {
 
 .ad1-text {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
-    font-size: 20px;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;   
+     font-size: 20px;
     padding-left: 20px;
 }
 
 .ad1-btn {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     background-color: transparent;
     color: black;
     border-width: 1.5px;
@@ -905,22 +880,22 @@ span.num1 {
 .ad2-container p {
     font-size: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 .ad2-text {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     font-size: 20px;
     padding-left: 20px;
 }
 
 .ad2-btn {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
     background-color: transparent;
     color: black;
     border-width: 1.5px;
@@ -941,20 +916,17 @@ span.num1 {
 }
 
 @media screen and (max-width: 1020px) {
-    .ad1-container {
-        flex-wrap: wrap;
+    .ad1-container{
+       flex-wrap: wrap;
     }
-
-    .ad1-btn {
+    .ad1-btn{
         margin-bottom: 20px;
         margin-left: 25%;
     }
-
-    .ad2-container {
+    .ad2-container{
         flex-wrap: wrap-reverse;
     }
-
-    .ad2-btn {
+    .ad2-btn{
         margin-bottom: 20px;
         margin-left: 25%;
     }
@@ -1019,41 +991,37 @@ span.num1 {
 
 
 /* services start */
-.services {
+.services{
     border: 1px solid #c9c5c5;
 }
-
 .serwrap {
-
+    
     display: flex;
     margin-top: -5%;
     text-align: center;
     align-items: center;
     justify-content: space-between;
 }
-
-.serwrap div {
-    margin: 8%;
+.serwrap div{
+    margin: 8% ;
 }
-
-.serwrap h2 {
+.serwrap  h2 {
     font-family: 'Zapf';
     font-size: 25px;
     letter-spacing: 1px;
     font-weight: 100px;
 }
 
-.serwrap p {
+.serwrap  p {
     margin-top: 5%;
 }
 
 
-@media screen and (max-width:800px) {
-    .serwrap {
+@media screen and (max-width:1050px) {
+    .serwrap{
         flex-wrap: wrap;
-        margin: 20%;
     }
-
+    
 }
 
 /* services end */
@@ -1089,7 +1057,7 @@ span.num1 {
     width: 250px;
     font-size: 23px;
     transition: 0.9s ease;
-    color: #000000;
+    color: white;
     background: #d79e2e;
     cursor: pointer;
 
@@ -1122,8 +1090,8 @@ span.num1 {
 .f-col ul {
     list-style: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 .f-col {
@@ -1132,8 +1100,8 @@ span.num1 {
     padding: 10px 15px;
     padding-bottom: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-        'Helvetica Neue', sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 .f-col h3 {
@@ -1189,8 +1157,7 @@ span.num1 {
     color: #24262b;
     background-color: #ffffff;
 }
-
-.f-col .social-links a p {
+.f-col .social-links a p{
     padding: 10px;
 }
 
@@ -1217,7 +1184,6 @@ span.num1 {
     opacity: 0;
     transition: all 2s ease;
 }
-
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
