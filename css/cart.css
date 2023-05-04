@@ -166,8 +166,9 @@ span.minus {
 .checkout-btn:hover {
 
     background: #d79e2e;
-    transition: 0.5s ease;
+    transition: 0.7s ease;
     cursor: pointer;
+    letter-spacing: 7px;
 }
 
 .right-bar p.checkout-detail {
