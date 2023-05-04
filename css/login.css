@@ -14,14 +14,13 @@ body {
     height: 100vh;
     font-family: 'Zapf';
 }
-.left {
-    width: 50%;
-}
+
 
 .signIn {
     margin: 5%;
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -31,46 +30,48 @@ body {
     padding-bottom: 10px;
     border-bottom: 1px solid #adadad;
 }
+.left {
+    flex: 50%;
+}
 
 .lgbutton {
     margin: 5%;
-    margin-top: 10%;
-    background-color: #b58422;
+    background-color: black;
     text-align: center;
     border: none;
     color: white;
-    padding: 10px 25px;
-    display: inline-block;
-    font-size: 16px;
-    width: 55%;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 4px;
+    height: 40px;
+    width: 54%;
 }
 
 .lgbutton:hover {
-    letter-spacing: 5px;
-    background: #e4c688;
-    transition: 0.5s ease;
+    background: #b58422;
+    transition: 0.7s ease;
     cursor: pointer;
+    letter-spacing: 6px;
 }
 
 
 .signInform {
 
-    padding: 0 50px;
+    padding-right: 7%;
+    padding-left: 30%;
     border-right: 1px solid #adadad;
-    width: 100%;
 }
 
 .textfield {
     position: relative;
     border-bottom: 1px solid #adadad;
     margin: 5%;
-
 }
 
 .textfield input {
-    width: 20%;
- 
-    /* padding: 0 5px; */
+    width: 100%;
+    padding-top: 20px;
     height: 40px;
     font: 16px;
     font-size: 16.5px;
@@ -81,8 +82,9 @@ body {
 .textfield label {
 
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 5px;
+    padding-top: 20px;
     pointer-events: none;
     transform: translateY(-125%);
     font-size: 19px;
@@ -112,9 +114,10 @@ body {
 }
 
 .right {
-    padding-left: 50px;
+    padding-left: 1%;
     display: block;
-    width: 50%;
+    flex: 50%;
+    width: 100%;
 }
 
 .header1 {
@@ -124,35 +127,41 @@ body {
 }
 
 .header2 {
-    margin: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .ulist{
     font-style: italic;
     color: #686868;
-    margin: 5%;
-    margin-top: 4.5%;
-    margin-bottom: 4.5%;
+    margin-bottom: 7%;
+    margin-left: 7%;
+    margin-right: 5%;
 }
 
 .subutton {
-    margin: 5%;
-    margin-top: 8%;
-    background-color: #b58422;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: black;
     text-align: center;
     border: none;
     color: white;
-    padding: 10px 25px;
-    display: inline-block;
-    font-size: 16px;
-    width: 55%;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 5px;
+    height: 40px;
+    width: 42%;
 }
 
 .subutton:hover {
-    letter-spacing: 5px;
-    background: #e4c688;
-    transition: 0.5s ease;
+    background: #b58422;
+    transition: 0.7s ease;
     cursor: pointer;
+    letter-spacing: 6px;
 }
 
 #passlabel{
@@ -163,24 +172,27 @@ font-size: 15px;
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .signIn {
-        width: 100%;
+        width: 90%;
         display: block;
     }
-
     .signInform {
         border-right: none;
+        padding: 0;
+        width: 80%;
     }
 
     .left {
         margin-top: 5%;
         border-bottom: 1px solid #adadad;
         width: 100%;
+        
     }
 
     .right {
         margin-top: 5%;
         width: 100%;
+        padding: 0;
     }
 }
