@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <script src = "./js/trial.js"></script>
+    <script src="./js/trial.js"></script>
     <title>Clementine</title>
 </head>
 
@@ -54,51 +54,67 @@
                             </ul>
                         </li>
                         <li><a href="./contactus.html">CONTACT US</a></li>
-    
+
                         <li><a href="#"><i class="ri-search-line"></i></a></li>
-<!--Cart Start-->
-                        
-<li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
-                       
-<div class="cart-window hide" id="sidebar">
-    <button id ="closesidebarbtn" onclick="closesidebar()"><span class="material-icons">close</span></button>
+                        <li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
 
-    <h2 class="ShopBag">Shopping Bag</h2>
-    <div class="cart-wrapper">
-    <div class="cart-item">
-        <img src="./Images/whiteRook.jpg" alt="">
-         <div class="details">
-            <span class="name"> Clementine Silver White Rook</span>
-            <div class="btn-wrapper">
-                <span class="minus">-</span>
-                <span class="num">1</span>
-                <span class="add">+</span>
-            </div> 
-            <span class="price"> Price: 15200 LE</span>
-         </div>
-    </div>
-    <!--Item 2-->
-    <div class="cart-item">
-        <img src="./Images/r5.png" alt="">
-         <div class="details">
-            <span class="name">Clementine Silver Snowflake</span>
-            <div class="btn-wrapper">
-                <span class="minus1">-</span>
-                <span class="num1">1</span>
-                <span class="add1">+</span>
-            </div>                                 
-             <span class="price" id="pie"> Price: 11000 LE</span>
-         </div>
-    </div>
-    </div>
-    <div class="total">Total: 26200 LE</div>
-    <button class="checkout" onclick="location.href='./cart.html'">CHECKOUT</button>
-</div>
+                        <!--Cart Start-->
+                        <li><a href="#" id="cart-icon"><i class="ri-shopping-bag-line"></i></a>
+                            <div class="cart" id="cart">
+                                <div class="cart-window hide" id="sidebar">
+                                    <button id="closesidebarbtn" onclick="closesidebar()"><span
+                                            class="material-icons">close</span></button>
+                                    <div class="cart-wrapper">
+                                        <h2 class="ShopBag">My Shopping Bag</h2>
+                                        <div class="line"></div>
+                                        <div class="cart-item">
+                                            <button class="remove-btn" onclick=""><i class="ri-close-line"></i></button>
+                                            <img src="./Images/whiteRook.jpg" alt="">
+                                            <div class="details">
+                                                <div class="name"> Clementine Silver White Rook</div>
+                                                <div class="btn-wrapper">
+                                                    <span class="minus">-</span>
+                                                    <span class="num">1</span>
+                                                    <span class="add">+</span>
+                                                </div>
+                                                <button class="wishlist-btn" onclcik="">Add to Wishlist</p></button>
+                                                <div class="price"> Price: EGP15200</div>
+                                            </div>
+                                        </div>
+                                        <!--Item 2-->
+                                        <div class="cart-item">
+                                            <button class="remove-btn" onclick=""><i class="ri-close-line"></i></button>
+                                            <img src="./Images/r5.png" alt="">
+                                            <div class="details">
+                                                <div class="name">Clementine Silver Snowflake</div>
+                                                <div class="btn-wrapper">
+                                                    <span class="minus1">-</span>
+                                                    <span class="num1">1</span>
+                                                    <span class="add1">+</span>
+                                                </div>
+                                                <button class="wishlist-btn" onclcik="">Add to Wishlist</p></button>
+                                                <div class="price" id="pie"> Price: EGP11000</div>
+                                            </div>
+                                        </div>
 
-<!--Cart End-->
-
-
-   <li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
+                                        <div class="total">
+                                            <div class="shipping">
+                                                <p><span>Subtotal</span> <span>EGP <span id="total-before">
+                                                            262000</span></span></p>
+                                                <p><span>Shipping</span> <span>EGP <span>100</span></span></p>
+                                            </div>
+                                            <p><span>Total</span> <span>EGP <span id="total-after">2620100</span></span>
+                                            </p>
+                                        </div>
+                                        <div class="checkout-btn">
+                                            <button class="checkout"
+                                                onclick="location.href='./cart.html'">CHECKOUT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Cart End-->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -135,7 +151,7 @@
                 <div class="slide">
                     <img src="./Images/header3.png">
                 </div>
-                
+
 
                 <!-- slideshow images end -->
                 <!-- auto nav start -->
@@ -172,8 +188,9 @@
 
 
     <section id="intro">
-        <h1 class = "intro-title">Infinite (Re)Invention</h1>
-        <p class="intro-p">Since 2000, our passion for innovation and design, and mastery of crystal cutting has defined Clementine as the leading jewelry and accessories brand.
+        <h1 class="intro-title">Infinite (Re)Invention</h1>
+        <p class="intro-p">Since 2000, our passion for innovation and design, and mastery of crystal cutting has defined
+            Clementine as the leading jewelry and accessories brand.
         </p>
     </section>
 
@@ -184,24 +201,24 @@
 
 
 
-     <!--row 1 star-->
-     <section class = "row1-maintitle reveal">
-        <h1>Crystals In Mesmerizing Constellations       </h1>
-     </section>
-     <section class="row1-container reveal">
+    <!--row 1 star-->
+    <section class="row1-maintitle reveal">
+        <h1>Crystals In Mesmerizing Constellations </h1>
+    </section>
+    <section class="row1-container reveal">
         <a href="./gnecklaces.html" class="row1-title">
             <img src="./Images/y2.png" alt="necklaces">
             <class="row1-neck">Necklaces</h3>
-            <div>
-              <button href="./gnecklaces.html" class="row1btn">Shop Now</button>
-            </div>
+                <div>
+                    <button href="./gnecklaces.html" class="row1btn">Shop Now</button>
+                </div>
         </a>
         <a href="./dearrings.html" class="row1-title">
             <img src="./Images/y1.png" alt="earrings">
             <class="row1-neck">Earrings</h3>
-            <div>
-              <button href="./dearrings.html" class="row1btn">Shop Now</button>
-            </div>
+                <div>
+                    <button href="./dearrings.html" class="row1btn">Shop Now</button>
+                </div>
         </a>
     </section>
 
@@ -211,9 +228,9 @@
 
     <!-- homepage products start -->
     <section class="homepage-products reveal">
-       
+
         <h1 class="homepage-p-title">New Collection</h1>
-        <img src="Images/arrow2.png" width="10px" class="prev_arrow"  onclick="newcollectionslider()"></button>
+        <img src="Images/arrow2.png" width="10px" class="prev_arrow" onclick="newcollectionslider()"></button>
         <img src="Images/arrow.png" width="10px" class="next_arrow" onclick="newcollectionslider()"></button>
 
 
@@ -312,15 +329,15 @@
 
         </div>
     </section>
-    <div class="videobreak reveal"> 
+    <div class="videobreak reveal">
         <div class="vidmain-title">
-            <h1>IGNITE <div class="br1">YOUR</div>DREAMS  </h1>
+            <h1>IGNITE <div class="br1">YOUR</div>DREAMS </h1>
         </div>
         <video ctontrols autoplay muted loop class="vidmain">
             <source src="./Images/vidmain.mp4" type="video/mp4">
         </video>
     </div>
-   
+
 
     <!-- homepage end -->
 
@@ -329,33 +346,36 @@
 
     <div class="ad1-container reveal">
         <div class="ad1-img">
-          <img src="./Images/ad1.png">
+            <img src="./Images/ad1.png">
         </div>
         <div class="ad1-text">
-          <h1>Pieces of Pure Wonder </h1>
-          <p>Our Millenia family is a contemporary interpretation of our heritage and expertise. The science of crystal cutting meets the magic of light refraction in bold designs that go right to the heart of who we are.
-          </p>
-          <button class="ad1-btn">
-            Discover More
-          </button>
+            <h1>Pieces of Pure Wonder </h1>
+            <p>Our Millenia family is a contemporary interpretation of our heritage and expertise. The science of
+                crystal cutting meets the magic of light refraction in bold designs that go right to the heart of who we
+                are.
+            </p>
+            <button class="ad1-btn">
+                Discover More
+            </button>
         </div>
-      </div>
-      <div class="ad2-container reveal">
+    </div>
+    <div class="ad2-container reveal">
         <div class="ad2-text">
             <h1>Kaleidoscopic Hues</h1>
             <p>Step inside a vibrant wonderland, where confidence is colorful and coordinating crystals make
-                <br> every look pop. Push the boundaries in party pink, shine bright in bold metallics, bring positive vibes in sunshine yellow, deep dive into a spectrum of blues, or channel your inner goddess in emerald green. 
+                <br> every look pop. Push the boundaries in party pink, shine bright in bold metallics, bring positive
+                vibes in sunshine yellow, deep dive into a spectrum of blues, or channel your inner goddess in emerald
+                green.
             </p>
             <button class="ad2-btn">
                 Discover More
-              </button>
-          </div>
-        <div class="ad2-img">
-          <img src="./Images/ad2.png">
-<!--     trying to deploy the image         -->
+            </button>
         </div>
-        
-      </div>
+        <div class="ad2-img">
+            <img src="./Images/ad2.png">
+        </div>
+
+    </div>
 
 
 
@@ -381,7 +401,7 @@
     </section>
     <!-- categories end -->
 
-    
+
 
     <!-- services start -->
     <section class="services reveal">
@@ -407,7 +427,8 @@
 
         <h1 class="contact-heading"> Have any questions?</h1>
         <div class="c-button ">
-            <button class="sub-contact-btn"> <a href="./contactus.html" style="text-decoration: none; color:white">Contact Us Now!</a></button>
+            <button class="sub-contact-btn"> <a href="./contactus.html"
+                    style="text-decoration: none; color:white">Contact Us Now!</a></button>
 
         </div>
     </section>
@@ -463,8 +484,6 @@
 
 
 
-
-    
     <script>
         function myFunction() {
             var x = document.getElementById("mynavbar");
@@ -476,71 +495,85 @@
         }
 
 
-      /*Drop down cart start*/
-(function(){
- 
- $("#cart").on("click", function() {
-   $(".cart-window").fadeToggle( "fast");
- });
- 
-})();
-      /*Drop down cart end*/
+        /*Drop down cart start*/
+        (function () {
+
+            $("#cart-icon").on("click", function () {
+                $(".cart-window").fadeToggle("fast");
+            });
+
+        })();
+        /*Drop down cart end*/
 
 
- /* increment and decrement start*/
-      const plus = document.querySelector(".add"),  
-      num = document.querySelector(".num"),
-      minus = document.querySelector(".minus");
+        /* increment and decrement start*/
+        let total = document.querySelector("#total-before");
+        let final = document.querySelector("#total-after");
+        let shipping = 100;
+        const plus = document.querySelector(".add"),
+            num = document.querySelector(".num"),
+            minus = document.querySelector(".minus");
 
-      const plus1 = document.querySelector(".add1"),
-      minus1 = document.querySelector(".minus1"),
-      num1 = document.querySelector(".num1");
-      var priceupdate = document.querySelector(".price");
-      var priceupdate2 = document.querySelector("#pie");
+        const plus1 = document.querySelector(".add1"),
+            minus1 = document.querySelector(".minus1"),
+            num1 = document.querySelector(".num1");
+        var priceupdate = document.querySelector(".price");
+        var priceupdate2 = document.querySelector("#pie");
+        let sum = 26200;
+        let b = 1;
+        let a = 1;
+        plus.addEventListener("click", () => {
+            var a2;
+            a++;
+            a2 = a - 1;
+            num.innerText = a;
+            priceupdate.innerText = "Price: EGP" + a * 15200;
+            sum = sum - (a2 * 15200) + a * 15200;
+            total.innerText = '' + sum;
+            final.innerText = '' + sum + 100;
+        })
+        plus1.addEventListener("click", () => {
+            var b2;
+            b++;
+            b2 = b - 1;
+            num1.innerText = b;
+            priceupdate2.innerText = "Price: EGP" + b * 11000;
+            sum = sum - (b2 * 11000) + b * 11000;
+            total.innerText = '' + sum;
+            final.innerText = '' + sum + 100;
 
-      let b=1;
-      let a =1;
-      plus.addEventListener("click", ()=>{
-        a++;
-        num.innerText =a; 
-        priceupdate.innerText="Price: " + a*15200 + " LE";
-      })
-      plus1.addEventListener("click", ()=>{
-        b++;
-        num1.innerText =b; 
-        priceupdate2.innerText="Price: " + b*11000 + " LE";
+        })
 
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                sum = sum - 15200;
+                a--;
+            }
+            num.innerText = a;
+            var p = 15200 + Math.abs(15200 - a * 15200);
+            priceupdate.innerText = "Price: EGP" + p;
+            total.innerText = '' + sum;
+            final.innerText = '' + sum + 100;
+        })
+        minus1.addEventListener("click", () => {
+            if (b > 1) {
+                sum = sum - 11000;
+                b--;
+            }
+            num1.innerText = b;
+            var p2 = 11000 + Math.abs(11000 - b * 11000);
+            sum = sum + (b * 11000) - 11000;
+            priceupdate2.innerText = "Price: EGP" + p2;
+            total.innerText = '' + sum;
+            final.innerText = '' + sum + 100;
+        })
 
-      })
-   
-      minus.addEventListener("click", ()=>{
-       if(a>1)
-       {
-        a--; 
-       } 
-        num.innerText =a; 
-        var p= 15200+Math.abs(15200-a*15200);
-        priceupdate.innerText= "Price: " + p + " LE";
-
-      })
-      minus1.addEventListener("click", ()=>{
-       if(b>1)
-       {
-        b--;
-       } 
-        num1.innerText =b; 
-        var p2= 11000+Math.abs(11000-a*11000);
-        priceupdate2.innerText= "Price: " + p2 + " LE";
-
-
-      })
-
-    /* increment and decrement end */
+        /* increment and decrement end */
 
     </script>
 
 
-<script src ="./js/trial.js"></script>
+    <script src="./js/trial.js"></script>
 
 
 
