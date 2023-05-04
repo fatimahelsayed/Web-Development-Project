@@ -126,27 +126,94 @@
 
 
                 
-                <div class="search-container" >
-                    <div>
-                    <h2 class="search-title">Search For Existing Products</h2>
-                    </div>
-                        <div id="search">
-                        <input type="text" id="searchinput" onkeyup="search_cust()" placeholder="Search...">
-                        <div>
-                    </div>
-                   </div>
-                    <ul id="custlist">
-                    <li><a href="#" id="c1"> Clementine Daisy Necklace
-                         <div><button class = "btn" > <i class="fa fa-edit" ></i> </button> <button class="btn"><i class="fa fa-trash"> </i></button ></div></a></li>
-                    <li><a href="#" id="c2"> Clementine Wishbone Ring                  
-                        <div><button class = "btn"> <i class="fa fa-edit"></i> </button> <button class="btn"><i class="fa fa-trash"></i></button ></div></a></li>
-                    <li><a href="#" id="c3">Clementine Floral Twist Bracelet                         
-                        <div><button class = "btn"> <i class="fa fa-edit"></i> </button> <button class="btn"><i class="fa fa-trash"></i></button></div></a></li>
-                    <li><a href="#" id="c4">Clementine Disney Earrings                         
-                        <div><button class = "btn"> <i class="fa fa-edit"></i> </button> <button class="btn"><i class="fa fa-trash"></i></button ></div></a></li>
-                    </ul>
-                </div>
-            
+                <main class="table">
+                    <section class="table_header">
+                        <h1>Products List</h1>
+                        <div class="search_orders">
+                            <input type="search" placeholder="Search existing products...">
+                        </div>
+                       
+                    </section>
+                    <section class="table_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th> Product ID <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Product Image <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Product Name <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Model <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Edit/Delete <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Availability <span class="icon-arrow">&UpArrow;</span></th>
+                                    <th> Price <span class="icon-arrow">&UpArrow;</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> #182383C </td>
+                                    <td> <img src="Images/r2.png" alt="" id="prod_img"></td>
+                                    <td> Clementine Daisy Ring </td>
+                                    <td> Diamond </td>
+                                    <td><button class = "btn" > <i class="fa fa-edit" ></i> </button> <button class="btn"><i class="fa fa-trash"> </i></button ></a></li>
+                                    </td>
+                                    <td>
+                                        <p class="status_delivered">In Stock</p> <p class="avail_amount">*Available: 100 Pieces</p>
+                                    </td>
+                                    <td> <strong> EGP 12890 </strong></td>
+                                </tr>
+                                <tr>
+                                    <td> #843WRFH </td>
+                                    <td> <img src="Images/r3.png" alt="" id="prod_img"></td>
+                                    <td> Clementine Sweetheart Necklace </td>
+                                    <td> Diamond </td>
+                                    <td><button class = "btn" > <i class="fa fa-edit" ></i> </button> <button class="btn"><i class="fa fa-trash"> </i></button ></a></li>
+                                    </td>
+                                    <td>
+                                        <p class="status_delivered">In Stock</p> <p class="avail_amount">*Available: 90 Pieces</p>
+                                    </td>
+                                    <td> <strong>EGP 535050</strong> </td>
+                                </tr>
+                                <tr>
+                                    <td> #129EDJHN</td>
+                                    <td> <img src="Images/gr6.png" alt=""id="prod_img"></td>
+                                    <td> Clementine Royal Ring </td>
+                                    <td> Gold </td>
+                                    <td><button class = "btn" > <i class="fa fa-edit" ></i> </button> <button class="btn"><i class="fa fa-trash"> </i></button ></a></li>
+                                    </td>
+                                    <td>
+                                        <p class="status_cancelled">Out Of Stock</p> <p class="avail_amount">*Available: 0 Pieces</p>
+                                    </td>
+                                    <td> <strong>EGP 210040</strong> </td>
+                                </tr>
+                                <tr>
+                                    <td> #8I2UWNC</td>
+                                    <td> <img src="Images/b4.jpg" alt=""id="prod_img"></td>
+                                    <td> Clementine Diamond Bracelet </td>
+                                    <td> Diamond </td>
+                                    <td><button class = "btn" > <i class="fa fa-edit" ></i> </button> <button class="btn"><i class="fa fa-trash"> </i></button ></a></li>
+                                    </td>
+                                    <td>
+                                        <p class="status_delivered">In Stock</p> <p class="avail_amount">*Available: 23 Pieces</p>
+                                    </td>
+                                    <td> <strong>EGP 14970</strong> </td>
+                                </tr>
+                                <tr>
+                                    <td> #3R4NFC</td>
+                                    <td> <img src="Images/gn3.png" alt=""id="prod_img"></td>
+                                    <td> Clementine Gold Necklace </td>
+                                    <td> Gold </td>
+                                    <td><button class = "btn" > <i class="fa fa-edit" ></i> </button> <button class="btn"><i class="fa fa-trash"> </i></button ></a></li>
+                                    </td>
+                                    <td>
+                                        <p class="status_cancelled">Out Of Stock</p> <p class="avail_amount">*Available: 0 Pieces</p>
+                                    </td>
+                                    <td> <strong>EGP 39999</strong> </td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </section>
+           
+                </main>
             
                 <div id="update-msg">
                     <span>Product Updated Successfully.</span>
@@ -165,7 +232,7 @@
 
              
 
-    <script src="js/editcustdash.js"></script>
+    <script src="js/orders.js"></script>
 
 </body>
 
