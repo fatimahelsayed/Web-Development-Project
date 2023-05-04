@@ -784,7 +784,7 @@ span.minus1 {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
 
 /* Track */
@@ -886,8 +886,12 @@ span.minus1 {
 @media screen and (max-width: 1020px) {
     .vidmain-title {
         border-right: none;
+        padding-bottom: 20px;
     }
-
+    .vidmain{
+        padding: 0;
+        width: 100%;
+    }
 }
 
 /* ---- end vid break ---- */
