@@ -270,12 +270,7 @@ main {
 /* orders */
 
 
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 main.table {
     width: 75vw;
