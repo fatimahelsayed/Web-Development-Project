@@ -28,7 +28,7 @@
                         <a href="index.html">
                             <img src="./Images/logoo copy.png">
                         </a>
-                        <span class="toggle-cart-box">
+                        <span class="toggle-box">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -55,53 +55,51 @@
                             </ul>
                         </li>
                         <li><a href="./contactus.html">CONTACT US</a></li>
-
+    
                         <li><a href="#"><i class="ri-search-line"></i></a></li>
-                        <!--Cart Start-->
+<!--Cart Start-->
+                        
+<li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
+                       
+<div class="cart-window hide" id="sidebar">
+    <button id ="closesidebarbtn" onclick="closesidebar()"><span class="material-icons">close</span></button>
 
-                        <li><a href="#" id="cart"><i class="ri-shopping-bag-line"></i></a></li>
+    <h2 class="ShopBag">Shopping Bag</h2>
+    <div class="cart-wrapper">
+    <div class="cart-item">
+        <img src="./Images/whiteRook.jpg" alt="">
+         <div class="details">
+            <span class="name"> Clementine Silver White Rook</span>
+            <div class="btn-wrapper">
+                <span class="minus">-</span>
+                <span class="num">1</span>
+                <span class="add">+</span>
+            </div> 
+            <span class="price"> Price: 15200 LE</span>
+         </div>
+    </div>
+    <!--Item 2-->
+    <div class="cart-item">
+        <img src="./Images/r5.png" alt="">
+         <div class="details">
+            <span class="name">Clementine Silver Snowflake</span>
+            <div class="btn-wrapper">
+                <span class="minus1">-</span>
+                <span class="num1">1</span>
+                <span class="add1">+</span>
+            </div>                                 
+             <span class="price" id="pie"> Price: 11000 LE</span>
+         </div>
+    </div>
+    </div>
+    <div class="total">Total: 26200 LE</div>
+    <button class="checkout" onclick="location.href='./cart.html'">CHECKOUT</button>
+</div>
 
-                        <div class="cart-window hide" id="sidebar">
-                            <button id="closesidebarbtn" onclick="closesidebar()"><span
-                                    class="material-icons">close</span></button>
-
-                            <h2 class="ShopBag">Shopping Bag</h2>
-                            <div class="cart-wrapper">
-                                <div class="cart-item">
-                                    <img src="./Images/whiteRook.jpg" alt="">
-                                    <div class="details">
-                                        <span class="name"> Clementine Silver White Rook</span>
-                                        <div class="btn-wrapper">
-                                            <span class="minus">-</span>
-                                            <span class="num">1</span>
-                                            <span class="add">+</span>
-                                        </div>
-                                        <span class="price"> Price: 15200 LE</span>
-                                    </div>
-                                </div>
-                                <!--Item 2-->
-                                <div class="cart-item">
-                                    <img src="./Images/r5.png" alt="">
-                                    <div class="details">
-                                        <span class="name">Clementine Silver Snowflake</span>
-                                        <div class="btn-wrapper">
-                                            <span class="minus1">-</span>
-                                            <span class="num1">1</span>
-                                            <span class="add1">+</span>
-                                        </div>
-                                        <span class="price" id="pie"> Price: 11000 LE</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="total">Total: 26200 LE</div>
-                            <button class="checkout"><a href="./checkout.html"
-                                    style="color: azure; text-decoration: none;">Checkout</a></button>
-                        </div>
-
-                        <!--Cart End-->
+<!--Cart End-->
 
 
-                        <li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
+   <li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -110,7 +108,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $(".navigation .navbar .logo-toggle-container .toggle-cart-box").click(function () {
+            $(".navigation .navbar .logo-toggle-container .toggle-box").click(function () {
                 $(".navigation .menu").stop().slideToggle();
             });
         });
