@@ -239,7 +239,7 @@ body {
     position: fixed;
     top: 0;
     display: none;
-    right: 0%;
+    right: 0;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -247,12 +247,15 @@ body {
     box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.568);
 }
 
+.hide{
+    display: none;
+}
+
 #closesidebarbtn {
     float: left;
     color: #454545;
     background: none;
     border-style: none;
-    
 }
 
 #closesidebarbtn:hover {
