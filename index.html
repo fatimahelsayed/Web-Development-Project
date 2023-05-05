@@ -57,8 +57,12 @@
 
                         <li><a href="#"><i class="ri-search-line"></i></a></li>
                         <li><a href="./login.html"><i class="ri-account-circle-line"></i></a></li>
+                        <!-- wishlist start -->
+                        <li><a href="#"><i class="ri-heart-line"></i></a>
+                            
+                            <!-- wishlist end -->
 
-                        <!--Cart Start-->
+                            <!--Cart Start-->
                         <li><a href="#" id="cart-icon"><i class="ri-shopping-bag-line"></i></a>
                             <div class="cart" id="cart">
                                 <div class="cart-window hide" id="sidebar">
@@ -241,7 +245,7 @@
                 <div class="product-image">
                     <span class="discount-tag">50% off</span>
                     <img src="./Images/r1.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
+                    <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">Ring 1</h2>
@@ -254,7 +258,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="./Images/r2.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
+                    <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">Ring 2</h2>
@@ -267,7 +271,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="./Images/r3.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
+                    <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">Neck 3</h2>
@@ -280,7 +284,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="./Images/r3.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
+                    <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">Neck 4</h2>
@@ -294,7 +298,7 @@
                 <div class="product-image">
                     <span class="discount-tag">30% off</span>
                     <img src="./Images/r5.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
+                    <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">Ring 5</h2>
@@ -306,7 +310,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="./Images/r6.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
+                    <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">Neck 6</h2>
@@ -318,7 +322,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <img src="./Images/r7.png" class="product-thumb" alt="">
-                    <button class="card-btn">add to whislist</button>
+                    <button class="card-btn">add to cart</button>
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">Neck 7</h2>
@@ -479,103 +483,8 @@
         </div>
     </footer>
 
-
-
-
-
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("mynavbar");
-            if (x.className === "navbar") {
-                x.className += " responsive";
-            } else {
-                x.className = "navbar";
-            }
-        }
-
-
-        /*Drop down cart start*/
-        (function () {
-
-            $("#cart-icon").on("click", function () {
-                $(".cart-window").fadeToggle("slow");
-            });
-
-        })();
-        /*Drop down cart end*/
-
-
-        /* increment and decrement start*/
-        let total = document.querySelector("#total-before");
-        let final = document.querySelector("#total-after");
-        let shipping = 100;
-        const plus = document.querySelector(".add"),
-            num = document.querySelector(".num"),
-            minus = document.querySelector(".minus");
-
-        const plus1 = document.querySelector(".add1"),
-            minus1 = document.querySelector(".minus1"),
-            num1 = document.querySelector(".num1");
-        var priceupdate = document.querySelector(".price");
-        var priceupdate2 = document.querySelector("#pie");
-        let sum = 26200;
-        let b = 1;
-        let a = 1;
-        plus.addEventListener("click", () => {
-            var a2;
-            a++;
-            a2 = a - 1;
-            num.innerText = a;
-            priceupdate.innerText = "Price: EGP" + a * 15200;
-            sum = sum - (a2 * 15200) + (a * 15200);
-            total.innerText = '' + sum;
-            final.innerText = '' + sum + 100;
-        })
-        plus1.addEventListener("click", () => {
-            var b2;
-            b++;
-            b2 = b - 1;
-            num1.innerText = b;
-            priceupdate2.innerText = "Price: EGP" + b * 11000;
-            sum = sum - (b2 * 11000) + (b * 11000);
-            total.innerText = '' + sum;
-            final.innerText = '' + sum + 100;
-
-        })
-
-        minus.addEventListener("click", () => {
-            if (a > 1) {
-                sum = sum - 15200;
-                a--;
-            }
-            num.innerText = a;
-            var p = 15200 + Math.abs(15200 - a * 15200);
-            priceupdate.innerText = "Price: EGP" + p;
-            total.innerText = '' + sum;
-            final.innerText = '' + sum + 100;
-        })
-        minus1.addEventListener("click", () => {
-            if (b > 1) {
-                sum = sum - 11000;
-                b--;
-            }
-            num1.innerText = b;
-            var p2 = 11000 + Math.abs(11000 - b * 11000);
-            priceupdate2.innerText = "Price: EGP" + p2;
-            total.innerText = '' + sum;
-            final.innerText = '' + sum + 100;
-        })
-
-        /* increment and decrement end */
-
-    </script>
-
-
     <script src="./js/trial.js"></script>
-
-
-
+    <script src="./js/cart.js"></script>
 
 </body>
 
