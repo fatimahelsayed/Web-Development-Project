@@ -7,7 +7,6 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/cart.css">
     <link rel="stylesheet" type="text/css" href="css/wishlist.css">
     <!-- to access font awesome cdn icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -62,7 +61,6 @@
                         </li>
                         <!-- wishlist end -->
 
-                        <!--Cart Start-->
                         <li><a href="#" id="cart-icon"><i class="ri-shopping-bag-line"></i></a>
                             <div class="cart" id="cart">
                                 <div class="cart-window hide" id="sidebar">
@@ -77,11 +75,11 @@
                                             <div class="details">
                                                 <div class="name"> Clementine Silver White Rook</div>
                                                 <div class="btn-wrapper">
-                                                    <span class="sub">-</span>
-                                                    <span class="numb">1</span>
+                                                    <span class="minus">-</span>
+                                                    <span class="num">1</span>
                                                     <span class="add">+</span>
                                                 </div>
-                                                <button class="wishlist-btn" onclcik="">Add to Wishlist</p></button>
+                                                <button class="wishlist-btn" onclick="">Add to Wishlist</p></button>
                                                 <div class="price"> Price: EGP15200</div>
                                             </div>
                                         </div>
@@ -92,8 +90,8 @@
                                             <div class="details">
                                                 <div class="name">Clementine Silver Snowflake</div>
                                                 <div class="btn-wrapper">
-                                                    <span class="sub1">-</span>
-                                                    <span class="numb1">1</span>
+                                                    <span class="minus1">-</span>
+                                                    <span class="num1">1</span>
                                                     <span class="add1">+</span>
                                                 </div>
                                                 <button class="wishlist-btn" onclcik="">Add to Wishlist</p></button>
@@ -117,9 +115,7 @@
                                     </div>
                                 </div>
                             </div>
-
-                        </li>
-                        <!--Cart End-->
+                            <!--Cart End-->
                     </ul>
                 </div>
             </div>
@@ -254,7 +250,7 @@
             if (c1 > 1) {
                 c1--;
             }
-            
+
             numb.innerText = c1;
             var p = 15200 + Math.abs(15200 - c1 * 15200);
             priceupdate.innerText = "EGP " + p;
