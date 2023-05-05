@@ -198,10 +198,26 @@ body {
 
     .navigation .menu li {
         display: block;
-        float: none !important;
         padding: 0 0px;
         border-bottom: 1px solid #bbbbbb;
         left: 0;
+        width: 100%;
+    }
+
+    .navigation .menu li:nth-child(9) {
+        border-bottom: none;
+    }
+
+    .navigation .menu li ul li {
+        border-top: 1px solid #bbbbbb;
+        border-bottom: none;
+    }
+
+    .navigation .menu li:nth-child(4),
+    .navigation .menu li:nth-child(6),
+    .navigation .menu li:nth-child(7),
+    .navigation .menu li:nth-child(8) {
+        margin-bottom: 5px;
     }
 
     .navigation .menu li ul {
@@ -222,17 +238,18 @@ body {
     z-index: 35;
     position: fixed;
     top: 0;
-    right: 0;
+    display: none;
+    right: -100%;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: white;
     box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.568);
-    transform: 2.5s ease;
 }
 
-.hide {
-    display: none;
+.cart-window .active {
+    right: 0;
+    transition: 0.7s ease;
 }
 
 #closesidebarbtn {
@@ -359,8 +376,8 @@ span.add1,
 span.minus1 {
     font-size: 20px;
 }
-.wishlist-btn
-{
+
+.wishlist-btn {
     display: block;
     float: left;
     margin-top: 10px;
@@ -369,9 +386,11 @@ span.minus1 {
     text-decoration: underline;
     opacity: 65%;
 }
-.wishlist-btn:hover{
+
+.wishlist-btn:hover {
     opacity: 100%;
 }
+
 .total {
     text-align: center;
     align-items: center;
@@ -379,20 +398,22 @@ span.minus1 {
     margin-bottom: 10px;
     padding: 10px;
 }
-.total .shipping
-{
+
+.total .shipping {
     border-bottom: 1px solid rgb(233, 233, 233);
     margin-bottom: 10px;
 
 }
-.total p, 
-.total.shipping p{
+
+.total p,
+.total.shipping p {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
 }
+
 .checkout {
     margin: 5% 10% 5% 5%;
     border: none;
@@ -888,7 +909,8 @@ span.minus1 {
         border-right: none;
         padding-bottom: 20px;
     }
-    .vidmain{
+
+    .vidmain {
         padding: 0;
         width: 100%;
     }
