@@ -83,7 +83,9 @@
     opacity: 100%;
 }
 
-.prod-content h4 {
+.prod-content .price1,
+.prod-content .price2,
+.prod-content .price3{
     font-weight: 400;
     margin-bottom: 50px;
 }
@@ -107,7 +109,8 @@
     font-weight: 300;
 }
 
-.btn-wrap span.num {
+.btn-wrap span.num2,
+span.num3, span.num4 {
     font-size: 20px;
     height: 100%;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -116,8 +119,10 @@
     padding-top: 1%;
 }
 
-.btn-wrap span.add,
-span.minus {
+.btn-wrap span.add2,
+span.minus2, span.add3,
+span.minus3, span.add4,
+span.minus4{
     font-size: 20px;
     height: 100%;
     padding-top: 1%;
