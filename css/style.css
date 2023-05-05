@@ -112,13 +112,13 @@ body {
     display: none;
     text-align: left;
     width: 100%;
-    padding: 10 0px;
+    padding: 10px;
     border-top: 1px solid #bbbbbb;
 
 }
 
 .navigation .menu li ul li:nth-child(3) {
-    border-bottom: 1px solid #bbbbbb;
+    border-bottom: none;
 }
 
 .navigation .menu li:focus-within>ul li,
