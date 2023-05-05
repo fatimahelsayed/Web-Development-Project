@@ -251,23 +251,20 @@
         })
 
         sub.addEventListener("click", () => {
-            if (a > 1) {
-                a--;
+            if (c1 > 1) {
+                c1--;
             }
-            if(a == 1)
-            {
-                
-            }
-            numb.innerText = a;
-            var p = 15200 + Math.abs(15200 - a * 15200);
+            
+            numb.innerText = c1;
+            var p = 15200 + Math.abs(15200 - c1 * 15200);
             priceupdate.innerText = "EGP " + p;
         })
         sub1.addEventListener("click", () => {
-            if (b > 1) {
-                b--;
+            if (c2 > 1) {
+                c2--;
             }
-            numb1.innerText = b;
-            var p2 = 19000 + Math.abs(19000 - b * 19000);
+            numb1.innerText = c2;
+            var p2 = 19000 + Math.abs(19000 - c2 * 19000);
             priceupdate2.innerText = "EGP " + p2;
 
         })
